@@ -1,0 +1,279 @@
+Comenzaremos la Fase 3.2 — Diseño visual definitivo.
+
+PRIMER COMPONENTE: PORTADA GENERAL
+
+La referencia visual autoritativa se encuentra en:
+
+/referencias/01_portada.pdf
+
+Debes analizar directamente este archivo.
+
+Este PDF forma parte del repositorio y debe utilizarse como referencia
+para medir posiciones, proporciones, geometría, alineaciones y composición.
+
+Las especificaciones tipográficas que proporciono a continuación fueron
+obtenidas directamente del archivo original en Adobe Illustrator y tienen
+prioridad sobre cualquier estimación visual realizada a partir del PDF.
+
+
+PRIMER COMPONENTE: PORTADA GENERAL
+
+
+Este PDF es la REFERENCIA VISUAL AUTORITATIVA de la portada.
+No quiero una reinterpretación ni un diseño inspirado en ella.
+
+Quiero reproducirla con la mayor fidelidad posible en Typst.
+
+────────────────────────────────────────
+1. PRINCIPIO DE REPRODUCCIÓN
+────────────────────────────────────────
+
+Utiliza dos fuentes de información:
+
+A) El PDF adjunto:
+   úsalo como referencia para posiciones, proporciones, geometría,
+   espacios, alineaciones y composición general.
+
+B) Las especificaciones extraídas directamente de Illustrator:
+   tienen prioridad para tipografía, tamaños, leading, tracking,
+   colores y strokes.
+
+No estimes visualmente un valor cuando ya exista una medida proporcionada.
+
+────────────────────────────────────────
+2. ESPECIFICACIONES TIPOGRÁFICAS
+────────────────────────────────────────
+
+TÍTULO
+
+Texto:
+PROTOCOLO
+FAMILIAR
+
+Font family: Minion Pro
+Font style: Medium Display
+Size: 33.4913 pt
+Leading: 33 pt
+Tracking: 19
+Color: #2e2f31
+
+
+LEMA PRINCIPAL
+
+Texto:
+VISIÓN · UNIDAD · LEGADO
+
+Font family: Neuzeit Grotesk
+Font style: Regular
+Size: 7.9077 pt
+Leading: 7.4559 pt
+Tracking: 371
+Color: #2e2f31
+
+
+FRASE INFERIOR
+
+Texto base:
+UN FUTURO QUE CONSTRUIMOS
+
+Font family: Neuzeit Grotesk
+Font style: Regular
+Size: 4.8234 pt
+Leading: 4.5478 pt
+Tracking: 371
+Color: #6c6b67
+
+Texto destacado:
+JUNTOS.
+
+Font family: Neuzeit Grotesk
+Font style: Regular
+Size: 4.8234 pt
+Leading: 4.5478 pt
+Tracking: 371
+Color: #f15e22
+Stroke: 0.2 pt
+Stroke color: #f15e22
+
+
+VERSIÓN
+
+Texto:
+VERSION 1.0
+
+Font family: Neuzeit Grotesk
+Font style: Regular
+Size: 4.8234 pt
+Leading: 4.5478 pt
+Tracking: 371
+Color: #f15e22
+Stroke: 0.2 pt
+Stroke color: #f15e22
+
+
+FECHA
+
+Texto:
+AGOSTO 2026
+
+Font family: Neuzeit Grotesk
+Font style: Regular
+Size: 4.8234 pt
+Leading: 4.5478 pt
+Tracking: 371
+Color: #6c6b67
+
+
+────────────────────────────────────────
+3. TRACKING
+────────────────────────────────────────
+
+Los valores de tracking proporcionados proceden de Adobe Illustrator.
+
+Interprétalos correctamente según la convención Adobe:
+
+tracking 19 = 19/1000 em
+tracking 371 = 371/1000 em
+
+Convierte estos valores a la unidad equivalente de Typst en lugar
+de interpretarlos como puntos.
+
+Documenta la conversión realizada.
+
+────────────────────────────────────────
+4. TIPOGRAFÍAS
+────────────────────────────────────────
+
+NO sustituyas silenciosamente:
+
+Minion Pro Medium Display
+Neuzeit Grotesk Regular
+
+por Segoe UI, Arial u otras fuentes.
+
+Primero verifica si Typst puede localizar exactamente esas familias
+y estilos mediante:
+
+- fuentes instaladas en Windows;
+- assets/fonts/.
+
+Si alguna no está disponible, repórtalo.
+
+Puedes generar una prueba temporal con una sustitución únicamente
+si queda claramente identificada como provisional.
+
+No descargues tipografías.
+
+────────────────────────────────────────
+5. COMPOSICIÓN
+────────────────────────────────────────
+
+Analiza directamente el PDF para obtener las coordenadas y dimensiones
+de los elementos siempre que técnicamente sea posible.
+
+La portada contiene, entre otros:
+
+- logotipo POLIFLEX;
+- símbolo circular naranja;
+- composición central del título;
+- pequeños filetes naranjas sobre y debajo del título;
+- VISIÓN · UNIDAD · LEGADO;
+- elemento circular decorativo de gran formato en la zona
+  superior/derecha;
+- frase inferior izquierda;
+- filete naranja inferior izquierdo;
+- VERSION 1.0;
+- AGOSTO 2026;
+- composición geométrica diagonal de la esquina inferior derecha;
+- fondo y líneas decorativas sutiles.
+
+No reconstruyas manualmente elementos corporativos complejos si pueden
+extraerse o incorporarse como recursos vectoriales desde los originales.
+
+────────────────────────────────────────
+6. MEDICIÓN DEL PDF
+────────────────────────────────────────
+
+Antes de implementar la portada:
+
+1. determina el tamaño exacto de página del PDF;
+2. determina las coordenadas aproximadas de cada elemento;
+3. identifica qué elementos son texto y cuáles son vectores/imágenes;
+4. identifica colores de fondo y elementos gráficos;
+5. determina alineaciones y ejes;
+6. documenta estas mediciones.
+
+Usa el PDF como sistema de coordenadas para reproducir la portada,
+no solamente como referencia visual.
+
+────────────────────────────────────────
+7. IMPLEMENTACIÓN
+────────────────────────────────────────
+
+Implementa esta portada dentro del componente:
+
+cover-page()
+
+pero separa:
+
+CONTENIDO
+DATOS
+ESTILOS
+GEOMETRÍA
+RECURSOS GRÁFICOS
+
+Los valores visuales deben centralizarse en configuración cuando tenga
+sentido hacerlo.
+
+No introduzcas cambios en /capitulos/*.md.
+
+────────────────────────────────────────
+8. PRUEBA AISLADA
+────────────────────────────────────────
+
+Genera:
+
+dist/TEST_COVER.pdf
+
+Debe contener únicamente la portada reproducida.
+
+No compiles todavía todo el Protocolo.
+
+Mantén también EDITORIAL_SHOWCASE.pdf, pero la revisión visual de esta
+fase se hará principalmente sobre TEST_COVER.pdf.
+
+────────────────────────────────────────
+9. COMPARACIÓN
+────────────────────────────────────────
+
+Después de generar TEST_COVER.pdf:
+
+1. renderiza la portada original y la portada generada al mismo tamaño;
+2. realiza una comparación visual;
+3. si es posible, genera una superposición con transparencia o un
+   diff visual para detectar desplazamientos;
+4. corrige diferencias evidentes de posición, escala y alineación.
+
+No alteres los valores tipográficos proporcionados para compensar
+errores de posicionamiento.
+
+────────────────────────────────────────
+10. ENTREGA DE ESTA ITERACIÓN
+────────────────────────────────────────
+
+Al finalizar entrégame:
+
+- TEST_COVER.pdf;
+- tabla de coordenadas/dimensiones obtenidas;
+- confirmación de las fuentes realmente utilizadas;
+- conversión aplicada a los valores de tracking;
+- lista de recursos gráficos identificados;
+- diferencias conocidas respecto al PDF original;
+- cualquier recurso original que necesites que te proporcione.
+
+Después DETENTE.
+
+No trabajes todavía en índice, capítulos, páginas interiores,
+H1-H4, tablas ni anexos.
+
+Primero aprobaremos la portada.

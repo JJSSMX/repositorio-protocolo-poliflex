@@ -1,0 +1,196 @@
+---
+title: "Portada e Índice General"
+company: "Poliductos Flexibles, S.A. de C.V."
+brand: "POLIFLEX"
+family: "Familia Velasco Chedraui"
+version: "2.0"
+date: "Agosto 2026"
+location: "Coatepec, Veracruz, México"
+---
+
+# Índice General
+
+- Declaración de Principios Familiares y Visión Intergeneracional
+- Misión y Propósito Familiar Empresarial
+- Visión Intergeneracional y Proyecto de Largo Plazo
+- Valores Comunes y Principios Rectores
+- Unidad Familiar como Activo Estratégico
+- Legitimidad del Protocolo y Adhesión Voluntaria
+- Revisión Generacional del Protocolo
+- Naturaleza Jurídica y Coordinación Normativa
+- Criterio de Interpretación del Protocolo
+- Propiedad Accionaria, Control Familiar y Liquidez Patrimonial
+- Naturaleza del Patrimonio Accionario Familiar
+- Reconocimiento del Carácter Institucional de las Acciones
+- Alcance de las Restricciones sobre la Titularidad Accionaria
+- Prevalencia del Interés Patrimonial Común
+- Distinción Estructural de Derechos sobre las Acciones
+- Derechos Económicos
+- Derechos Corporativos y de Control
+- Derecho de Liquidez o Salida
+- Principio de Separación Funcional de Derechos
+- Definición Normativa de la Familia Empresaria
+- Familia Consanguínea en Línea Directa
+- Accionistas Familiares
+- Familia Política
+- Régimen de Incorporación de la Familia Política
+- Descendencia No Tradicional
+- Reconocimiento de Derechos Económicos
+- Régimen de Derechos Corporativos
+- Principio de Diferenciación Funcional
+- Ramas Familiares Activas y Pasivas
+- Ramas Familiares Activas
+- Ramas Familiares Pasivas
+- Diferenciación en el Ejercicio de Derechos
+- Protección Patrimonial y No Interferencia
+- Transición entre Ramas Familiares Activas y Pasivas
+- Permanencia Familiar y Restricciones a la Transmisión
+- Regla General de Permanencia en Manos Familiares
+- Restricción a la Transmisión a Terceros
+- Derecho de Tanto Inter-Familiar
+- Derecho de Preferencia en Nuevas Emisiones
+- Supremacía del Control Familiar sobre la Liquidez Individual
+- Prohibición de Gravámenes, Garantías y Uso Instrumental de las Acciones
+- Prohibición de Gravámenes y Garantías
+- Ineficacia de Actos Contrarios
+- Protección Frente a Acreedores Personales
+- Vinculación con el Régimen de Operaciones entre Familiares
+- Liquidez Patrimonial y Mecanismos de Salida
+- Salida Voluntaria
+- Salida Forzada
+- Principios Rectores de la Sucesión Accionaria
+- Transmisión del Valor Patrimonial por Sucesión
+- No Transmisión Automática de Derechos Corporativos
+- Derecho de Asociación y Control de Integración
+- Remisión al Régimen Específico de Ejecución
+- Valuación del Capital Accionario
+- Supuestos de Activación Obligatoria
+- Metodología de Cálculo
+- Carácter Vinculante del Resultado
+- Canalización de Controversias
+- Control Familiar Efectivo
+- Principio de Control Mayoritario Familiar
+- Materias Reservadas
+- Régimen de Mayorías Reforzadas
+- Derechos de Veto Familiar
+- Designación y Control de Órganos Sociales
+- Gobierno Corporativo Familiar, Institucionalización y Régimen de Profesionalización
+- Principio de Institucionalización y Jerarquía Normativa Interna
+- Principio de Institucionalización del Sistema Familiar–Empresarial
+- Jerarquía Normativa Interna y Regla de Especialidad
+- Régimen de Separación Funcional entre Propiedad, Gobierno y Operación
+- Propiedad Accionaria como Esfera Patrimonial sin Atribuciones de Gobierno ni de Ejecución
+- Gobierno Corporativo Familiar como Esfera de Decisión Estratégica y Control Institucional
+- Operación Empresarial como Esfera Ejecutiva Autónoma
+- Prohibición de Intervención Cruzada y Supuestos Excepcionales
+- Coordinación y Límites de los Órganos Societarios
+- Órganos de Gobierno Corporativo Familiar
+- Asamblea de Familia
+- Consejo de Familia
+- Comité de Honor Familiar
+- Principio de Vocería Única Familiar
+- Régimen de Profesionalización
+- Profesionalización como Condición de Acceso al Poder Familiar
+- Régimen de Elegibilidad para Órganos de Gobierno Corporativo Familiar
+- Elegibilidad para el Desempeño de Funciones Ejecutivas por Familiares
+- Incompatibilidades y Nulidad de Designaciones Contrarias al Protocolo
+- Régimen de Función Ejecutiva en la Empresa Familiar
+- Naturaleza y Límites de la Función Ejecutiva
+- Régimen Aplicable a Directivos Familiares
+- Neutralidad, Lealtad Institucional y Rendición de Cuentas
+- Régimen de Tipificación de Infracciones al Gobierno Corporativo Familiar
+- Invasión Competencial y Actuación Extrainstitucional
+- Abuso de Posición Familiar, Patrimonial o Institucional
+- Desconocimiento de la Institucionalidad Decisoria y de la Vocería Única
+- Calificación de la Infracción y Activación del Régimen de Consecuencias
+- Régimen de Sucesión Familiar Empresarial
+- Principio de Sucesión Empresarial Ordenada y Continuidad Societaria
+- Finalidad Empresarial de la Sucesión Accionaria
+- Exclusión de la Transmisión Automática de Derechos Societarios
+- Prevalencia del Interés Social y del Control Familiar Institucional
+- Supuestos Jurídicos de Activación del Régimen Sucesorio
+- Fallecimiento del Accionista Familiar
+- Incapacidad Total y Permanente del Accionista Familiar
+- Activación Anticipada por Retiro o Planeación Patrimonial Inter Vivos
+- Régimen de Transmisión del Valor Económico Accionario en la Sucesión
+- Reconocimiento del Derecho Sucesorio como Derecho Económico
+- Determinación del Valor Conforme al Mecanismo de Valuación Vinculante
+- Exigibilidad y Modalidades de Satisfacción
+- Alcance del Derecho Económico y Exclusión de Pretensiones Adicionales
+- Régimen de Ejercicio y Limitación de Derechos Corporativos en Contextos Sucesorios
+- Inexistencia de Transmisión Automática de Derechos Corporativos
+- Suspensión Automática de Derechos Corporativos durante el Proceso Sucesorio
+- Condicionamiento del Ejercicio de Derechos Corporativos
+- Habilitación Excepcional para el Ejercicio de Control
+- Ineficacia de Actos Corporativos Ejercidos sin Habilitación
+- Tratamiento Sucesorio Diferenciado por Categoría de Vínculo Familiar
+- Sucesión en Línea Consanguínea Directa
+- Régimen Aplicable a la Familia Política
+- Régimen Aplicable a la Descendencia no Tradicional
+- Exclusión de Terceros Ajenos al Sistema Familiar
+- Testamento Empresarial, Legados Accionarios y Albacea Especial Empresarial
+- Testamento Empresarial como Instrumento Preferente
+- Legados Especiales de Acciones
+- Albacea Especial Empresarial
+- Inscripción Provisional de Legatarios
+- Adjudicación Definitiva y Regularización Societaria
+- Régimen de Salida Ordenada de Titulares Económicos no Integrados
+- Naturaleza Transitoria de la Titularidad Económica no Integrada
+- Oferta Obligatoria y Derecho de Preferencia Interno
+- Prohibición de Disposición a Favor de Terceros
+- Convenio de Salida Ordenada como Condición de Reconocimiento
+- Mecanismos de Salida Forzosa
+- Exclusión de Derechos de Liquidez no Previstos
+- Régimen de Congelamiento Accionario durante el Proceso Sucesorio
+- Activación Automática del Congelamiento
+- Prohibición de Actos de Disposición o Afectación
+- Ineficacia de Actos Contrarios al Congelamiento
+- Coordinación Institucional de Registro
+- Levantamiento del Congelamiento y Regularización
+- Tratamiento de Dividendos y Beneficios Durante el Congelamiento
+- Procedimiento Sucesorio Interno y Formalización Societaria
+- Notificación Formal del Evento Sucesorio
+- Intervención del Órgano Rector del Proceso
+- Determinación Régimen Aplicable
+- Documentación y Formalización del Proceso
+- Control Institucional de la Información y Comunicación Familiar–Empresarial
+- Principio de Control Institucional de la Información
+- Clasificación de la Información Familiar – Empresarial
+- Régimen de Acceso a la Información
+- Régimen de Confidencialidad y Deber de Reserva
+- Régimen de Vocería Institucional
+- Ineficacia de Actos y Remisión al Régimen Sancionador
+- Régimen de Disciplina Financiera Familiar–Empresarial
+- Principio de Disciplina Financiera y Neutralidad Patrimonial
+- Prohibición de Apropiación Informal de Recursos
+- Prohibición de Préstamos, Anticipos o Beneficios No Autorizados
+- Régimen Excepcional de Disposiciones Financieras Permitidas
+- Prohibición de Afectación del Patrimonio Accionario Frente a Terceros
+- Responsabilidad Patrimonial e Ineficacia Institucional
+- Procedimiento Sancionador y Régimen de Sanciones Internas
+- Rectores del Régimen Sancionador
+- Sujetos Obligados y Alcance del Régimen
+- Catálogo de Infracciones
+- Procedimiento Sancionador Interno
+- Órganos Competentes
+- Catálogo de Sanciones
+- Reincidencia y Efectos Acumulativos
+- Medios Alternativos de Solución de Conflictos Familiares–Empresariales
+- Principio de Solución Institucional y Escalonada de Conflictos
+- Obligatoriedad del Agotamiento Previo
+- Ámbito de Aplicación del Régimen de Conflictos
+- Instancia Interna: Comité de Honor Familiar
+- Mediación Familiar–Empresarial
+- Arbitraje Familiar–Empresarial
+- Efectos de la Mediación y del Arbitraje
+- Prohibición de Judicialización Prematura
+- Coordinación con el Régimen Sancionador
+- Régimen Jurídico del Protocolo Familiar
+- Naturaleza Jurídica y Carácter Vinculante
+- Sujetos Obligados y Alcance
+- Jerarquía Normativa Interna
+- Vigencia y Efectos
+- Procedimiento de Reforma
+- Adhesión y Ratificación
+- Nulidad de Pactos Paralelos y Actos de Elusión
+- Interpretación y Cierre Normativo

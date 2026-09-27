@@ -1,0 +1,657 @@
+# ==============================================================================
+# CONFIGURACIÓN EDITORIAL CENTRALIZADA — PROTOCOLO FAMILIAR POLIFLEX
+# ==============================================================================
+# Parámetros globales para el motor editorial (Typst / HTML-CSS / Pandoc).
+# Modifique estos valores para alterar la maquetación sin tocar el contenido.
+# ==============================================================================
+
+metadata:
+  title: "Protocolo Familiar"
+  subtitle: "Marco Institucional de Gobernanza y Continuidad Familiar–Empresarial"
+  company: "Poliductos Flexibles, S.A. de C.V."
+  brand: "POLIFLEX"
+  family: "Familia Velasco Chedraui"
+  location: "Coatepec, Veracruz, México"
+  date: "Agosto de 2026"
+  version: "2.0"
+  canonical_source: "/capitulos/*.md"
+
+page:
+  format_name: "media_carta"        # Media Carta / Statement / Half Letter
+  width: "5.5in"                   # 139.7 mm
+  height: "8.5in"                  # 215.9 mm
+  facing_pages: true               # Páginas enfrentadas (doble faz: recto / verso)
+  bleed: "3mm"                     # Sangrado para corte de imprenta
+  margins:
+    top: "18mm"
+    bottom: "18mm"
+    inside: "18mm"                 # Margen interior / lomo para encuadernación (gutter)
+    outside: "15mm"                # Margen exterior / corte
+
+typography:
+  fonts:
+    body: "Inter"                  # Alternativas: "Libertinus Serif", "Georgia", "Segoe UI"
+    headings: "Inter"              # Tipografía de títulos
+    tables: "Inter"                # Tipografía para cuadros y tablas
+    monospace: "Consolas"
+  sizes:
+    body: "9.5pt"
+    h1: "15.5pt"                   # Título de capítulo
+    h2: "12pt"                     # Subsección principal
+    h3: "10.5pt"                   # Cláusula o artículo
+    h4: "9.5pt"                    # Subcláusula
+    footnote: "8pt"
+    folio: "8pt"                   # Número de página
+    header_text: "7.5pt"
+  leading: "0.65em"                # Espaciado adicional entre líneas consecutivas en Typst (ver nota técnica)
+  line_height: 1.35                # Multiplicador equivalente para HTML/CSS
+  tracking: "0pt"                  # Espaciado entre caracteres (letter-spacing)
+
+colors:
+  primary: "#0f172a"               # Slate 900 (títulos principales, acentos fuertes)
+  secondary: "#1e293b"             # Slate 800 (subtítulos H2, H3)
+  accent: "#0284c7"                # Azul institucional sobrio (filetes H1, acentos)
+  accent_light: "#38bdf8"          # Azul claro (detalles de portada)
+  text_main: "#0f172a"             # Texto principal de cuerpo
+  text_muted: "#64748b"            # Gris slate para folios y encabezados
+  border: "#cbd5e1"                # Bordes de tablas y separadores
+  bg_subtle: "#f8fafc"             # Fondo alterno para filas de tablas
+  bg_header: "#f1f5f9"             # Fondo de cabeceras de tabla
+  cover_bg: "#0f172a"              # Fondo oscuro institucional de portada
+
+lines:
+  h1_rule_width: "1.5pt"           # Grosor del filete bajo el título H1
+  table_border_width: "0.5pt"      # Grosor de la cuadrícula de tabla
+  table_header_rule_width: "1.2pt" # Grosor del filete bajo cabecera de tabla
+  footer_rule_width: "0.5pt"       # Grosor de filete opcional en pie de página
+  signature_line_width: "0.75pt"   # Grosor de línea para firmas
+
+paragraphs:
+  justify: true                    # Texto justificado
+  hyphenation: true                # Separación silábica en español
+  language: "es"                   # Código de idioma
+  indent_first_line: "0pt"         # Sangría de primera línea
+  space_below: "7pt"               # Separación entre párrafos ordinarios
+  widows: 2                        # Control de viudas (mínimo de líneas al pie)
+  orphans: 2                       # Control de huérfanas (mínimo de líneas al inicio)
+
+headings:
+  h1:
+    page_break_before: true        # Salto de página antes de cada capítulo
+    start_on: "recto"              # "recto" (impar/derecha) o "any" (siguiente página)
+    keep_with_next: true           # Evitar título huérfano (sticky block)
+    space_above: "0pt"
+    space_below: "14pt"
+    line_rule_below: true          # Filete divisorio bajo el título
+  h2:
+    keep_with_next: true
+    space_above: "16pt"
+    space_below: "6pt"
+  h3:
+    keep_with_next: true
+    space_above: "12pt"
+    space_below: "5pt"
+  h4:
+    keep_with_next: true
+    space_above: "9pt"
+    space_below: "4pt"
+
+numbering_styles:
+  heading_levels: "1.1.1.1"        # Numeración jerárquica decimal de cláusulas
+  legal_incisos: "a)"              # Incisos alfabéticos de primer nivel
+  legal_sub_incisos: "i."          # Sub-incisos romanos minúsculos
+  procedural_fractions: "I."       # Fracciones en romanos mayúsculos
+  numbered_steps: "1."             # Pasos procedimentales decimales
+
+legal_lists:
+  space_between_items: "4pt"
+  alpha_prefix_width: "18pt"
+  roman_upper_prefix_width: "22pt"
+  roman_lower_indent: "15pt"
+  roman_lower_prefix_width: "18pt"
+  decimal_prefix_width: "18pt"
+
+headers_footers:
+  omit_on_cover: true
+  omit_on_chapter_start: true
+  header:
+    verso: "Poliductos Flexibles, S.A. de C.V. · Protocolo Familiar"
+    recto: "chapter_title"         # Dinámico según el capítulo actual
+  footer:
+    folio_position: "outer"        # Exterior: izquierda en verso, derecha en recto
+    show_border: false             # Filete sutil sobre el folio
+
+# ==============================================================================
+# TABLA DE CONTENIDOS — ESPECIFICACIONES DE ADOBE ILLUSTRATOR Y MEDICIÓN VECTORIAL
+# ==============================================================================
+toc:
+  enabled: true
+  page:
+    width: "396pt"                 # 5.5 in (Media Carta)
+    height: "612pt"                # 8.5 in (Media Carta)
+  header:
+    prefix:
+      text: "TABLA DE"
+      font: "Neuzeit Grotesk"
+      font_style: "Regular"
+      fallback_font: "Segoe UI"
+      size: "7.9077pt"
+      leading: "7.4559pt"
+      tracking: "0.060em"          # 60/1000 em
+      color: "#f04e23"
+      stroke: "0.2pt"
+      stroke_color: "#f04e23"
+      baseline_y: "39.1426pt"
+      dy: "33.8721pt"
+      x: "25.7886pt"
+    title:
+      text: "CONTENIDO"
+      font: "Minion Pro"
+      font_style: "Medium Display"
+      fallback_font: "Georgia"
+      size: "15.9929pt"
+      leading: "15.7583pt"
+      tracking: "0.019em"          # 19/1000 em
+      color: "#2e2f31"
+      baseline_y: "59.8906pt"
+      dy: "49.4792pt"
+      x: "25.5605pt"
+    rule:
+      x: "25.784pt"
+      y: "73.866pt"
+      width: "14.189pt"
+      height: "0.902pt"
+      color: "#f04e23"
+  dot_matrix:
+    cols: 7
+    rows: 38
+    x0: "26.818pt"
+    y0: "117.973pt"
+    dx: "7.0952pt"
+    dy: "8.7538pt"
+    diameter: "2.068pt"
+    radius: "1.034pt"
+    color: "#ebe5e3"
+  styles:
+    number:
+      font: "Neuzeit Grotesk"
+      font_style: "Regular"
+      size: "7.9077pt"
+      leading: "7.4559pt"
+      tracking: "0em"
+      color: "#f04e23"
+      stroke: "0.2pt"
+      stroke_color: "#f04e23"
+      default_x: "133.0pt"
+    title:
+      font: "Neuzeit Grotesk"
+      font_style: "Regular"
+      size: "7.9077pt"
+      leading: "12pt"
+      typst_leading: "6.7295pt"
+      tracking: "0em"
+      color: "#2e2f31"
+      x: "158.6016pt"
+      width: "170pt"
+    page:
+      font: "Neuzeit Grotesk"
+      font_style: "Regular"
+      size: "7.9077pt"
+      leading: "7.4559pt"
+      tracking: "0.060em"          # 60/1000 em
+      color: "#2e2f31"
+      stroke: "0.2pt"
+      stroke_color: "#2e2f31"
+      x: "337.3735pt"
+    start_y: "89.0361pt"
+    inter_entry_gap: "25.20pt"
+    ascent_neuzeit: "5.2705pt"
+    ascent_minion: "10.4114pt"
+    ascent_footer: "3.2148pt"
+  footer:
+    phrase:
+      text: "PROTOCOLO FAMILIAR"
+      font: "Neuzeit Grotesk"
+      font_style: "Regular"
+      fallback_font: "Segoe UI"
+      size: "4.8234pt"
+      leading: "4.5478pt"
+      tracking: "0.200em"          # 200/1000 em
+      color: "#6c6b67"
+      stroke: "0.1pt"
+      stroke_color: "#6c6b67"
+      baseline_y: "594.6387pt"
+      dy: "591.4239pt"
+      x: "26.8179pt"
+    version:
+      text: "VERSION 1.0"
+      font: "Neuzeit Grotesk"
+      font_style: "Regular"
+      fallback_font: "Segoe UI"
+      size: "4.8234pt"
+      leading: "4.5478pt"
+      tracking: "0.200em"          # 200/1000 em
+      color: "#f15e22"
+      stroke: "0.2pt"
+      stroke_color: "#f15e22"
+      baseline_y: "594.6963pt"
+      dy: "591.4815pt"
+      x: "103.7456pt"
+  chapters:
+    - num: "01"
+      num_x: "133.2847pt"
+      baseline_y: "89.0361pt"
+      title: "DECLARACIÓN DE PRINCIPIOS FAMILIARES Y \\ VISIÓN INTERGENERACIONAL"
+      page: "00"
+    - num: "02"
+      num_x: "133.3584pt"
+      baseline_y: "126.5818pt"
+      title: "PROPIEDAD ACCIONARIA, CONTROL FAMILIAR Y \\ LIQUIDEZ PATRIMONIAL"
+      page: "00"
+    - num: "03"
+      num_x: "133.2852pt"
+      baseline_y: "164.2145pt"
+      title: "GOBIERNO CORPORATIVO FAMILIAR, \\ INSTITUCIONALIZACIÓN Y RÉGIMEN DE \\ PROFESIONALIZACIÓN"
+      page: "00"
+    - num: "04"
+      num_x: "132.8740pt"
+      baseline_y: "213.2264pt"
+      title: "RÉGIMEN DE SUCESIÓN FAMILIAR EMPRESARIAL"
+      page: "00"
+    - num: "05"
+      num_x: "133.3945pt"
+      baseline_y: "238.5864pt"
+      title: "CONTROL INSTITUCIONAL DE LA INFORMACIÓN Y \\ COMUNICACIÓN FAMILIAR–EMPRESARIAL"
+      page: "00"
+    - num: "06"
+      num_x: "132.8740pt"
+      baseline_y: "275.5391pt"
+      title: "RÉGIMEN DE DISCIPLINA FINANCIERA \\ FAMILIAR–EMPRESARIAL"
+      page: "00"
+    - num: "07"
+      num_x: "132.8740pt"
+      baseline_y: "312.7764pt"
+      title: "PROCEDIMIENTO SANCIONADOR Y RÉGIMEN DE \\ SANCIONES INTERNAS"
+      page: "00"
+    - num: "08"
+      num_x: "132.8740pt"
+      baseline_y: "350.1956pt"
+      title: "MEDIOS ALTERNATIVOS DE SOLUCIÓN DE \\ CONFLICTOS FAMILIARES–EMPRESARIALES"
+      page: "00"
+    - num: "09"
+      num_x: "132.8740pt"
+      baseline_y: "386.6660pt"
+      title: "RÉGIMEN JURÍDICO DEL PROTOCOLO FAMILIAR"
+      page: "00"
+
+
+tables:
+  keep_together: true              # Evitar partir tablas pequeñas entre páginas
+  header_bg: "#f1f5f9"             # Gris neutro institucional
+  border_color: "#cbd5e1"
+  border_width: "0.5pt"
+  cell_padding_y: "4pt"
+  cell_padding_x: "6pt"
+  zebra_striping: true
+  zebra_bg: "#f8fafc"
+
+signatures:
+  keep_together: true              # Bloque de firmas indivisible (breakable: false)
+  line_width: "135pt"              # Ancho de la línea de firma
+  space_above: "25pt"              # Espacio antes del bloque de firmas
+
+# ==============================================================================
+# PORTADA GENERAL — ESPECIFICACIONES DE ADOBE ILLUSTRATOR Y MEDICIÓN VECTORIAL
+# ==============================================================================
+cover:
+  page:
+    width: "396pt"                 # 5.5 in (Media Carta)
+    height: "612pt"                # 8.5 in (Media Carta)
+  assets:
+    background_vector: "/assets/images/portada_fondo.pdf"
+  title:
+    text_line1: "PROTOCOLO"
+    text_line2: "FAMILIAR"
+    font: "Minion Pro"
+    font_style: "Medium Display"
+    fallback_font: "Georgia"
+    size: "33.4913pt"
+    leading: "33pt"
+    tracking: "0.019em"            # 19/1000 em
+    color: "#2e2f31"
+    baseline_y1: "299.75pt"
+    baseline_y2: "332.74pt"
+    dy_line1: "276.54pt"
+    dy_line2: "309.53pt"
+  motto:
+    word1: "VISIÓN"
+    word2: "UNIDAD"
+    word3: "LEGADO"
+    font: "Neuzeit Grotesk"
+    font_style: "Regular"
+    fallback_font: "Segoe UI"
+    size: "7.9077pt"
+    leading: "7.4559pt"
+    tracking: "0.371em"            # 371/1000 em
+    color: "#2e2f31"
+    baseline_y: "364.40pt"
+    dy: "358.86pt"
+    x_word1: "116.24pt"
+    x_word2: "175.55pt"
+    x_word3: "237.98pt"
+  footer_phrase:
+    text_base: "UN FUTURO QUE CONSTRUIMOS "
+    text_highlight: "JUNTOS."
+    font: "Neuzeit Grotesk"
+    font_style: "Regular"
+    fallback_font: "Segoe UI"
+    size: "4.8234pt"
+    leading: "4.5478pt"
+    tracking: "0.371em"            # 371/1000 em
+    color_base: "#6c6b67"
+    color_highlight: "#f15e22"
+    stroke_highlight: "0.2pt"
+    stroke_color: "#f15e22"
+    baseline_y: "500.38pt"
+    dy: "497.00pt"
+    x: "43.70pt"
+  version:
+    text: "VERSION 1.0"
+    font: "Neuzeit Grotesk"
+    font_style: "Regular"
+    fallback_font: "Segoe UI"
+    size: "4.8234pt"
+    leading: "4.5478pt"
+    tracking: "0.371em"            # 371/1000 em
+    color: "#f15e22"
+    stroke: "0.2pt"
+    stroke_color: "#f15e22"
+    baseline_y: "546.32pt"
+    dy: "542.94pt"
+    x: "44.05pt"
+  date:
+    text: "AGOSTO 2026"
+    font: "Neuzeit Grotesk"
+    font_style: "Regular"
+    fallback_font: "Segoe UI"
+    size: "4.8234pt"
+    leading: "4.5478pt"
+    tracking: "0.371em"            # 371/1000 em
+    color: "#6c6b67"
+    baseline_y: "556.75pt"
+    dy: "553.37pt"
+    x: "43.70pt"
+
+# ==============================================================================
+# APERTURA DE CAPÍTULO — ESPECIFICACIONES DE ADOBE ILLUSTRATOR Y MEDICIÓN VECTORIAL
+# ==============================================================================
+chapter_opening:
+  enabled: true
+  page:
+    width: "396pt"                 # 5.5 in (Media Carta)
+    height: "612pt"                # 8.5 in (Media Carta)
+  assets:
+    background_vector: "/assets/images/capitulo_apertura_fondo.pdf"
+  number:
+    font: "Minion Pro"
+    font_style: "Medium Display"
+    fallback_font: "Georgia"
+    size: "39.3657pt"
+    leading: "59.0746pt"
+    tracking: "-0.050em"           # -50/1000 em
+    color: "#f15d22"
+    baseline_y: "368.0762pt"
+    dy: "342.4491pt"
+    x: "28.9150pt"
+    ascent: "25.6271pt"
+  title:
+    font: "Minion Pro"
+    font_style: "Medium Display"
+    fallback_font: "Georgia"
+    size: "15.9929pt"
+    leading: "24pt"
+    typst_leading: "13.5939pt"
+    tracking: "0.019em"            # 19/1000 em
+    color: "#2e2f31"
+    width: "250pt"
+    baseline_y1: "422.7119pt"
+    dy: "412.3005pt"
+    x: "28.3398pt"
+    ascent: "10.4114pt"
+  description:
+    font: "Neuzeit Grotesk"
+    font_style: "Regular"
+    fallback_font: "Segoe UI"
+    size: "7.9077pt"
+    leading: "18pt"
+    typst_leading: "12.7295pt"
+    tracking: "0em"
+    color: "#2e2f31"
+    width: "250pt"
+    baseline_y1: "496.3955pt"
+    dy: "491.1250pt"
+    x: "28.7422pt"
+    ascent: "5.2705pt"
+  footer:
+    phrase:
+      text: "PROTOCOLO FAMILIAR"
+      font: "Neuzeit Grotesk"
+      font_style: "Regular"
+      fallback_font: "Segoe UI"
+      size: "4.8234pt"
+      leading: "4.5478pt"
+      tracking: "0.200em"          # 200/1000 em
+      color: "#6c6b67"
+      stroke: "0.1pt"
+      stroke_color: "#6c6b67"
+      baseline_y: "594.6387pt"
+      dy: "591.4239pt"
+      x: "28.9150pt"
+    version:
+      text: "VERSION 1.0"
+      font: "Neuzeit Grotesk"
+      font_style: "Regular"
+      fallback_font: "Segoe UI"
+      size: "4.8234pt"
+      leading: "4.5478pt"
+      tracking: "0.200em"          # 200/1000 em
+      color: "#f15e22"
+      stroke: "0.2pt"
+      stroke_color: "#f15e22"
+      baseline_y: "594.6963pt"
+      dy: "591.4815pt"
+      x: "105.8423pt"
+
+# ==============================================================================
+# PÁGINAS INTERIORES (RECTO / VERSO) Y PRIMERA PÁGINA DE CAPÍTULO (FASE 3.6)
+# ==============================================================================
+interior_page:
+  enabled: true
+  page:
+    width: "396pt"                 # 5.5 in (Media Carta)
+    height: "612pt"                # 8.5 in (Media Carta)
+    fill: "#ffffff"                # Blanco puro sin fondo tintado
+  spine_rule:
+    stroke: "0.5pt"
+    color: "#f04e23"
+  arcs:
+    center_x: "396.00pt"
+    center_y: "65.90pt"
+    radii:
+      - "147.47pt"
+      - "116.15pt"
+      - "83.09pt"
+      - "50.53pt"
+    stroke: "0.5pt"
+    color: "#f04e23"
+    shadow:
+      enabled: true
+      mode: "multiply"
+      opacity: 0.15
+      offset_x: "1.0008pt"
+      offset_y: "1.0008pt"
+      blur: "1.0008pt"
+      color: "#000000"
+  claim:
+    font: "Neuzeit Grotesk"
+    font_style: "Regular"
+    fallback_font: "Segoe UI"
+    size: "4.8234pt"
+    tracking: "0.371em"            # 371/1000 em
+    pitch: "8.00pt"
+    ascent: "3.2148pt"
+    color_main: "#6c6b67"
+    color_highlight: "#f15e22"
+    baselines_y:
+      - "28.9287pt"
+      - "36.9287pt"
+      - "44.9287pt"
+      - "52.9287pt"
+    recto_x: "59.7920pt"
+    verso_x: "268.7441pt"
+    verso_x_end: "350.79pt"
+  footer:
+    font: "Neuzeit Grotesk"
+    font_style: "Regular"
+    fallback_font: "Segoe UI"
+    size: "4.8234pt"
+    tracking: "0.200em"
+    ascent: "3.2148pt"
+    baseline_y: "594.6387pt"
+    dy: "591.4239pt"
+    phrase:
+      text: "PROTOCOLO FAMILIAR"
+      color: "#6c6b67"
+      stroke: "0.1pt"
+      stroke_color: "#6c6b67"
+    version:
+      text: "VERSION 1.0"
+      color: "#f15e22"
+      stroke: "0.2pt"
+      stroke_color: "#f15e22"
+  folio:
+    font: "Minion Pro"
+    font_style: "Medium Display"
+    fallback_font: "Georgia"
+    size: "10pt"
+    color: "#f15d22"
+    ascent: "6.5100pt"
+    baseline_y: "594.6400pt"
+    dy: "588.1300pt"
+  parity:
+    recto:
+      spine_rule_x: "30.13pt"
+      margin_spine: "58.74pt"
+      margin_cut: "22.70pt"
+      content_width: "314.56pt"
+      claim_x: "59.7920pt"
+      folio_x: "355.33pt"
+      footer_phrase_x: "80.0889pt"
+      footer_version_x: "157.0166pt"
+      has_isotype: true
+      isotype_x: "55.8388pt"
+      isotype_y: "582.9483pt"
+      isotype_width: "15.5740pt"
+      isotype_height: "15.3150pt"
+      isotype_asset: "/referencias/icono.svg"
+      isotype_opacity: 50%
+    verso:
+      spine_rule_x: "365.87pt"
+      margin_cut: "22.70pt"
+      margin_spine: "58.74pt"
+      content_width: "314.56pt"
+      claim_x: "268.7441pt"
+      folio_x: "22.70pt"
+      footer_phrase_x: "236.9500pt"
+      footer_version_x: "313.8700pt"
+      has_isotype: false
+  running_header:
+    font: "Neuzeit Grotesk"
+    font_style: "Regular"
+    fallback_font: "Segoe UI"
+    size: "5.5pt"
+    tracking: "0.200em"
+    color: "#6c6b67"
+    baseline_y: "35.00pt"
+    ascent: "3.66pt"
+    unit_gap: "8.0pt"
+    isotype:
+      asset: "/referencias/icono.svg"
+      width: "7.1186pt"
+      height: "7.0000pt"
+      gap: "5.0pt"
+      opacity: 50%
+  body:
+    font: "Neuzeit Grotesk"
+    font_style: "Regular"
+    fallback_font: "Segoe UI"
+    size: "7.9077pt"
+    color: "#2e2f31"
+    tracking: "0em"
+    adobe_leading: "18pt"
+    typst_leading: "12.72949pt"
+    justify: true
+    hyphenate: false
+    linebreaks: "simple"
+  headings:
+    font: "Minion Pro"
+    font_style: "Medium Display"
+    fallback_font: "Georgia"
+    size: "10pt"
+    tracking: "0.019em"
+    gap: "5.5pt"
+    color_title: "#2e2f31"
+    color_number: "#f15d22"
+    number_stroke: "0.4pt"
+    number_width: "11.78pt"
+    space_before: "37.5954pt"
+    space_after: "33.4209pt"
+    typst_v_before: "18.3483pt"
+    typst_v_after: "15.4200pt"
+  lists:
+    font: "Neuzeit Grotesk"
+    font_style: "Regular"
+    fallback_font: "Segoe UI"
+    size: "7.9077pt"
+    color: "#2e2f31"
+    tracking: "0em"
+    typst_leading: "12.72949pt"
+    indent_left: "20.00pt"
+    hanging_indent: "0pt"
+  chapter_first_page:
+    number:
+      font: "Minion Pro"
+      font_style: "Medium Display"
+      fallback_font: "Georgia"
+      size: "39.3657pt"
+      tracking: "-0.050em"
+      color: "#f15d22"
+      baseline_y: "108.0762pt"
+      ascent: "25.6271pt"
+      dy: "82.4491pt"
+      x: "57.9150pt"
+    rule:
+      x: "60.10pt"
+      y: "128.95pt"
+      width: "14.19pt"
+      height: "0.91pt"
+      color: "#f15d22"
+    title:
+      font: "Minion Pro"
+      font_style: "Medium Display"
+      fallback_font: "Georgia"
+      size: "15.9929pt"
+      tracking: "0.019em"
+      color: "#2e2f31"
+      pitch: "24.0053pt"
+      typst_leading: "13.5939pt"
+      x: "58.3398pt"
+      baseline_y1: "162.7119pt"
+      ascent: "10.4114pt"
+      dy: "152.3005pt"
+      width: "250pt"
+    content_dy: "231.8015pt"
+
+
+
+

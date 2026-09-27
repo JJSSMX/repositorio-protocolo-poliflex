@@ -1,0 +1,802 @@
+{
+  "initial_hashes": {
+    "capitulos/00_introduccion.md": "DEEECA7863249DB1348BEF6138E0DAEDA35B5120658459D0362309E543FECAD8",
+    "capitulos/10_anexos_formatos_operativos.md": "588A64539A62B89BA25D31E54E504FB7A5EDF9698AC085B6250CC3F91B774826",
+    "capitulos/11_reglamento_asamblea_familia.md": "52034B382BA0F3137016F1F8BE8F20AB2C76D134E9DEEC1160BE55ABFAD724D3",
+    "capitulos/12_reglamento_consejo_familia.md": "FDE5F0D62F99B198D4C238E36225AE62770C4C9255371715B0292DA12CB0EA18",
+    "capitulos/13_reglamento_comite_honor_familiar.md": "8662411CBAA2AAD718F4F48D0CE6083250D6935349530843966DC2A00140C23B"
+  },
+  "final_hashes": {
+    "capitulos/00_introduccion.md": "DEEECA7863249DB1348BEF6138E0DAEDA35B5120658459D0362309E543FECAD8",
+    "capitulos/10_anexos_formatos_operativos.md": "102AC1DE3C815C616CC5740D0F3676FEF929578373B0EB6BFF0641BFF6115D3C",
+    "capitulos/11_reglamento_asamblea_familia.md": "CF58D4959CE88BD2A2863AB6F018EB5F649151A9905859ACE203B4C853A3B5A8",
+    "capitulos/12_reglamento_consejo_familia.md": "42B59E7D5D26A90BDDBCA124B128F07BBA335C844B83FA4D7711433D9675A2A0",
+    "capitulos/13_reglamento_comite_honor_familiar.md": "B8D238BD294EC30DAE0DB0AAD76A8313EEB51D2CB69734B821C1E37337335CAF"
+  },
+  "changes_by_file": {
+    "12_reglamento_consejo_familia.md": [
+      {
+        "id": "H-01",
+        "desc": "Separación de título fusionado de Capítulo VI",
+        "target": "## CAPÍTULO VIDE LAS ACTAS Y REGISTRO DE ACUERDOS",
+        "replacement": "## CAPÍTULO VI\n\n**DE LAS ACTAS Y REGISTRO DE ACUERDOS**"
+      },
+      {
+        "id": "H-02",
+        "desc": "Separación de título fusionado de Capítulo VII",
+        "target": "## CAPÍTULO VIIDE LAS VACANTES Y SUSTITUCIONES",
+        "replacement": "## CAPÍTULO VII\n\n**DE LAS VACANTES Y SUSTITUCIONES**"
+      },
+      {
+        "id": "H-03",
+        "desc": "Separación de título fusionado de Capítulo VIII",
+        "target": "## CAPÍTULO VIIIDE LAS MODALIDADES DE SESIONES",
+        "replacement": "## CAPÍTULO VIII\n\n**DE LAS MODALIDADES DE SESIONES**"
+      },
+      {
+        "id": "H-04",
+        "desc": "Separación de título fusionado de Capítulo IX",
+        "target": "## CAPÍTULO IXDE LA INTERPRETACIÓN Y CASOS NO PREVISTOS",
+        "replacement": "## CAPÍTULO IX\n\n**DE LA INTERPRETACIÓN Y CASOS NO PREVISTOS**"
+      },
+      {
+        "id": "H-12",
+        "desc": "Eliminación de punto final espurio en título de Artículo 12",
+        "target": "### Artículo 12. De los Casos No Previstos.",
+        "replacement": "### Artículo 12. De los Casos No Previstos"
+      }
+    ],
+    "10_anexos_formatos_operativos.md": [
+      {
+        "id": "H-11",
+        "desc": "Corrección ortográfica de acentuación errónea (Cómite -> Comité)",
+        "target": "|  | Presidente del Cómite |  |",
+        "replacement": "|  | Presidente del Comité |  |"
+      },
+      {
+        "id": "H-10",
+        "desc": "Corrección ortográfica de errata tipográfica (complete. -> completo.)",
+        "target": "☐ Expediente institucional complete.",
+        "replacement": "☐ Expediente institucional completo."
+      }
+    ],
+    "11_reglamento_asamblea_familia.md": [
+      {
+        "line": 21,
+        "type": "para_bold",
+        "old": "**El presente Reglamento tiene por objeto regular la integración, convocatoria, funcionamiento, desarrollo de sesiones, adopción de acuerdos y seguimiento de las actividades de la Asamblea de Familia prevista en el Protocolo Familiar.**",
+        "new": "El presente Reglamento tiene por objeto regular la integración, convocatoria, funcionamiento, desarrollo de sesiones, adopción de acuerdos y seguimiento de las actividades de la Asamblea de Familia prevista en el Protocolo Familiar."
+      },
+      {
+        "line": 23,
+        "type": "para_bold",
+        "old": "**La Asamblea de Familia ejercerá sus funciones de conformidad con lo dispuesto en el Protocolo Familiar, el presente Reglamento y los acuerdos válidamente adoptados en el ámbito de su competencia.**",
+        "new": "La Asamblea de Familia ejercerá sus funciones de conformidad con lo dispuesto en el Protocolo Familiar, el presente Reglamento y los acuerdos válidamente adoptados en el ámbito de su competencia."
+      },
+      {
+        "line": 28,
+        "type": "para_bold",
+        "old": "**El presente Reglamento constituye un instrumento de desarrollo y ejecución del Protocolo Familiar, por lo que deberá interpretarse y aplicarse de manera consistente con sus principios, disposiciones y objetivos.**",
+        "new": "El presente Reglamento constituye un instrumento de desarrollo y ejecución del Protocolo Familiar, por lo que deberá interpretarse y aplicarse de manera consistente con sus principios, disposiciones y objetivos."
+      },
+      {
+        "line": 30,
+        "type": "para_bold",
+        "old": "**En caso de discrepancia, contradicción, incompatibilidad o duda interpretativa entre lo previsto en este Reglamento y el Protocolo Familiar, prevalecerá en todo momento lo dispuesto en este último. En consecuencia, cualquier disposición, interpretación o aplicación del presente Reglamento que resulte contraria al Protocolo Familiar carecerá de efectos dentro del sistema familiar–empresarial.**",
+        "new": "En caso de discrepancia, contradicción, incompatibilidad o duda interpretativa entre lo previsto en este Reglamento y el Protocolo Familiar, prevalecerá en todo momento lo dispuesto en este último. En consecuencia, cualquier disposición, interpretación o aplicación del presente Reglamento que resulte contraria al Protocolo Familiar carecerá de efectos dentro del sistema familiar–empresarial."
+      },
+      {
+        "line": 40,
+        "type": "para_bold",
+        "old": "**La Asamblea de Familia estará integrada por todos los miembros de la familia empresaria reconocidos conforme al Protocolo Familiar.**",
+        "new": "La Asamblea de Familia estará integrada por todos los miembros de la familia empresaria reconocidos conforme al Protocolo Familiar."
+      },
+      {
+        "line": 42,
+        "type": "para_bold",
+        "old": "**Asimismo, formarán parte de la Asamblea de Familia los integrantes de la familia política cuya incorporación al sistema familiar–empresarial haya sido aprobada conforme a las disposiciones del Protocolo Familiar.**",
+        "new": "Asimismo, formarán parte de la Asamblea de Familia los integrantes de la familia política cuya incorporación al sistema familiar–empresarial haya sido aprobada conforme a las disposiciones del Protocolo Familiar."
+      },
+      {
+        "line": 44,
+        "type": "para_bold",
+        "old": "**La calidad de integrante de la Asamblea de Familia se adquirirá una vez cumplidos los requisitos, formalidades y procedimientos previstos en el Protocolo Familiar para la incorporación al sistema familiar–empresarial. En los casos en que resulte aplicable, dicha incorporación requerirá la aprobación expresa de la Asamblea de Familia y la suscripción de la correspondiente Carta de Adhesión.**",
+        "new": "La calidad de integrante de la Asamblea de Familia se adquirirá una vez cumplidos los requisitos, formalidades y procedimientos previstos en el Protocolo Familiar para la incorporación al sistema familiar–empresarial. En los casos en que resulte aplicable, dicha incorporación requerirá la aprobación expresa de la Asamblea de Familia y la suscripción de la correspondiente Carta de Adhesión."
+      },
+      {
+        "line": 46,
+        "type": "para_bold",
+        "old": "**Los integrantes de la familia empresaria participarán con derecho de voz y voto. Los integrantes de la familia política incorporados al sistema familiar–empresarial ejercerán los derechos de participación que expresamente determine la Asamblea de Familia en el acuerdo de incorporación correspondiente, incluyendo, en su caso, derechos de voz, voto, restricciones específicas o cualquier otra condición que la propia Asamblea estime procedente.**",
+        "new": "Los integrantes de la familia empresaria participarán con derecho de voz y voto. Los integrantes de la familia política incorporados al sistema familiar–empresarial ejercerán los derechos de participación que expresamente determine la Asamblea de Familia en el acuerdo de incorporación correspondiente, incluyendo, en su caso, derechos de voz, voto, restricciones específicas o cualquier otra condición que la propia Asamblea estime procedente."
+      },
+      {
+        "line": 48,
+        "type": "para_bold",
+        "old": "**La Asamblea o, en su caso, quien emita la convocatoria, podrá autorizar la participación de invitados, asesores, especialistas o terceros cuya intervención resulte conveniente para el análisis de asuntos determinados, quienes participarán únicamente con derecho de voz.**",
+        "new": "La Asamblea o, en su caso, quien emita la convocatoria, podrá autorizar la participación de invitados, asesores, especialistas o terceros cuya intervención resulte conveniente para el análisis de asuntos determinados, quienes participarán únicamente con derecho de voz."
+      },
+      {
+        "line": 58,
+        "type": "para_bold",
+        "old": "**La Asamblea de Familia celebrará sesiones ordinarias y extraordinarias. Las sesiones ordinarias tendrán por objeto atender los asuntos periódicos de la familia empresaria y dar seguimiento a los acuerdos previamente adoptados.**",
+        "new": "La Asamblea de Familia celebrará sesiones ordinarias y extraordinarias. Las sesiones ordinarias tendrán por objeto atender los asuntos periódicos de la familia empresaria y dar seguimiento a los acuerdos previamente adoptados."
+      },
+      {
+        "line": 60,
+        "type": "para_bold",
+        "old": "**Las sesiones extraordinarias podrán celebrarse cuando la naturaleza, urgencia o importancia de los asuntos así lo requiera.**",
+        "new": "Las sesiones extraordinarias podrán celebrarse cuando la naturaleza, urgencia o importancia de los asuntos así lo requiera."
+      },
+      {
+        "line": 62,
+        "type": "para_bold",
+        "old": "**Las convocatorias deberán realizarse por cualquier medio que permita dejar constancia de su recepción, incluyendo medios físicos o electrónicos.**",
+        "new": "Las convocatorias deberán realizarse por cualquier medio que permita dejar constancia de su recepción, incluyendo medios físicos o electrónicos."
+      },
+      {
+        "line": 64,
+        "type": "para_bold",
+        "old": "**La convocatoria deberá contener, al menos:**",
+        "new": "La convocatoria deberá contener, al menos:"
+      },
+      {
+        "line": 66,
+        "type": "list_bold",
+        "old": "I. **Fecha y hora de la sesión;**",
+        "new": "I. Fecha y hora de la sesión;"
+      },
+      {
+        "line": 67,
+        "type": "list_bold",
+        "old": "II. **Lugar de celebración o medio de conexión correspondiente;**",
+        "new": "II. Lugar de celebración o medio de conexión correspondiente;"
+      },
+      {
+        "line": 68,
+        "type": "list_bold",
+        "old": "III. **Tipo de sesión;**",
+        "new": "III. Tipo de sesión;"
+      },
+      {
+        "line": 69,
+        "type": "list_bold",
+        "old": "IV. **Orden del Día; y**",
+        "new": "IV. Orden del Día; y"
+      },
+      {
+        "line": 70,
+        "type": "list_bold",
+        "old": "V. **Información o documentación relevante para el análisis de los asuntos a tratar.**",
+        "new": "V. Información o documentación relevante para el análisis de los asuntos a tratar."
+      },
+      {
+        "line": 71,
+        "type": "para_bold",
+        "old": "**La convocatoria y documentación soporte podrán remitirse conjuntamente o ponerse a disposición de los participantes por medios físicos o electrónicos.**",
+        "new": "La convocatoria y documentación soporte podrán remitirse conjuntamente o ponerse a disposición de los participantes por medios físicos o electrónicos."
+      },
+      {
+        "line": 73,
+        "type": "para_bold",
+        "old": "**Salvo causa justificada, las convocatorias deberán realizarse con al menos cinco días naturales de anticipación.**",
+        "new": "Salvo causa justificada, las convocatorias deberán realizarse con al menos cinco días naturales de anticipación."
+      },
+      {
+        "line": 83,
+        "type": "para_bold",
+        "old": "**Las sesiones serán presididas por la persona que la propia Asamblea designe al inicio de cada reunión. Asimismo, se designará un Secretario de la sesión, quien será responsable de levantar el acta correspondiente y dar seguimiento a los acuerdos adoptados.**",
+        "new": "Las sesiones serán presididas por la persona que la propia Asamblea designe al inicio de cada reunión. Asimismo, se designará un Secretario de la sesión, quien será responsable de levantar el acta correspondiente y dar seguimiento a los acuerdos adoptados."
+      },
+      {
+        "line": 85,
+        "type": "para_bold",
+        "old": "**Las reglas de instalación y votación previstas en el presente Reglamento se aplicarán sin perjuicio de aquellos asuntos para los cuales el Protocolo Familiar exija unanimidad de votos o una mayoría calificada para su aprobación. En tales casos, deberán respetarse los porcentajes, requisitos y mecanismos de votación específicamente previstos en el Protocolo Familiar.**",
+        "new": "Las reglas de instalación y votación previstas en el presente Reglamento se aplicarán sin perjuicio de aquellos asuntos para los cuales el Protocolo Familiar exija unanimidad de votos o una mayoría calificada para su aprobación. En tales casos, deberán respetarse los porcentajes, requisitos y mecanismos de votación específicamente previstos en el Protocolo Familiar."
+      },
+      {
+        "line": 87,
+        "type": "para_bold",
+        "old": "**Fuera de los supuestos señalados en el párrafo anterior, la Asamblea se considerará válidamente instalada cuando se encuentren presentes o representadas al menos el setenta y cinco por ciento de las personas con derecho a voto.**",
+        "new": "Fuera de los supuestos señalados en el párrafo anterior, la Asamblea se considerará válidamente instalada cuando se encuentren presentes o representadas al menos el setenta y cinco por ciento de las personas con derecho a voto."
+      },
+      {
+        "line": 89,
+        "type": "para_bold",
+        "old": "**Si no se alcanzare el quórum previsto en el párrafo anterior, podrá celebrarse una segunda convocatoria, en cuyo caso la Asamblea se considerará válidamente instalada con la asistencia de al menos el cincuenta y cinco por ciento de las personas con derecho a voto.**",
+        "new": "Si no se alcanzare el quórum previsto en el párrafo anterior, podrá celebrarse una segunda convocatoria, en cuyo caso la Asamblea se considerará válidamente instalada con la asistencia de al menos el cincuenta y cinco por ciento de las personas con derecho a voto."
+      },
+      {
+        "line": 91,
+        "type": "para_bold",
+        "old": "**La instalación válida de la Asamblea no implicará, por sí misma, la posibilidad de resolver asuntos sujetos a regímenes especiales de aprobación. Tratándose de materias reservadas o de cualquier otro asunto sujeto a mayorías reforzadas conforme al Protocolo Familiar, únicamente podrán adoptarse acuerdos cuando concurran los requisitos de capital familiar, ramas familiares activas y demás condiciones expresamente previstas en dicho instrumento.**",
+        "new": "La instalación válida de la Asamblea no implicará, por sí misma, la posibilidad de resolver asuntos sujetos a regímenes especiales de aprobación. Tratándose de materias reservadas o de cualquier otro asunto sujeto a mayorías reforzadas conforme al Protocolo Familiar, únicamente podrán adoptarse acuerdos cuando concurran los requisitos de capital familiar, ramas familiares activas y demás condiciones expresamente previstas en dicho instrumento."
+      },
+      {
+        "line": 96,
+        "type": "para_bold",
+        "old": "**Las sesiones se desarrollarán conforme al Orden del Día aprobado al inicio de la reunión. Las personas participantes tendrán derecho a expresar sus opiniones, formular propuestas y solicitar que sus manifestaciones relevantes queden asentadas en el acta correspondiente.**",
+        "new": "Las sesiones se desarrollarán conforme al Orden del Día aprobado al inicio de la reunión. Las personas participantes tendrán derecho a expresar sus opiniones, formular propuestas y solicitar que sus manifestaciones relevantes queden asentadas en el acta correspondiente."
+      },
+      {
+        "line": 98,
+        "type": "para_bold",
+        "old": "**La Presidencia de la sesión procurará que las deliberaciones se desarrollen de manera ordenada, respetuosa y alineada con los principios establecidos en el Protocolo Familiar. La Presidencia podrá ordenar recesos cuando la naturaleza de los asuntos sometidos a consideración así lo requiera.**",
+        "new": "La Presidencia de la sesión procurará que las deliberaciones se desarrollen de manera ordenada, respetuosa y alineada con los principios establecidos en el Protocolo Familiar. La Presidencia podrá ordenar recesos cuando la naturaleza de los asuntos sometidos a consideración así lo requiera."
+      },
+      {
+        "line": 108,
+        "type": "para_bold",
+        "old": "**Los acuerdos se adoptarán por mayoría simple de los votos presentes, salvo que el Protocolo Familiar o el presente Reglamento establezcan una mayoría distinta.**",
+        "new": "Los acuerdos se adoptarán por mayoría simple de los votos presentes, salvo que el Protocolo Familiar o el presente Reglamento establezcan una mayoría distinta."
+      },
+      {
+        "line": 110,
+        "type": "para_bold",
+        "old": "**Requerirán el voto favorable de al menos las tres cuartas partes (75%) de las personas con derecho a voto presentes en la sesión:**",
+        "new": "Requerirán el voto favorable de al menos las tres cuartas partes (75%) de las personas con derecho a voto presentes en la sesión:"
+      },
+      {
+        "line": 112,
+        "type": "list_bold",
+        "old": "I. **Las reformas al Protocolo Familiar;**",
+        "new": "I. Las reformas al Protocolo Familiar;"
+      },
+      {
+        "line": 113,
+        "type": "list_bold",
+        "old": "II. **La incorporación de integrantes de la familia política al sistema familiar–empresarial;**",
+        "new": "II. La incorporación de integrantes de la familia política al sistema familiar–empresarial;"
+      },
+      {
+        "line": 114,
+        "type": "list_bold",
+        "old": "III. **La modificación de la estructura de los órganos de gobierno familiar, y**",
+        "new": "III. La modificación de la estructura de los órganos de gobierno familiar, y"
+      },
+      {
+        "line": 115,
+        "type": "list_bold",
+        "old": "IV. **Cualquier supuestos expresamente señalado en el Protocolo Familiar.**",
+        "new": "IV. Cualquier supuestos expresamente señalado en el Protocolo Familiar."
+      },
+      {
+        "line": 116,
+        "type": "para_bold",
+        "old": "**Tratándose de materias reservadas, serán aplicables exclusivamente las reglas de aprobación previstas en el Capítulo 2 del Protocolo Familiar, incluyendo la concurrencia simultánea de la mayoría calificada de capital familiar y de la mayoría por ramas familiares activas, según corresponda.**",
+        "new": "Tratándose de materias reservadas, serán aplicables exclusivamente las reglas de aprobación previstas en el Capítulo 2 del Protocolo Familiar, incluyendo la concurrencia simultánea de la mayoría calificada de capital familiar y de la mayoría por ramas familiares activas, según corresponda."
+      },
+      {
+        "line": 118,
+        "type": "para_bold",
+        "old": "**Las votaciones podrán realizarse de manera económica, nominal o por cualquier otro mecanismo que determine la propia Asamblea.**",
+        "new": "Las votaciones podrán realizarse de manera económica, nominal o por cualquier otro mecanismo que determine la propia Asamblea."
+      },
+      {
+        "line": 128,
+        "type": "para_bold",
+        "old": "**Corresponde a la Asamblea de Familia conocer, deliberar y resolver los asuntos que el Protocolo Familiar reserve expresamente a su competencia.**",
+        "new": "Corresponde a la Asamblea de Familia conocer, deliberar y resolver los asuntos que el Protocolo Familiar reserve expresamente a su competencia."
+      },
+      {
+        "line": 130,
+        "type": "para_bold",
+        "old": "**Asimismo, podrá emitir directrices, recomendaciones y acuerdos orientados al fortalecimiento de la unidad familiar, la continuidad generacional, la preservación del patrimonio familiar y el adecuado funcionamiento del sistema de gobierno familiar.**",
+        "new": "Asimismo, podrá emitir directrices, recomendaciones y acuerdos orientados al fortalecimiento de la unidad familiar, la continuidad generacional, la preservación del patrimonio familiar y el adecuado funcionamiento del sistema de gobierno familiar."
+      },
+      {
+        "line": 140,
+        "type": "para_bold",
+        "old": "**De toda sesión deberá levantarse un acta que contenga, al menos:**",
+        "new": "De toda sesión deberá levantarse un acta que contenga, al menos:"
+      },
+      {
+        "line": 142,
+        "type": "list_bold",
+        "old": "I. **Fecha, hora y lugar de celebración;**",
+        "new": "I. Fecha, hora y lugar de celebración;"
+      },
+      {
+        "line": 143,
+        "type": "list_bold",
+        "old": "II. **Lista de asistencia;**",
+        "new": "II. Lista de asistencia;"
+      },
+      {
+        "line": 144,
+        "type": "list_bold",
+        "old": "III. **Verificación de quórum;**",
+        "new": "III. Verificación de quórum;"
+      },
+      {
+        "line": 145,
+        "type": "list_bold",
+        "old": "IV. **Orden del Día;**",
+        "new": "IV. Orden del Día;"
+      },
+      {
+        "line": 146,
+        "type": "list_bold",
+        "old": "V. **Síntesis de las deliberaciones y, en su caso, de las posiciones relevantes expresamente solicitadas para constancia;**",
+        "new": "V. Síntesis de las deliberaciones y, en su caso, de las posiciones relevantes expresamente solicitadas para constancia;"
+      },
+      {
+        "line": 147,
+        "type": "list_bold",
+        "old": "VI. **Acuerdos adoptados; y**",
+        "new": "VI. Acuerdos adoptados; y"
+      },
+      {
+        "line": 148,
+        "type": "list_bold",
+        "old": "VII. **Resultado de las votaciones correspondientes.**",
+        "new": "VII. Resultado de las votaciones correspondientes."
+      },
+      {
+        "line": 149,
+        "type": "para_bold",
+        "old": "**Las actas deberán ser firmadas por quien haya presidido la sesión y por el Secretario designado para la misma.**",
+        "new": "Las actas deberán ser firmadas por quien haya presidido la sesión y por el Secretario designado para la misma."
+      },
+      {
+        "line": 151,
+        "type": "para_bold",
+        "old": "**El Secretario llevará un registro de acuerdos en el que se identifiquen las acciones pendientes, responsables designados y fechas de cumplimiento, informando periódicamente a la Asamblea sobre su avance.**",
+        "new": "El Secretario llevará un registro de acuerdos en el que se identifiquen las acciones pendientes, responsables designados y fechas de cumplimiento, informando periódicamente a la Asamblea sobre su avance."
+      },
+      {
+        "line": 161,
+        "type": "para_bold",
+        "old": "**Las sesiones de la Asamblea de Familia podrán celebrarse de manera presencial, virtual o híbrida, según se determine en la convocatoria correspondiente. Las sesiones celebradas mediante medios tecnológicos producirán los mismos efectos y tendrán la misma validez que aquellas celebradas de manera presencial.**",
+        "new": "Las sesiones de la Asamblea de Familia podrán celebrarse de manera presencial, virtual o híbrida, según se determine en la convocatoria correspondiente. Las sesiones celebradas mediante medios tecnológicos producirán los mismos efectos y tendrán la misma validez que aquellas celebradas de manera presencial."
+      },
+      {
+        "line": 166,
+        "type": "para_bold",
+        "old": "**Corresponderá a quien presida la sesión verificar la identidad de las personas que participen mediante medios tecnológicos. Ninguna persona podrá intervenir o emitir su voto sin que previamente se haya verificado su identidad.**",
+        "new": "Corresponderá a quien presida la sesión verificar la identidad de las personas que participen mediante medios tecnológicos. Ninguna persona podrá intervenir o emitir su voto sin que previamente se haya verificado su identidad."
+      },
+      {
+        "line": 168,
+        "type": "para_bold",
+        "old": "**Las personas que participen mediante medios tecnológicos se considerarán presentes para efectos de quórum, deliberación y votación. Su participación y sentido del voto producirán los mismos efectos que los de las personas asistentes de manera presencial.**",
+        "new": "Las personas que participen mediante medios tecnológicos se considerarán presentes para efectos de quórum, deliberación y votación. Su participación y sentido del voto producirán los mismos efectos que los de las personas asistentes de manera presencial."
+      },
+      {
+        "line": 173,
+        "type": "para_bold",
+        "old": "**En el acta correspondiente deberá dejarse constancia de la modalidad de celebración de la sesión, de las personas que participaron mediante medios tecnológicos y de cualquier incidencia relevante que hubiere afectado el desarrollo de la reunión.**",
+        "new": "En el acta correspondiente deberá dejarse constancia de la modalidad de celebración de la sesión, de las personas que participaron mediante medios tecnológicos y de cualquier incidencia relevante que hubiere afectado el desarrollo de la reunión."
+      },
+      {
+        "line": 177,
+        "type": "para_bold",
+        "old": "**El presente Reglamento entrará en vigor en la misma fecha en que sea aprobado por la Asamblea de Familia y permanecerá vigente hasta en tanto no sea modificado o sustituido conforme a las disposiciones aplicables del Protocolo Familiar.**",
+        "new": "El presente Reglamento entrará en vigor en la misma fecha en que sea aprobado por la Asamblea de Familia y permanecerá vigente hasta en tanto no sea modificado o sustituido conforme a las disposiciones aplicables del Protocolo Familiar."
+      }
+    ],
+    "13_reglamento_comite_honor_familiar.md": [
+      {
+        "line": 21,
+        "type": "para_bold",
+        "old": "**El presente Reglamento establece las reglas de integración, organización, funcionamiento y operación del Comité de Honor Familiar previsto en el Protocolo Familiar.**",
+        "new": "El presente Reglamento establece las reglas de integración, organización, funcionamiento y operación del Comité de Honor Familiar previsto en el Protocolo Familiar."
+      },
+      {
+        "line": 23,
+        "type": "para_bold",
+        "old": "**El Comité de Honor Familiar ejercerá sus atribuciones de conformidad con las disposiciones contenidas en el Protocolo Familiar, el presente Reglamento y los acuerdos válidamente adoptados por la Asamblea de Familia.**",
+        "new": "El Comité de Honor Familiar ejercerá sus atribuciones de conformidad con las disposiciones contenidas en el Protocolo Familiar, el presente Reglamento y los acuerdos válidamente adoptados por la Asamblea de Familia."
+      },
+      {
+        "line": 28,
+        "type": "para_bold",
+        "old": "**El presente Reglamento constituye un instrumento de desarrollo y ejecución del Protocolo Familiar, por lo que deberá interpretarse y aplicarse de manera consistente con sus principios, disposiciones y objetivos.**",
+        "new": "El presente Reglamento constituye un instrumento de desarrollo y ejecución del Protocolo Familiar, por lo que deberá interpretarse y aplicarse de manera consistente con sus principios, disposiciones y objetivos."
+      },
+      {
+        "line": 30,
+        "type": "para_bold",
+        "old": "**En caso de discrepancia, contradicción, incompatibilidad o duda interpretativa entre lo previsto en este Reglamento y el Protocolo Familiar, prevalecerá en todo momento lo dispuesto en este último. En consecuencia, ninguna disposición, interpretación o aplicación del presente Reglamento podrá contravenir, modificar, restringir o ampliar los derechos, principios, reglas de control, mecanismos de gobernanza o materias reservadas previstos en el Protocolo Familiar.**",
+        "new": "En caso de discrepancia, contradicción, incompatibilidad o duda interpretativa entre lo previsto en este Reglamento y el Protocolo Familiar, prevalecerá en todo momento lo dispuesto en este último. En consecuencia, ninguna disposición, interpretación o aplicación del presente Reglamento podrá contravenir, modificar, restringir o ampliar los derechos, principios, reglas de control, mecanismos de gobernanza o materias reservadas previstos en el Protocolo Familiar."
+      },
+      {
+        "line": 40,
+        "type": "para_bold",
+        "old": "**El Comité de Honor Familiar es un órgano de carácter excepcional y no permanente, que se constituirá únicamente cuando, conforme al Protocolo Familiar, exista un asunto que deba ser sometido a su conocimiento y resolución.**",
+        "new": "El Comité de Honor Familiar es un órgano de carácter excepcional y no permanente, que se constituirá únicamente cuando, conforme al Protocolo Familiar, exista un asunto que deba ser sometido a su conocimiento y resolución."
+      },
+      {
+        "line": 42,
+        "type": "para_bold",
+        "old": "**Para cada asunto que requiera su intervención, la Asamblea de Familia designará a tres integrantes que reunirán las condiciones de independencia, imparcialidad y elegibilidad previstas en el Protocolo Familiar.**",
+        "new": "Para cada asunto que requiera su intervención, la Asamblea de Familia designará a tres integrantes que reunirán las condiciones de independencia, imparcialidad y elegibilidad previstas en el Protocolo Familiar."
+      },
+      {
+        "line": 44,
+        "type": "para_bold",
+        "old": "**Una vez integrado, los miembros del Comité designarán de entre ellos a quien fungirá como Presidente y a quien desempeñará las funciones de Secretario durante la sustanciación y resolución del asunto correspondiente. Emitida la resolución definitiva y concluidas las actuaciones necesarias para su formalización, el Comité de Honor Familiar se tendrá por disuelto.**",
+        "new": "Una vez integrado, los miembros del Comité designarán de entre ellos a quien fungirá como Presidente y a quien desempeñará las funciones de Secretario durante la sustanciación y resolución del asunto correspondiente. Emitida la resolución definitiva y concluidas las actuaciones necesarias para su formalización, el Comité de Honor Familiar se tendrá por disuelto."
+      },
+      {
+        "line": 46,
+        "type": "para_bold",
+        "old": "**En la integración del Comité de Honor Familiar, la Asamblea de Familia procurará de manera preferente la participación del señor Roberto Ledesma Cruz y del señor Justo Félix Fernández Chedraui, en atención a su trayectoria, calidad moral, independencia y reconocimiento dentro del sistema familiar–empresarial. La participación de dichas personas tendrá carácter preferente más no obligatorio, por lo que, en caso de impedimento, imposibilidad, excusa o negativa de cualquiera de ellas, la Asamblea podrá designar a cualquier otra persona que reúna los requisitos previstos en el Protocolo Familiar.**",
+        "new": "En la integración del Comité de Honor Familiar, la Asamblea de Familia procurará de manera preferente la participación del señor Roberto Ledesma Cruz y del señor Justo Félix Fernández Chedraui, en atención a su trayectoria, calidad moral, independencia y reconocimiento dentro del sistema familiar–empresarial. La participación de dichas personas tendrá carácter preferente más no obligatorio, por lo que, en caso de impedimento, imposibilidad, excusa o negativa de cualquiera de ellas, la Asamblea podrá designar a cualquier otra persona que reúna los requisitos previstos en el Protocolo Familiar."
+      },
+      {
+        "line": 51,
+        "type": "para_bold",
+        "old": "**Los integrantes del Comité de Honor Familiar serán designados por la Asamblea de Familia para conocer y resolver el asunto específico que motive su integración.**",
+        "new": "Los integrantes del Comité de Honor Familiar serán designados por la Asamblea de Familia para conocer y resolver el asunto específico que motive su integración."
+      },
+      {
+        "line": 53,
+        "type": "para_bold",
+        "old": "**Cuando alguno de los integrantes se encuentre impedido, tenga un conflicto de interés o no pueda continuar participando en el procedimiento correspondiente, la Asamblea de Familia designará a la persona que habrá de sustituirlo exclusivamente para la atención de dicho asunto.**",
+        "new": "Cuando alguno de los integrantes se encuentre impedido, tenga un conflicto de interés o no pueda continuar participando en el procedimiento correspondiente, la Asamblea de Familia designará a la persona que habrá de sustituirlo exclusivamente para la atención de dicho asunto."
+      },
+      {
+        "line": 63,
+        "type": "para_bold",
+        "old": "**El Comité de Honor Familiar sesionará cuando existan asuntos de su competencia que deban ser atendidos conforme al Protocolo Familiar.**",
+        "new": "El Comité de Honor Familiar sesionará cuando existan asuntos de su competencia que deban ser atendidos conforme al Protocolo Familiar."
+      },
+      {
+        "line": 65,
+        "type": "para_bold",
+        "old": "**Las convocatorias deberán realizarse por cualquier medio que permita dejar constancia de su recepción y deberán contener, al menos:**",
+        "new": "Las convocatorias deberán realizarse por cualquier medio que permita dejar constancia de su recepción y deberán contener, al menos:"
+      },
+      {
+        "line": 67,
+        "type": "list_bold",
+        "old": "I. **Fecha y hora de la sesión;**",
+        "new": "I. Fecha y hora de la sesión;"
+      },
+      {
+        "line": 68,
+        "type": "list_bold",
+        "old": "II. **Lugar de celebración o medio de conexión correspondiente;**",
+        "new": "II. Lugar de celebración o medio de conexión correspondiente;"
+      },
+      {
+        "line": 69,
+        "type": "list_bold",
+        "old": "III. **Asunto o asuntos a tratar; y**",
+        "new": "III. Asunto o asuntos a tratar; y"
+      },
+      {
+        "line": 70,
+        "type": "list_bold",
+        "old": "IV. **Información o documentación relevante para el análisis de los asuntos correspondientes.**",
+        "new": "IV. Información o documentación relevante para el análisis de los asuntos correspondientes."
+      },
+      {
+        "line": 71,
+        "type": "para_bold",
+        "old": "**Salvo causa justificada, las convocatorias deberán realizarse con al menos tres días naturales de anticipación.**",
+        "new": "Salvo causa justificada, las convocatorias deberán realizarse con al menos tres días naturales de anticipación."
+      },
+      {
+        "line": 81,
+        "type": "para_bold",
+        "old": "**El Comité de Honor Familiar se considerará válidamente instalado cuando se encuentren presentes la totalidad de sus integrantes designados para conocer y resolver el asunto correspondiente.**",
+        "new": "El Comité de Honor Familiar se considerará válidamente instalado cuando se encuentren presentes la totalidad de sus integrantes designados para conocer y resolver el asunto correspondiente."
+      },
+      {
+        "line": 86,
+        "type": "para_bold",
+        "old": "**Los acuerdos, determinaciones y resoluciones del Comité de Honor Familiar se adoptarán por mayoría simple de votos, salvo que el Protocolo Familiar establezca expresamente un requisito distinto para el asunto de que se trate.**",
+        "new": "Los acuerdos, determinaciones y resoluciones del Comité de Honor Familiar se adoptarán por mayoría simple de votos, salvo que el Protocolo Familiar establezca expresamente un requisito distinto para el asunto de que se trate."
+      },
+      {
+        "line": 88,
+        "type": "para_bold",
+        "old": "**Las votaciones podrán realizarse de manera económica, nominal o mediante cualquier otro mecanismo que determine el propio Comité, debiendo dejarse constancia de su resultado en el acta correspondiente.**",
+        "new": "Las votaciones podrán realizarse de manera económica, nominal o mediante cualquier otro mecanismo que determine el propio Comité, debiendo dejarse constancia de su resultado en el acta correspondiente."
+      },
+      {
+        "line": 98,
+        "type": "para_bold",
+        "old": "**Serán atribuciones del Comité de Honor Familiar, además de las señaladas en el Protocolo Familiar, las siguientes:**",
+        "new": "Serán atribuciones del Comité de Honor Familiar, además de las señaladas en el Protocolo Familiar, las siguientes:"
+      },
+      {
+        "line": 100,
+        "type": "list_bold",
+        "old": "I. **Conocer los asuntos que le sean sometidos conforme a las disposiciones del Protocolo Familiar;**",
+        "new": "I. Conocer los asuntos que le sean sometidos conforme a las disposiciones del Protocolo Familiar;"
+      },
+      {
+        "line": 101,
+        "type": "list_bold",
+        "old": "II. **Promover mecanismos de diálogo, conciliación y entendimiento entre los integrantes de la familia empresaria cuando ello resulte procedente;**",
+        "new": "II. Promover mecanismos de diálogo, conciliación y entendimiento entre los integrantes de la familia empresaria cuando ello resulte procedente;"
+      },
+      {
+        "line": 102,
+        "type": "list_bold",
+        "old": "III. **Emitir las recomendaciones, opiniones, determinaciones y resoluciones que correspondan conforme al Protocolo Familiar, incluyendo aquellas que resulten necesarias para la aplicación del régimen disciplinario, sancionador o de exclusión previsto en dicho instrumento;**",
+        "new": "III. Emitir las recomendaciones, opiniones, determinaciones y resoluciones que correspondan conforme al Protocolo Familiar, incluyendo aquellas que resulten necesarias para la aplicación del régimen disciplinario, sancionador o de exclusión previsto en dicho instrumento;"
+      },
+      {
+        "line": 103,
+        "type": "list_bold",
+        "old": "IV. **Dar seguimiento al cumplimiento de las medidas, acuerdos o determinaciones adoptadas conforme al Protocolo Familiar;**",
+        "new": "IV. Dar seguimiento al cumplimiento de las medidas, acuerdos o determinaciones adoptadas conforme al Protocolo Familiar;"
+      },
+      {
+        "line": 104,
+        "type": "list_bold",
+        "old": "V. **Informar a la Asamblea de Familia o al Consejo de Familia sobre aquellos asuntos que deban ser de su conocimiento;**",
+        "new": "V. Informar a la Asamblea de Familia o al Consejo de Familia sobre aquellos asuntos que deban ser de su conocimiento;"
+      },
+      {
+        "line": 105,
+        "type": "list_bold",
+        "old": "VI. **Ejercer las demás atribuciones que le confieran el Protocolo Familiar y los acuerdos válidamente adoptados por los órganos de gobierno familiar;**",
+        "new": "VI. Ejercer las demás atribuciones que le confieran el Protocolo Familiar y los acuerdos válidamente adoptados por los órganos de gobierno familiar;"
+      },
+      {
+        "line": 106,
+        "type": "list_bold",
+        "old": "VII. **Interpretar las disposiciones del Protocolo Familiar dentro del ámbito de su competencia y para efectos de la atención de los asuntos sometidos a su conocimiento, y**",
+        "new": "VII. Interpretar las disposiciones del Protocolo Familiar dentro del ámbito de su competencia y para efectos de la atención de los asuntos sometidos a su conocimiento, y"
+      },
+      {
+        "line": 107,
+        "type": "list_bold",
+        "old": "VIII. **Resolver los procedimientos cuya competencia le atribuya expresamente el Protocolo Familiar, incluyendo aquellos relacionados con la exclusión de integrantes del sistema familiar–empresarial, sin perjuicio de las facultades de ejecución que correspondan al Consejo de Familia conforme al propio Protocolo.**",
+        "new": "VIII. Resolver los procedimientos cuya competencia le atribuya expresamente el Protocolo Familiar, incluyendo aquellos relacionados con la exclusión de integrantes del sistema familiar–empresarial, sin perjuicio de las facultades de ejecución que correspondan al Consejo de Familia conforme al propio Protocolo."
+      },
+      {
+        "line": 116,
+        "type": "para_bold",
+        "old": "**Ningún integrante del Comité de Honor Familiar podrá participar en la atención, análisis, deliberación o resolución de asuntos respecto de los cuales tenga interés personal, familiar, económico o cualquier otra circunstancia que pueda comprometer o razonablemente generar dudas sobre su independencia, objetividad o imparcialidad.**",
+        "new": "Ningún integrante del Comité de Honor Familiar podrá participar en la atención, análisis, deliberación o resolución de asuntos respecto de los cuales tenga interés personal, familiar, económico o cualquier otra circunstancia que pueda comprometer o razonablemente generar dudas sobre su independencia, objetividad o imparcialidad."
+      },
+      {
+        "line": 118,
+        "type": "para_bold",
+        "old": "**Cuando un integrante identifique la existencia de un conflicto de interés, deberá comunicarlo de inmediato y abstenerse de intervenir en cualquier etapa del asunto correspondiente.**",
+        "new": "Cuando un integrante identifique la existencia de un conflicto de interés, deberá comunicarlo de inmediato y abstenerse de intervenir en cualquier etapa del asunto correspondiente."
+      },
+      {
+        "line": 120,
+        "type": "para_bold",
+        "old": "**En tal supuesto, la Asamblea de Familia designará a la persona que habrá de sustituirlo exclusivamente para la atención y resolución del asunto de que se trate. Hasta en tanto se realice dicha designación, el procedimiento correspondiente quedará suspendido.**",
+        "new": "En tal supuesto, la Asamblea de Familia designará a la persona que habrá de sustituirlo exclusivamente para la atención y resolución del asunto de que se trate. Hasta en tanto se realice dicha designación, el procedimiento correspondiente quedará suspendido."
+      },
+      {
+        "line": 130,
+        "type": "para_bold",
+        "old": "**De toda sesión deberá levantarse un acta que contenga, al menos:**",
+        "new": "De toda sesión deberá levantarse un acta que contenga, al menos:"
+      },
+      {
+        "line": 132,
+        "type": "list_bold",
+        "old": "I. **Fecha, hora y lugar de celebración;**",
+        "new": "I. Fecha, hora y lugar de celebración;"
+      },
+      {
+        "line": 133,
+        "type": "list_bold",
+        "old": "II. **Lista de asistencia;**",
+        "new": "II. Lista de asistencia;"
+      },
+      {
+        "line": 134,
+        "type": "list_bold",
+        "old": "III. **Verificación de quórum;**",
+        "new": "III. Verificación de quórum;"
+      },
+      {
+        "line": 135,
+        "type": "list_bold",
+        "old": "IV. **Asuntos tratados;**",
+        "new": "IV. Asuntos tratados;"
+      },
+      {
+        "line": 136,
+        "type": "list_bold",
+        "old": "V. **Síntesis de las deliberaciones;**",
+        "new": "V. Síntesis de las deliberaciones;"
+      },
+      {
+        "line": 137,
+        "type": "list_bold",
+        "old": "VI. **Acuerdos, recomendaciones o determinaciones adoptadas; y**",
+        "new": "VI. Acuerdos, recomendaciones o determinaciones adoptadas; y"
+      },
+      {
+        "line": 138,
+        "type": "list_bold",
+        "old": "VII. **Resultado de las votaciones correspondientes.**",
+        "new": "VII. Resultado de las votaciones correspondientes."
+      },
+      {
+        "line": 139,
+        "type": "para_bold",
+        "old": "**Las actas deberán ser firmadas por el Presidente y el Secretario del Comité. El Secretario deberá mantener actualizado el Libro de Actas y el Registro Confidencial de Asuntos del Comité de Honor Familiar.**",
+        "new": "Las actas deberán ser firmadas por el Presidente y el Secretario del Comité. El Secretario deberá mantener actualizado el Libro de Actas y el Registro Confidencial de Asuntos del Comité de Honor Familiar."
+      },
+      {
+        "line": 149,
+        "type": "para_bold",
+        "old": "**Los integrantes del Comité de Honor Familiar deberán guardar estricta confidencialidad respecto de la información, documentación, deliberaciones y asuntos sometidos a su conocimiento, salvo autorización expresa de la Asamblea de Familia o disposición contenida en el Protocolo Familiar.**",
+        "new": "Los integrantes del Comité de Honor Familiar deberán guardar estricta confidencialidad respecto de la información, documentación, deliberaciones y asuntos sometidos a su conocimiento, salvo autorización expresa de la Asamblea de Familia o disposición contenida en el Protocolo Familiar."
+      },
+      {
+        "line": 151,
+        "type": "para_bold",
+        "old": "**La obligación de confidencialidad subsistirá aun después de haber concluido el cargo correspondiente.**",
+        "new": "La obligación de confidencialidad subsistirá aun después de haber concluido el cargo correspondiente."
+      },
+      {
+        "line": 161,
+        "type": "para_bold",
+        "old": "**Cualquier situación de carácter procedimental no prevista expresamente en el presente Reglamento podrá ser resuelta por el Comité de Honor Familiar, siempre que dicha determinación resulte consistente con el Protocolo Familiar y no implique la modificación, interpretación extensiva o afectación de derechos, principios rectores, reglas de control, mecanismos de gobernanza o materias reservadas previstas en dicho instrumento.**",
+        "new": "Cualquier situación de carácter procedimental no prevista expresamente en el presente Reglamento podrá ser resuelta por el Comité de Honor Familiar, siempre que dicha determinación resulte consistente con el Protocolo Familiar y no implique la modificación, interpretación extensiva o afectación de derechos, principios rectores, reglas de control, mecanismos de gobernanza o materias reservadas previstas en dicho instrumento."
+      },
+      {
+        "line": 163,
+        "type": "para_bold",
+        "old": "**En caso de duda interpretativa, contradicción normativa o afectación potencial a los principios fundamentales del sistema familiar–empresarial, prevalecerá lo dispuesto en el Protocolo Familiar y el asunto deberá ser sometido a la consideración de la Asamblea de Familia para su determinación.**",
+        "new": "En caso de duda interpretativa, contradicción normativa o afectación potencial a los principios fundamentales del sistema familiar–empresarial, prevalecerá lo dispuesto en el Protocolo Familiar y el asunto deberá ser sometido a la consideración de la Asamblea de Familia para su determinación."
+      },
+      {
+        "line": 167,
+        "type": "para_bold",
+        "old": "**El presente Reglamento entrará en vigor en la misma fecha en que sea aprobado por la Asamblea de Familia y permanecerá vigente hasta en tanto no sea modificado o sustituido conforme a las disposiciones aplicables del Protocolo Familiar.**",
+        "new": "El presente Reglamento entrará en vigor en la misma fecha en que sea aprobado por la Asamblea de Familia y permanecerá vigente hasta en tanto no sea modificado o sustituido conforme a las disposiciones aplicables del Protocolo Familiar."
+      }
+    ]
+  },
+  "regulations_structural_validation": {
+    "Reglamento 11 (Asamblea de Familia)": {
+      "capitulos_count": 8,
+      "capitulos": [
+        "CAPÍTULO I",
+        "CAPÍTULO II",
+        "CAPÍTULO III",
+        "CAPÍTULO IV",
+        "CAPÍTULO V",
+        "CAPÍTULO VI",
+        "CAPÍTULO VII",
+        "CAPÍTULO VIII"
+      ],
+      "subcaps_count": 8,
+      "subcaps": [
+        "**DE LAS DISPOSICIONES GENERALES**",
+        "**DE LA INTEGRACIÓN Y PARTICIPACIÓN**",
+        "**DE LAS CONVOCATORIAS**",
+        "**INSTALACIÓN Y DESARROLLO DE LAS SESIONES**",
+        "**DE LAS VOTACIONES Y ACUERDOS**",
+        "**DE LAS FACULTADES**",
+        "**DE LAS ACTAS Y SEGUIMIENTO DE ACUERDOS**",
+        "**DE LAS SESIONES VIRTUALES**"
+      ],
+      "articulos_count": 12,
+      "articulos": [
+        "Artículo 1. Del Objeto y Alcance",
+        "Artículo 2. De la Prevalencia del Protocolo Familiar",
+        "Artículo 3. De la Integración",
+        "Artículo 4. De las Convocatorias",
+        "Artículo 5. De la Instalación de la Asamblea",
+        "Artículo 6. Del Desarrollo de las Sesiones",
+        "Artículo 7. De las Votaciones",
+        "Artículo 8. De las Facultades",
+        "Artículo 9. De las Actas y Seguimiento",
+        "Artículo 10. De las Modalidades de Celebración",
+        "Artículo 11. De la Identificación de los Participantes",
+        "Artículo 12. De la Constancia de la Sesión"
+      ],
+      "transitorios_count": 1,
+      "paragraphs_count": 45,
+      "words_count": 1484
+    },
+    "Reglamento 12 (Consejo de Familia)": {
+      "capitulos_count": 9,
+      "capitulos": [
+        "CAPÍTULO I",
+        "CAPÍTULO II",
+        "CAPÍTULO III",
+        "CAPÍTULO IV",
+        "CAPÍTULO V",
+        "CAPÍTULO VI",
+        "CAPÍTULO VII",
+        "CAPÍTULO VIII",
+        "CAPÍTULO IX"
+      ],
+      "subcaps_count": 9,
+      "subcaps": [
+        "**DE LAS DISPOSICIONES GENERALES**",
+        "**DE LA INTEGRACIÓN Y DESIGNACIÓN**",
+        "**DE LAS SESIONES Y CONVOCATORIAS**",
+        "**DEL QUÓRUM Y VOTACIONES**",
+        "**DE LAS FACULTADES**",
+        "**DE LAS ACTAS Y REGISTRO DE ACUERDOS**",
+        "**DE LAS VACANTES Y SUSTITUCIONES**",
+        "**DE LAS MODALIDADES DE SESIONES**",
+        "**DE LA INTERPRETACIÓN Y CASOS NO PREVISTOS**"
+      ],
+      "articulos_count": 12,
+      "articulos": [
+        "Artículo 1. Del Objeto y Alcance",
+        "Artículo 2. De la Prevalencia del Protocolo Familiar",
+        "Artículo 3. De la Integración",
+        "Artículo 4. De la Designación",
+        "Artículo 5. De las Sesiones",
+        "Artículo 6. De la Instalación",
+        "Artículo 7. De las Votaciones",
+        "Artículo 8. De las Facultades",
+        "Artículo 9. De las Actas y Seguimiento",
+        "Artículo 10. De las Vacantes",
+        "Artículo 11. De las Modalidades de Celebración",
+        "Artículo 12. De los Casos No Previstos"
+      ],
+      "transitorios_count": 1,
+      "paragraphs_count": 38,
+      "words_count": 1301
+    },
+    "Reglamento 13 (Comité de Honor)": {
+      "capitulos_count": 9,
+      "capitulos": [
+        "CAPÍTULO I",
+        "CAPÍTULO II",
+        "CAPÍTULO III",
+        "CAPÍTULO IV",
+        "CAPÍTULO V",
+        "CAPÍTULO VI",
+        "CAPÍTULO VII",
+        "CAPÍTULO VIII",
+        "CAPÍTULO IX"
+      ],
+      "subcaps_count": 9,
+      "subcaps": [
+        "**DE LAS DISPOSICIONES GENERALES**",
+        "**DE LA INTEGRACIÓN Y DESIGNACIÓN**",
+        "**DE LAS SESIONES Y CONVOCATORIAS**",
+        "**DEL QUÓRUM Y LAS VOTACIONES**",
+        "**DE LAS ATRIBUCIONES**",
+        "**DE LOS CONFLICTOS DE INTERÉS**",
+        "**DE LAS ACTAS Y DEL REGISTRO CONFIDENCIAL DE ASUNTOS**",
+        "**DE LA CONFIDENCIALIDAD**",
+        "**DE LOS CASOS NO PREVISTOS**"
+      ],
+      "articulos_count": 12,
+      "articulos": [
+        "Artículo 1. Del Objeto y Alcance",
+        "Artículo 2. De la Prevalencia del Protocolo Familiar",
+        "Artículo 3. De la Integración",
+        "Artículo 4. De la Designación, Duración y Remoción",
+        "Artículo 5. De las Sesiones y Convocatorias",
+        "Artículo 6. De la Instalación del Comité",
+        "Artículo 7. De la Adopción de Acuerdos",
+        "Artículo 8. De las Atribuciones",
+        "Artículo 9. De los Conflictos de Interés",
+        "Artículo 10. De las Actas y del Registro",
+        "Artículo 11. De la Confidencialidad",
+        "Artículo 12. De los Casos No Previstos"
+      ],
+      "transitorios_count": 1,
+      "paragraphs_count": 38,
+      "words_count": 1377
+    }
+  },
+  "anexo_10_validation": {
+    "checkboxes": 18,
+    "table_blocks": 22,
+    "comite_count": 10,
+    "comite_erroneo_count": 0,
+    "completo_count": 1,
+    "complete_erroneo_count": 0
+  },
+  "cleanliness_audit": {
+    "all_files_clean": true,
+    "ufffd_present": false,
+    "docx_residues_present": false,
+    "control_chars_present": false
+  }
+}

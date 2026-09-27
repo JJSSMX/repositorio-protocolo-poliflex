@@ -1,0 +1,25 @@
+================================================================================
+INFORME DE AUDITORÍA DE ENUMERACIONES Y LISTAS — FASE 3.9.2
+Protocolo Familiar · Poliductos Flexibles, S.A. de C.V. (POLIFLEX)
+================================================================================
+
+1. AUDITORÍA DE RESIDUOS DE PARSER (%2.) EN CAPÍTULO 02:
+  - Ubicación en fuente canónica: 02_capitulo2_propiedad_control_liquidez.md (Líneas 438, 439, 440).
+  - Texto original en Markdown:
+      %2. La deducción de la deuda financiera neta;
+      %2. La adición de efectivo no operativo; y
+      %2. Cualquier otra partida relevante que impacte materialmente el valor económico de la Sociedad.
+  - Origen técnico: Residuo de conversión desde OpenXML DOCX (nivel 2 de anidamiento de lista).
+  - Tratamiento estructural en compilador: El parser reconoce regex '^%(\d+)\.\s+' y lo convierte dinámicamente
+    en sublista romana legal: #legal-roman('i.', ...), #legal-roman('ii.', ...), #legal-roman('iii.', ...).
+  - Estado en PDF renderizado (Pág. 35): Perfectamente numerado como i., ii., iii. sin residuos visuales.
+  - Acción canónica: Registrado formalmente como CANONICAL_SOURCE_CORRECTION_REQUIRED para normalización si el usuario lo autoriza.
+
+2. AUDITORÍA DE LISTAS ALFABÉTICAS (lowerLetter):
+  - Capítulo 01: a) a e) en Sección 1.4 (Continuidad perfecta, 0 saltos).
+  - Capítulo 02: 8 bloques de listas alfabéticas (a-c, a-d, a-g en Valuación). 100% de continuidad verificada.
+  - Capítulo 07: a) a c) en Sección 7.5 (Amonestación, Suspensión, Exclusión). 100% de continuidad verificada.
+
+3. AUDITORÍA DE ENCABEZADOS SOLEMNES (PRIMERO, SEGUNDO, ETC.):
+  - En Capítulos 01–09: Cero encabezados solemnes aplicables (se rigen estrictamente por numeración decimal H2/H3/H4).
+  - En Anexos (Capítulo 10): Se identifican cláusulas solemnes ('### PRIMERO.'), reservadas para su fase correspondiente.

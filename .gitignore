@@ -1,0 +1,42 @@
+﻿# ============================================================
+# POLIFLEX — Protocolo Familiar
+# Archivos locales / temporales
+# ============================================================
+
+# Fuentes tipográficas locales
+assets/fonts/*.otf
+assets/fonts/*.ttf
+assets/fonts/*.woff
+assets/fonts/*.woff2
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Temporales
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+
+# Scratch / pruebas temporales de trabajo
+scratch/
+
+# Typst cache/local artifacts
+.typst/
+
+# Logs
+*.log

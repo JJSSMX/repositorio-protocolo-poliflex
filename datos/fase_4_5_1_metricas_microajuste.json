@@ -1,0 +1,278 @@
+{
+  "A_orig": {
+    "label": "A original",
+    "variant": "A",
+    "spacing_pt": 5.5,
+    "page_count": 4,
+    "pages": [
+      {
+        "page_num": 1,
+        "type": "RECTO",
+        "content_lines_count": 29,
+        "y_start": 70.21,
+        "y_end": 523.83,
+        "height_used": 453.62,
+        "occupancy_pct": 95.3,
+        "free_reserve_pt": 22.37,
+        "first_line": "P R O T O C O L O F A M I L I A R",
+        "last_line": "solicitar que sus manifestaciones relevantes queden asentadas en el acta correspondiente."
+      },
+      {
+        "page_num": 2,
+        "type": "VERSO",
+        "content_lines_count": 29,
+        "y_start": 70.42,
+        "y_end": 513.43,
+        "height_used": 443.01,
+        "occupancy_pct": 93.1,
+        "free_reserve_pt": 32.98,
+        "first_line": "R E G L A M E N T O · A S A M B L E A D E F A M I L I A",
+        "last_line": "Protocolo Familiar reserve expresamente a su competencia."
+      },
+      {
+        "page_num": 3,
+        "type": "RECTO",
+        "content_lines_count": 38,
+        "y_start": 70.42,
+        "y_end": 511.24,
+        "height_used": 440.82,
+        "occupancy_pct": 92.6,
+        "free_reserve_pt": 35.17,
+        "first_line": "P R O T O C O L O F A M I L I A R",
+        "last_line": "aquellas celebradas de manera presencial."
+      },
+      {
+        "page_num": 4,
+        "type": "VERSO",
+        "content_lines_count": 18,
+        "y_start": 70.31,
+        "y_end": 318.36,
+        "height_used": 248.05,
+        "occupancy_pct": 52.1,
+        "free_reserve_pt": 227.94,
+        "first_line": "R E G L A M E N T O · A S A M B L E A D E F A M I L I A",
+        "last_line": "conforme a las disposiciones aplicables del Protocolo Familiar.",
+        "transitorio_y0": 261.77,
+        "transitorio_y1": 271.77
+      }
+    ],
+    "art5_metrics": {
+      "art5_y0": 113.56,
+      "art5_y1": 122.76,
+      "art5_baseline": 120.25,
+      "body_first_line_y0": 125.16,
+      "body_first_line_y1": 133.07,
+      "body_first_line_baseline": 131.02,
+      "baseline_delta": 10.77,
+      "baseline_ratio_vs_leading": 0.846,
+      "optical_clearance": 2.4
+    }
+  },
+  "A4": {
+    "label": "Microvariante A4",
+    "variant": "A4",
+    "spacing_pt": 4.0,
+    "page_count": 4,
+    "pages": [
+      {
+        "page_num": 1,
+        "type": "RECTO",
+        "content_lines_count": 29,
+        "y_start": 70.21,
+        "y_end": 520.83,
+        "height_used": 450.62,
+        "occupancy_pct": 94.7,
+        "free_reserve_pt": 25.37,
+        "first_line": "P R O T O C O L O F A M I L I A R",
+        "last_line": "solicitar que sus manifestaciones relevantes queden asentadas en el acta correspondiente."
+      },
+      {
+        "page_num": 2,
+        "type": "VERSO",
+        "content_lines_count": 29,
+        "y_start": 70.42,
+        "y_end": 510.43,
+        "height_used": 440.01,
+        "occupancy_pct": 92.4,
+        "free_reserve_pt": 35.98,
+        "first_line": "R E G L A M E N T O · A S A M B L E A D E F A M I L I A",
+        "last_line": "Protocolo Familiar reserve expresamente a su competencia."
+      },
+      {
+        "page_num": 3,
+        "type": "RECTO",
+        "content_lines_count": 38,
+        "y_start": 70.42,
+        "y_end": 508.24,
+        "height_used": 437.82,
+        "occupancy_pct": 92.0,
+        "free_reserve_pt": 38.17,
+        "first_line": "P R O T O C O L O F A M I L I A R",
+        "last_line": "aquellas celebradas de manera presencial."
+      },
+      {
+        "page_num": 4,
+        "type": "VERSO",
+        "content_lines_count": 18,
+        "y_start": 70.31,
+        "y_end": 315.36,
+        "height_used": 245.05,
+        "occupancy_pct": 51.5,
+        "free_reserve_pt": 230.94,
+        "first_line": "R E G L A M E N T O · A S A M B L E A D E F A M I L I A",
+        "last_line": "conforme a las disposiciones aplicables del Protocolo Familiar.",
+        "transitorio_y0": 258.77,
+        "transitorio_y1": 268.77
+      }
+    ],
+    "art5_metrics": {
+      "art5_y0": 113.56,
+      "art5_y1": 122.76,
+      "art5_baseline": 120.25,
+      "body_first_line_y0": 123.66,
+      "body_first_line_y1": 131.57,
+      "body_first_line_baseline": 129.52,
+      "baseline_delta": 9.27,
+      "baseline_ratio_vs_leading": 0.728,
+      "optical_clearance": 0.9
+    }
+  },
+  "A6": {
+    "label": "Microvariante A6",
+    "variant": "A6",
+    "spacing_pt": 6.0,
+    "page_count": 4,
+    "pages": [
+      {
+        "page_num": 1,
+        "type": "RECTO",
+        "content_lines_count": 29,
+        "y_start": 70.21,
+        "y_end": 524.83,
+        "height_used": 454.62,
+        "occupancy_pct": 95.5,
+        "free_reserve_pt": 21.37,
+        "first_line": "P R O T O C O L O F A M I L I A R",
+        "last_line": "solicitar que sus manifestaciones relevantes queden asentadas en el acta correspondiente."
+      },
+      {
+        "page_num": 2,
+        "type": "VERSO",
+        "content_lines_count": 29,
+        "y_start": 70.42,
+        "y_end": 514.43,
+        "height_used": 444.01,
+        "occupancy_pct": 93.3,
+        "free_reserve_pt": 31.98,
+        "first_line": "R E G L A M E N T O · A S A M B L E A D E F A M I L I A",
+        "last_line": "Protocolo Familiar reserve expresamente a su competencia."
+      },
+      {
+        "page_num": 3,
+        "type": "RECTO",
+        "content_lines_count": 38,
+        "y_start": 70.42,
+        "y_end": 512.24,
+        "height_used": 441.82,
+        "occupancy_pct": 92.8,
+        "free_reserve_pt": 34.17,
+        "first_line": "P R O T O C O L O F A M I L I A R",
+        "last_line": "aquellas celebradas de manera presencial."
+      },
+      {
+        "page_num": 4,
+        "type": "VERSO",
+        "content_lines_count": 18,
+        "y_start": 70.31,
+        "y_end": 319.36,
+        "height_used": 249.05,
+        "occupancy_pct": 52.3,
+        "free_reserve_pt": 226.94,
+        "first_line": "R E G L A M E N T O · A S A M B L E A D E F A M I L I A",
+        "last_line": "conforme a las disposiciones aplicables del Protocolo Familiar.",
+        "transitorio_y0": 262.77,
+        "transitorio_y1": 272.77
+      }
+    ],
+    "art5_metrics": {
+      "art5_y0": 113.56,
+      "art5_y1": 122.76,
+      "art5_baseline": 120.25,
+      "body_first_line_y0": 125.66,
+      "body_first_line_y1": 133.57,
+      "body_first_line_baseline": 131.52,
+      "baseline_delta": 11.27,
+      "baseline_ratio_vs_leading": 0.885,
+      "optical_clearance": 2.9
+    }
+  },
+  "A8": {
+    "label": "Microvariante A8",
+    "variant": "A8",
+    "spacing_pt": 8.0,
+    "page_count": 4,
+    "pages": [
+      {
+        "page_num": 1,
+        "type": "RECTO",
+        "content_lines_count": 29,
+        "y_start": 70.21,
+        "y_end": 528.83,
+        "height_used": 458.62,
+        "occupancy_pct": 96.3,
+        "free_reserve_pt": 17.37,
+        "first_line": "P R O T O C O L O F A M I L I A R",
+        "last_line": "solicitar que sus manifestaciones relevantes queden asentadas en el acta correspondiente."
+      },
+      {
+        "page_num": 2,
+        "type": "VERSO",
+        "content_lines_count": 29,
+        "y_start": 70.42,
+        "y_end": 518.43,
+        "height_used": 448.01,
+        "occupancy_pct": 94.1,
+        "free_reserve_pt": 27.98,
+        "first_line": "R E G L A M E N T O · A S A M B L E A D E F A M I L I A",
+        "last_line": "Protocolo Familiar reserve expresamente a su competencia."
+      },
+      {
+        "page_num": 3,
+        "type": "RECTO",
+        "content_lines_count": 38,
+        "y_start": 70.42,
+        "y_end": 516.24,
+        "height_used": 445.82,
+        "occupancy_pct": 93.7,
+        "free_reserve_pt": 30.17,
+        "first_line": "P R O T O C O L O F A M I L I A R",
+        "last_line": "aquellas celebradas de manera presencial."
+      },
+      {
+        "page_num": 4,
+        "type": "VERSO",
+        "content_lines_count": 18,
+        "y_start": 70.31,
+        "y_end": 323.36,
+        "height_used": 253.05,
+        "occupancy_pct": 53.2,
+        "free_reserve_pt": 222.94,
+        "first_line": "R E G L A M E N T O · A S A M B L E A D E F A M I L I A",
+        "last_line": "conforme a las disposiciones aplicables del Protocolo Familiar.",
+        "transitorio_y0": 266.77,
+        "transitorio_y1": 276.77
+      }
+    ],
+    "art5_metrics": {
+      "art5_y0": 113.56,
+      "art5_y1": 122.76,
+      "art5_baseline": 120.25,
+      "body_first_line_y0": 127.66,
+      "body_first_line_y1": 135.57,
+      "body_first_line_baseline": 133.52,
+      "baseline_delta": 13.27,
+      "baseline_ratio_vs_leading": 1.043,
+      "optical_clearance": 4.9
+    }
+  }
+}

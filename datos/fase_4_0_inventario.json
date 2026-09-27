@@ -1,0 +1,1193 @@
+{
+  "00_introduccion.md": {
+    "file": "00_introduccion.md",
+    "sha256": "DEEECA7863249DB1348BEF6138E0DAEDA35B5120658459D0362309E543FECAD8",
+    "bytes": 2219,
+    "char_count": 2196,
+    "word_count": 305,
+    "lines_total": 24,
+    "frontmatter": {
+      "title": "Introducción",
+      "company": "Poliductos Flexibles, S.A. de C.V.",
+      "brand": "POLIFLEX",
+      "family": "Familia Velasco Chedraui",
+      "version": "2.0",
+      "date": "Agosto 2026",
+      "location": "Coatepec, Veracruz, México"
+    },
+    "headings": {
+      "h1": [
+        [
+          4,
+          "Introducción"
+        ]
+      ],
+      "h2": [],
+      "h3": [],
+      "h4": []
+    },
+    "paragraphs_count": 6,
+    "tables": {
+      "count": 0,
+      "blocks": []
+    },
+    "lists": {
+      "alpha_count": 0,
+      "roman_lower_count": 0,
+      "roman_upper_count": 0,
+      "decimal_count": 0,
+      "bullet_count": 0,
+      "alpha_items": [],
+      "roman_lower_items": [],
+      "roman_upper_items": [],
+      "decimal_items": []
+    },
+    "fillable_fields_count": 0,
+    "checkbox_count": 0,
+    "articles": [],
+    "solemn_clauses": [],
+    "transitorios": [],
+    "signature_cues": []
+  },
+  "10_anexos_formatos_operativos.md": {
+    "file": "10_anexos_formatos_operativos.md",
+    "sha256": "588A64539A62B89BA25D31E54E504FB7A5EDF9698AC085B6250CC3F91B774826",
+    "bytes": 17381,
+    "char_count": 17110,
+    "word_count": 2229,
+    "lines_total": 329,
+    "frontmatter": {
+      "title": "Anexos y Formatos Operativos",
+      "company": "Poliductos Flexibles, S.A. de C.V.",
+      "brand": "POLIFLEX",
+      "family": "Familia Velasco Chedraui",
+      "version": "2.0",
+      "date": "Agosto 2026",
+      "location": "Coatepec, Veracruz, México"
+    },
+    "headings": {
+      "h1": [
+        [
+          3,
+          "Anexos y Formatos Operativos"
+        ]
+      ],
+      "h2": [
+        [
+          6,
+          "AVISO DE EXCLUSIVIDAD Y PERSONALIZACIÓN"
+        ],
+        [
+          23,
+          "Carta de Aceptación y Adhesión al Protocolo Familiar"
+        ],
+        [
+          75,
+          "Convocatoria de Asamblea de Familia"
+        ],
+        [
+          108,
+          "Acta de Asamblea General Familiar"
+        ],
+        [
+          164,
+          "Convocatoria a Sesión de Consejo de Familia"
+        ],
+        [
+          201,
+          "Acta de Sesión del Consejo de Familia"
+        ],
+        [
+          257,
+          "Acta de Constitución y Sesión del Comité de Honor Familiar"
+        ]
+      ],
+      "h3": [
+        [
+          30,
+          "PRIMERO. DE LA DECLARACIÓN DE CONOCIMIENTO"
+        ],
+        [
+          37,
+          "SEGUNDO. DE LA ACEPTACIÓN Y ADHESIÓN EXPRESA"
+        ],
+        [
+          44,
+          "TERCERO. DEL COMPROMISO DE CUMPLIMIENTO"
+        ],
+        [
+          51,
+          "CUARTO. DEL ALCANCE DE LA ADHESIÓN"
+        ],
+        [
+          62,
+          "QUINTO. DE LA VIGENCIA"
+        ]
+      ],
+      "h4": []
+    },
+    "paragraphs_count": 91,
+    "tables": {
+      "count": 6,
+      "blocks": [
+        {
+          "rows": 6,
+          "start_line": 118,
+          "headers": "| Nombre | Rama Familiar | Porcentaje de Capital | Acreditación | Firma |"
+        },
+        {
+          "rows": 5,
+          "start_line": 157,
+          "headers": "| Nombre | Rama | Cargo / Calidad | Firma |"
+        },
+        {
+          "rows": 5,
+          "start_line": 211,
+          "headers": "| Nombre | Rama Familiar | Cargo en el Consejo | Firma |"
+        },
+        {
+          "rows": 6,
+          "start_line": 249,
+          "headers": "| Nombre | Cargo | Firma |"
+        },
+        {
+          "rows": 5,
+          "start_line": 265,
+          "headers": "| Nombre | Carácter | Firma de Aceptación |"
+        },
+        {
+          "rows": 5,
+          "start_line": 315,
+          "headers": "| Nombre | Cargo en el Comité | Firma |"
+        }
+      ]
+    },
+    "lists": {
+      "alpha_count": 4,
+      "roman_lower_count": 0,
+      "roman_upper_count": 17,
+      "decimal_count": 22,
+      "bullet_count": 0,
+      "alpha_items": [
+        [
+          55,
+          "a) El ejercicio de derechos políticos internos en la familia empresaria;"
+        ],
+        [
+          56,
+          "b) La participación en órganos de gobierno familiar o corporativo;"
+        ],
+        [
+          57,
+          "c) La incorporación o permanencia en la empresa, en su caso; y"
+        ],
+        [
+          58,
+          "d) Cualquier otro supuesto previsto en el Protocolo Familiar."
+        ]
+      ],
+      "roman_lower_items": [],
+      "roman_upper_items": [
+        [
+          72,
+          "C. ____________________________________________"
+        ],
+        [
+          87,
+          "I. Registro de asistencia y verificación de quórum."
+        ],
+        [
+          88,
+          "II. Declaración formal de instalación de la Asamblea de Familia."
+        ],
+        [
+          89,
+          "III. Lectura, discusión y, en su caso, aprobación del Orden del Día."
+        ],
+        [
+          90,
+          "IV. Presentación, análisis y deliberación de los asuntos sometidos a consideración de la Asamblea."
+        ],
+        [
+          91,
+          "V. Discusión y adopción de acuerdos."
+        ],
+        [
+          92,
+          "VI. Seguimiento a acuerdos previamente adoptados."
+        ],
+        [
+          93,
+          "VII. Asuntos generales."
+        ],
+        [
+          94,
+          "VIII. Clausura de la sesión."
+        ],
+        [
+          180,
+          "I. Lista de asistencia y verificación de quórum."
+        ],
+        [
+          181,
+          "II. Declaración formal de instalación de la sesión."
+        ],
+        [
+          182,
+          "III. Lectura y aprobación del Orden del Día."
+        ],
+        [
+          183,
+          "IV. Seguimiento a acuerdos y asuntos pendientes."
+        ],
+        [
+          184,
+          "V. Presentación y análisis de los asuntos sometidos a consideración del Consejo."
+        ],
+        [
+          185,
+          "VI. Deliberación y adopción de acuerdos."
+        ],
+        [
+          186,
+          "VII. Asuntos generales."
+        ],
+        [
+          187,
+          "VIII. Clausura de la sesión."
+        ]
+      ],
+      "decimal_items": [
+        [
+          116,
+          "**1. Registro de Asistencia**"
+        ],
+        [
+          125,
+          "**2. Verificación de Quórum**"
+        ],
+        [
+          129,
+          "**3. Desarrollo de la Asamblea**"
+        ],
+        [
+          153,
+          "**4. Clausura**"
+        ],
+        [
+          209,
+          "**1. Lista De Asistencia**"
+        ],
+        [
+          219,
+          "**2. Declaración de Instalación**"
+        ],
+        [
+          223,
+          "**3. Declaración de Conflictos de Interés**"
+        ],
+        [
+          227,
+          "**4. Desarrollo de la Sesión**"
+        ],
+        [
+          245,
+          "**5. Clausura**"
+        ],
+        [
+          263,
+          "**1. Integrantes Designados del Comité**"
+        ],
+        [
+          271,
+          "**2. Objeto del Procedimiento**"
+        ],
+        [
+          275,
+          "**3. Descripción del Asunto**"
+        ],
+        [
+          281,
+          "**4. Documentación Recibida del Consejo de Familia:**"
+        ],
+        [
+          293,
+          "**5. Desarrollo de la Sesión**"
+        ],
+        [
+          295,
+          "1. Análisis del expediente."
+        ],
+        [
+          296,
+          "2. Valoración de los antecedentes y elementos aportados."
+        ],
+        [
+          297,
+          "3. Deliberación de los integrantes del Comité."
+        ],
+        [
+          298,
+          "4. Determinación institucional."
+        ],
+        [
+          299,
+          "**6. Consideraciones**"
+        ],
+        [
+          303,
+          "**7. Resolución**"
+        ],
+        [
+          307,
+          "**8. Efectos de la Resolución**"
+        ],
+        [
+          311,
+          "**9. Clausura**"
+        ]
+      ]
+    },
+    "fillable_fields_count": 34,
+    "checkbox_count": 18,
+    "articles": [],
+    "solemn_clauses": [
+      [
+        30,
+        "### PRIMERO. DE LA DECLARACIÓN DE CONOCIMIENTO"
+      ],
+      [
+        37,
+        "### SEGUNDO. DE LA ACEPTACIÓN Y ADHESIÓN EXPRESA"
+      ],
+      [
+        44,
+        "### TERCERO. DEL COMPROMISO DE CUMPLIMIENTO"
+      ],
+      [
+        51,
+        "### CUARTO. DEL ALCANCE DE LA ADHESIÓN"
+      ],
+      [
+        62,
+        "### QUINTO. DE LA VIGENCIA"
+      ]
+    ],
+    "transitorios": [],
+    "signature_cues": [
+      [
+        68,
+        "**Atentamente,**"
+      ],
+      [
+        72,
+        "C. ____________________________________________"
+      ],
+      [
+        99,
+        "Atentamente,"
+      ],
+      [
+        192,
+        "Atentamente,"
+      ]
+    ]
+  },
+  "11_reglamento_asamblea_familia.md": {
+    "file": "11_reglamento_asamblea_familia.md",
+    "sha256": "52034B382BA0F3137016F1F8BE8F20AB2C76D134E9DEEC1160BE55ABFAD724D3",
+    "bytes": 10866,
+    "char_count": 10663,
+    "word_count": 1484,
+    "lines_total": 177,
+    "frontmatter": {
+      "title": "Reglamento de la Asamblea de Familia",
+      "company": "Poliductos Flexibles, S.A. de C.V.",
+      "brand": "POLIFLEX",
+      "family": "Familia Velasco Chedraui",
+      "version": "2.0",
+      "date": "Agosto 2026",
+      "location": "Coatepec, Veracruz, México"
+    },
+    "headings": {
+      "h1": [
+        [
+          3,
+          "Reglamento de la Asamblea de Familia"
+        ]
+      ],
+      "h2": [
+        [
+          6,
+          "CAPÍTULO I"
+        ],
+        [
+          25,
+          "CAPÍTULO II"
+        ],
+        [
+          43,
+          "CAPÍTULO III"
+        ],
+        [
+          68,
+          "CAPÍTULO IV"
+        ],
+        [
+          93,
+          "CAPÍTULO V"
+        ],
+        [
+          113,
+          "CAPÍTULO VI"
+        ],
+        [
+          125,
+          "CAPÍTULO VII"
+        ],
+        [
+          146,
+          "CAPÍTULO VIII"
+        ]
+      ],
+      "h3": [
+        [
+          11,
+          "Artículo 1. Del Objeto y Alcance"
+        ],
+        [
+          18,
+          "Artículo 2. De la Prevalencia del Protocolo Familiar"
+        ],
+        [
+          30,
+          "Artículo 3. De la Integración"
+        ],
+        [
+          48,
+          "Artículo 4. De las Convocatorias"
+        ],
+        [
+          73,
+          "Artículo 5. De la Instalación de la Asamblea"
+        ],
+        [
+          86,
+          "Artículo 6. Del Desarrollo de las Sesiones"
+        ],
+        [
+          98,
+          "Artículo 7. De las Votaciones"
+        ],
+        [
+          118,
+          "Artículo 8. De las Facultades"
+        ],
+        [
+          130,
+          "Artículo 9. De las Actas y Seguimiento"
+        ],
+        [
+          151,
+          "Artículo 10. De las Modalidades de Celebración"
+        ],
+        [
+          156,
+          "Artículo 11. De la Identificación de los Participantes"
+        ],
+        [
+          163,
+          "Artículo 12. De la Constancia de la Sesión"
+        ]
+      ],
+      "h4": []
+    },
+    "paragraphs_count": 45,
+    "tables": {
+      "count": 0,
+      "blocks": []
+    },
+    "lists": {
+      "alpha_count": 0,
+      "roman_lower_count": 0,
+      "roman_upper_count": 16,
+      "decimal_count": 0,
+      "bullet_count": 0,
+      "alpha_items": [],
+      "roman_lower_items": [],
+      "roman_upper_items": [
+        [
+          58,
+          "I. **Fecha y hora de la sesión;**"
+        ],
+        [
+          59,
+          "II. **Lugar de celebración o medio de conexión correspondiente;**"
+        ],
+        [
+          60,
+          "III. **Tipo de sesión;**"
+        ],
+        [
+          61,
+          "IV. **Orden del Día; y**"
+        ],
+        [
+          62,
+          "V. **Información o documentación relevante para el análisis de los asuntos a tratar.**"
+        ],
+        [
+          104,
+          "I. **Las reformas al Protocolo Familiar;**"
+        ],
+        [
+          105,
+          "II. **La incorporación de integrantes de la familia política al sistema familiar–empresarial;**"
+        ],
+        [
+          106,
+          "III. **La modificación de la estructura de los órganos de gobierno familiar, y**"
+        ],
+        [
+          107,
+          "IV. **Cualquier supuestos expresamente señalado en el Protocolo Familiar.**"
+        ],
+        [
+          134,
+          "I. **Fecha, hora y lugar de celebración;**"
+        ],
+        [
+          135,
+          "II. **Lista de asistencia;**"
+        ],
+        [
+          136,
+          "III. **Verificación de quórum;**"
+        ],
+        [
+          137,
+          "IV. **Orden del Día;**"
+        ],
+        [
+          138,
+          "V. **Síntesis de las deliberaciones y, en su caso, de las posiciones relevantes expresamente solicitadas para constancia;**"
+        ],
+        [
+          139,
+          "VI. **Acuerdos adoptados; y**"
+        ],
+        [
+          140,
+          "VII. **Resultado de las votaciones correspondientes.**"
+        ]
+      ],
+      "decimal_items": []
+    },
+    "fillable_fields_count": 0,
+    "checkbox_count": 0,
+    "articles": [
+      [
+        11,
+        "### Artículo 1. Del Objeto y Alcance"
+      ],
+      [
+        18,
+        "### Artículo 2. De la Prevalencia del Protocolo Familiar"
+      ],
+      [
+        30,
+        "### Artículo 3. De la Integración"
+      ],
+      [
+        48,
+        "### Artículo 4. De las Convocatorias"
+      ],
+      [
+        73,
+        "### Artículo 5. De la Instalación de la Asamblea"
+      ],
+      [
+        86,
+        "### Artículo 6. Del Desarrollo de las Sesiones"
+      ],
+      [
+        98,
+        "### Artículo 7. De las Votaciones"
+      ],
+      [
+        118,
+        "### Artículo 8. De las Facultades"
+      ],
+      [
+        130,
+        "### Artículo 9. De las Actas y Seguimiento"
+      ],
+      [
+        151,
+        "### Artículo 10. De las Modalidades de Celebración"
+      ],
+      [
+        156,
+        "### Artículo 11. De la Identificación de los Participantes"
+      ],
+      [
+        163,
+        "### Artículo 12. De la Constancia de la Sesión"
+      ]
+    ],
+    "solemn_clauses": [],
+    "transitorios": [
+      [
+        167,
+        "**TRANSITORIO ÚNICO**"
+      ]
+    ],
+    "signature_cues": []
+  },
+  "12_reglamento_consejo_familia.md": {
+    "file": "12_reglamento_consejo_familia.md",
+    "sha256": "FDE5F0D62F99B198D4C238E36225AE62770C4C9255371715B0292DA12CB0EA18",
+    "bytes": 9180,
+    "char_count": 9014,
+    "word_count": 1297,
+    "lines_total": 162,
+    "frontmatter": {
+      "title": "Reglamento del Consejo de Familia",
+      "company": "Poliductos Flexibles, S.A. de C.V.",
+      "brand": "POLIFLEX",
+      "family": "Familia Velasco Chedraui",
+      "version": "2.0",
+      "date": "Agosto 2026",
+      "location": "Coatepec, Veracruz, México"
+    },
+    "headings": {
+      "h1": [
+        [
+          3,
+          "Reglamento del Consejo de Familia"
+        ]
+      ],
+      "h2": [
+        [
+          6,
+          "CAPÍTULO I"
+        ],
+        [
+          23,
+          "CAPÍTULO II"
+        ],
+        [
+          49,
+          "CAPÍTULO III"
+        ],
+        [
+          71,
+          "CAPÍTULO IV"
+        ],
+        [
+          88,
+          "CAPÍTULO V"
+        ],
+        [
+          106,
+          "CAPÍTULO VIDE LAS ACTAS Y REGISTRO DE ACUERDOS"
+        ],
+        [
+          125,
+          "CAPÍTULO VIIDE LAS VACANTES Y SUSTITUCIONES"
+        ],
+        [
+          135,
+          "CAPÍTULO VIIIDE LAS MODALIDADES DE SESIONES"
+        ],
+        [
+          143,
+          "CAPÍTULO IXDE LA INTERPRETACIÓN Y CASOS NO PREVISTOS"
+        ]
+      ],
+      "h3": [
+        [
+          11,
+          "Artículo 1. Del Objeto y Alcance"
+        ],
+        [
+          16,
+          "Artículo 2. De la Prevalencia del Protocolo Familiar"
+        ],
+        [
+          28,
+          "Artículo 3. De la Integración"
+        ],
+        [
+          42,
+          "Artículo 4. De la Designación"
+        ],
+        [
+          54,
+          "Artículo 5. De las Sesiones"
+        ],
+        [
+          76,
+          "Artículo 6. De la Instalación"
+        ],
+        [
+          81,
+          "Artículo 7. De las Votaciones"
+        ],
+        [
+          93,
+          "Artículo 8. De las Facultades"
+        ],
+        [
+          109,
+          "Artículo 9. De las Actas y Seguimiento"
+        ],
+        [
+          128,
+          "Artículo 10. De las Vacantes"
+        ],
+        [
+          138,
+          "Artículo 11. De las Modalidades de Celebración"
+        ],
+        [
+          146,
+          "Artículo 12. De los Casos No Previstos."
+        ]
+      ],
+      "h4": []
+    },
+    "paragraphs_count": 33,
+    "tables": {
+      "count": 0,
+      "blocks": []
+    },
+    "lists": {
+      "alpha_count": 0,
+      "roman_lower_count": 0,
+      "roman_upper_count": 22,
+      "decimal_count": 0,
+      "bullet_count": 0,
+      "alpha_items": [],
+      "roman_lower_items": [],
+      "roman_upper_items": [
+        [
+          32,
+          "I. Presidente;"
+        ],
+        [
+          33,
+          "II. Secretario; y"
+        ],
+        [
+          34,
+          "III. Tres Vocales."
+        ],
+        [
+          60,
+          "I. Fecha y hora de la sesión;"
+        ],
+        [
+          61,
+          "II. Lugar de celebración o medio de conexión correspondiente;"
+        ],
+        [
+          62,
+          "III. Orden del Día; y"
+        ],
+        [
+          63,
+          "IV. Información o documentación relevante para el análisis de los asuntos a tratar."
+        ],
+        [
+          97,
+          "I. Vigilar y dar seguimiento al cumplimiento del Protocolo Familiar;"
+        ],
+        [
+          98,
+          "II. Ejecutar y dar seguimiento a los acuerdos adoptados por la Asamblea de Familia;"
+        ],
+        [
+          99,
+          "III. Preparar y presentar a la Asamblea de Familia los asuntos que deban ser sometidos a su consideración;"
+        ],
+        [
+          100,
+          "IV. Promover la integración, comunicación, formación y desarrollo de los miembros de la familia empresaria;"
+        ],
+        [
+          101,
+          "V. Dar seguimiento a los procesos de sucesión y continuidad generacional previstos en el Protocolo Familiar;"
+        ],
+        [
+          102,
+          "VI. Coordinar la interacción institucional entre los órganos de gobierno familiar para efectos de comunicación, seguimiento de acuerdos y adecuada articulación de sus funciones, sin intervenir en las facultades exclusivas de cada órgano ni en la gestión operativa, técnica o administrativa de la Empresa;"
+        ],
+        [
+          103,
+          "VII. Remitir al Comité de Honor Familiar aquellos asuntos que, por su naturaleza, deban ser conocidos por dicho órgano, y"
+        ],
+        [
+          104,
+          "VIII. Ejecutar y dar seguimiento a las determinaciones emitidas por el Comité de Honor Familiar cuando así lo disponga el Protocolo Familiar, sin que ello implique facultades para modificar, revisar o sustituir las resoluciones adoptadas por dicho órgano."
+        ],
+        [
+          113,
+          "I. Fecha, hora y lugar de celebración;"
+        ],
+        [
+          114,
+          "II. Lista de asistencia;"
+        ],
+        [
+          115,
+          "III. Verificación de quórum;"
+        ],
+        [
+          116,
+          "IV. Orden del Día;"
+        ],
+        [
+          117,
+          "V. Síntesis de las deliberaciones;"
+        ],
+        [
+          118,
+          "VI. Acuerdos adoptados; y"
+        ],
+        [
+          119,
+          "VII. Resultado de las votaciones correspondientes."
+        ]
+      ],
+      "decimal_items": []
+    },
+    "fillable_fields_count": 0,
+    "checkbox_count": 0,
+    "articles": [
+      [
+        11,
+        "### Artículo 1. Del Objeto y Alcance"
+      ],
+      [
+        16,
+        "### Artículo 2. De la Prevalencia del Protocolo Familiar"
+      ],
+      [
+        28,
+        "### Artículo 3. De la Integración"
+      ],
+      [
+        42,
+        "### Artículo 4. De la Designación"
+      ],
+      [
+        54,
+        "### Artículo 5. De las Sesiones"
+      ],
+      [
+        76,
+        "### Artículo 6. De la Instalación"
+      ],
+      [
+        81,
+        "### Artículo 7. De las Votaciones"
+      ],
+      [
+        93,
+        "### Artículo 8. De las Facultades"
+      ],
+      [
+        109,
+        "### Artículo 9. De las Actas y Seguimiento"
+      ],
+      [
+        128,
+        "### Artículo 10. De las Vacantes"
+      ],
+      [
+        138,
+        "### Artículo 11. De las Modalidades de Celebración"
+      ],
+      [
+        146,
+        "### Artículo 12. De los Casos No Previstos."
+      ]
+    ],
+    "solemn_clauses": [],
+    "transitorios": [
+      [
+        152,
+        "**TRANSITORIO ÚNICO**"
+      ]
+    ],
+    "signature_cues": []
+  },
+  "13_reglamento_comite_honor_familiar.md": {
+    "file": "13_reglamento_comite_honor_familiar.md",
+    "sha256": "8662411CBAA2AAD718F4F48D0CE6083250D6935349530843966DC2A00140C23B",
+    "bytes": 10154,
+    "char_count": 9961,
+    "word_count": 1377,
+    "lines_total": 167,
+    "frontmatter": {
+      "title": "Reglamento del Comité de Honor Familiar",
+      "company": "Poliductos Flexibles, S.A. de C.V.",
+      "brand": "POLIFLEX",
+      "family": "Familia Velasco Chedraui",
+      "version": "2.0",
+      "date": "Agosto 2026",
+      "location": "Coatepec, Veracruz, México"
+    },
+    "headings": {
+      "h1": [
+        [
+          3,
+          "Reglamento del Comité de Honor Familiar"
+        ]
+      ],
+      "h2": [
+        [
+          6,
+          "CAPÍTULO I"
+        ],
+        [
+          25,
+          "CAPÍTULO II"
+        ],
+        [
+          48,
+          "CAPÍTULO III"
+        ],
+        [
+          66,
+          "CAPÍTULO IV"
+        ],
+        [
+          83,
+          "CAPÍTULO V"
+        ],
+        [
+          101,
+          "CAPÍTULO VI"
+        ],
+        [
+          115,
+          "CAPÍTULO VII"
+        ],
+        [
+          134,
+          "CAPÍTULO VIII"
+        ],
+        [
+          146,
+          "CAPÍTULO IX"
+        ]
+      ],
+      "h3": [
+        [
+          11,
+          "Artículo 1. Del Objeto y Alcance"
+        ],
+        [
+          18,
+          "Artículo 2. De la Prevalencia del Protocolo Familiar"
+        ],
+        [
+          30,
+          "Artículo 3. De la Integración"
+        ],
+        [
+          41,
+          "Artículo 4. De la Designación, Duración y Remoción"
+        ],
+        [
+          53,
+          "Artículo 5. De las Sesiones y Convocatorias"
+        ],
+        [
+          71,
+          "Artículo 6. De la Instalación del Comité"
+        ],
+        [
+          76,
+          "Artículo 7. De la Adopción de Acuerdos"
+        ],
+        [
+          88,
+          "Artículo 8. De las Atribuciones"
+        ],
+        [
+          106,
+          "Artículo 9. De los Conflictos de Interés"
+        ],
+        [
+          120,
+          "Artículo 10. De las Actas y del Registro"
+        ],
+        [
+          139,
+          "Artículo 11. De la Confidencialidad"
+        ],
+        [
+          151,
+          "Artículo 12. De los Casos No Previstos"
+        ]
+      ],
+      "h4": []
+    },
+    "paragraphs_count": 37,
+    "tables": {
+      "count": 0,
+      "blocks": []
+    },
+    "lists": {
+      "alpha_count": 0,
+      "roman_lower_count": 0,
+      "roman_upper_count": 19,
+      "decimal_count": 0,
+      "bullet_count": 0,
+      "alpha_items": [],
+      "roman_lower_items": [],
+      "roman_upper_items": [
+        [
+          59,
+          "I. **Fecha y hora de la sesión;**"
+        ],
+        [
+          60,
+          "II. **Lugar de celebración o medio de conexión correspondiente;**"
+        ],
+        [
+          61,
+          "III. **Asunto o asuntos a tratar; y**"
+        ],
+        [
+          62,
+          "IV. **Información o documentación relevante para el análisis de los asuntos correspondientes.**"
+        ],
+        [
+          92,
+          "I. **Conocer los asuntos que le sean sometidos conforme a las disposiciones del Protocolo Familiar;**"
+        ],
+        [
+          93,
+          "II. **Promover mecanismos de diálogo, conciliación y entendimiento entre los integrantes de la familia empresaria cuando ello resulte procedente;**"
+        ],
+        [
+          94,
+          "III. **Emitir las recomendaciones, opiniones, determinaciones y resoluciones que correspondan conforme al Protocolo Familiar, incluyendo aquellas que resulten necesarias para la aplicación del régimen disciplinario, sancionador o de exclusión previsto en dicho instrumento;**"
+        ],
+        [
+          95,
+          "IV. **Dar seguimiento al cumplimiento de las medidas, acuerdos o determinaciones adoptadas conforme al Protocolo Familiar;**"
+        ],
+        [
+          96,
+          "V. **Informar a la Asamblea de Familia o al Consejo de Familia sobre aquellos asuntos que deban ser de su conocimiento;**"
+        ],
+        [
+          97,
+          "VI. **Ejercer las demás atribuciones que le confieran el Protocolo Familiar y los acuerdos válidamente adoptados por los órganos de gobierno familiar;**"
+        ],
+        [
+          98,
+          "VII. **Interpretar las disposiciones del Protocolo Familiar dentro del ámbito de su competencia y para efectos de la atención de los asuntos sometidos a su conocimiento, y**"
+        ],
+        [
+          99,
+          "VIII. **Resolver los procedimientos cuya competencia le atribuya expresamente el Protocolo Familiar, incluyendo aquellos relacionados con la exclusión de integrantes del sistema familiar–empresarial, sin perjuicio de las facultades de ejecución que correspondan al Consejo de Familia conforme al propio Protocolo.**"
+        ],
+        [
+          124,
+          "I. **Fecha, hora y lugar de celebración;**"
+        ],
+        [
+          125,
+          "II. **Lista de asistencia;**"
+        ],
+        [
+          126,
+          "III. **Verificación de quórum;**"
+        ],
+        [
+          127,
+          "IV. **Asuntos tratados;**"
+        ],
+        [
+          128,
+          "V. **Síntesis de las deliberaciones;**"
+        ],
+        [
+          129,
+          "VI. **Acuerdos, recomendaciones o determinaciones adoptadas; y**"
+        ],
+        [
+          130,
+          "VII. **Resultado de las votaciones correspondientes.**"
+        ]
+      ],
+      "decimal_items": []
+    },
+    "fillable_fields_count": 0,
+    "checkbox_count": 0,
+    "articles": [
+      [
+        11,
+        "### Artículo 1. Del Objeto y Alcance"
+      ],
+      [
+        18,
+        "### Artículo 2. De la Prevalencia del Protocolo Familiar"
+      ],
+      [
+        30,
+        "### Artículo 3. De la Integración"
+      ],
+      [
+        41,
+        "### Artículo 4. De la Designación, Duración y Remoción"
+      ],
+      [
+        53,
+        "### Artículo 5. De las Sesiones y Convocatorias"
+      ],
+      [
+        71,
+        "### Artículo 6. De la Instalación del Comité"
+      ],
+      [
+        76,
+        "### Artículo 7. De la Adopción de Acuerdos"
+      ],
+      [
+        88,
+        "### Artículo 8. De las Atribuciones"
+      ],
+      [
+        106,
+        "### Artículo 9. De los Conflictos de Interés"
+      ],
+      [
+        120,
+        "### Artículo 10. De las Actas y del Registro"
+      ],
+      [
+        139,
+        "### Artículo 11. De la Confidencialidad"
+      ],
+      [
+        151,
+        "### Artículo 12. De los Casos No Previstos"
+      ]
+    ],
+    "solemn_clauses": [],
+    "transitorios": [
+      [
+        157,
+        "**TRANSITORIO ÚNICO**"
+      ]
+    ],
+    "signature_cues": []
+  }
+}

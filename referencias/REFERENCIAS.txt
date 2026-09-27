@@ -1,0 +1,60 @@
+PROTOCOLO FAMILIAR
+font family: Minion Pro
+font style: Medium Display
+size: 33.4913 pt
+leading: 33 pt
+tracking: 19
+color: 2e2f31
+
+VISIÓN UNIDAD LEGADO
+font family: Neuzeit Grotesk
+font style: Regular
+size: 7.9077 pt
+leading: 7.4559 pt
+tracking: 371
+color: 2e2f31
+
+UN FUTURO QUE CONSTRUIMOS
+font family: Neuzeit Grotesk
+font style: Regular
+size: 4.8234 pt
+tracking: 371
+leading: 4.5478 pt
+color: 6c6b67
+
+JUNTOS.
+font family: Neuzeit Grotesk
+font style: Regular
+size: 4.8234 pt
+tracking: 371
+leading: 4.5478 pt
+color: f15e22
+stroke: 0.2 pt
+stroke color: f15e22
+
+VERSION 1.0
+font family: Neuzeit Grotesk
+font style: Regular
+size: 4.8234 pt
+tracking: 371
+leading: 4.5478 pt
+color: f15e22
+stroke: 0.2 pt
+stroke color: f15e22
+
+
+AGOSTO 2026
+font family: Neuzeit Grotesk
+font style: Regular
+size: 4.8234 pt
+tracking: 371
+leading: 4.5478 pt
+color: 6c6b67
+
+
+
+
+
+
+
+

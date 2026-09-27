@@ -1,0 +1,301 @@
+{
+  "fase": "4.2",
+  "proyecto": "Protocolo Familiar POLIFLEX",
+  "fecha": "Septiembre 2026",
+  "estado": "ARQUITECTURA_EDITORIAL_COMPLETA",
+  "cumplimiento_restricciones": {
+    "fuentes_canonicas_modificadas": false,
+    "componentes_locked_modificados": false,
+    "componentes_nuevos_implementados": 0,
+    "pdf_produccion_generado": false,
+    "toc_requiere_desbloqueo": true
+  },
+  "orden_documental": {
+    "secuencia_actual_archivos": [
+      "00_introduccion.md",
+      "01_capitulo1_declaracion_principios.md",
+      "02_capitulo2_propiedad_control_liquidez.md",
+      "03_capitulo3_gobierno_profesionalizacion.md",
+      "04_capitulo4_sucesion_familiar.md",
+      "05_capitulo5_control_informacion_comunicacion.md",
+      "06_capitulo6_disciplina_financiera.md",
+      "07_capitulo7_procedimiento_sancionador.md",
+      "08_capitulo8_solucion_conflictos.md",
+      "09_capitulo9_regimen_juridico.md",
+      "10_anexos_formatos_operativos.md",
+      "11_reglamento_asamblea_familia.md",
+      "12_reglamento_consejo_familia.md",
+      "13_reglamento_comite_honor_familiar.md"
+    ],
+    "orden_editorial_recomendado": "PRELIMINARES (Portada, TOC, Introducción) -> CUERPO PRINCIPAL (Capítulos 01–09) -> REGLAMENTOS (11–13) -> ANEXOS Y FORMATOS OPERATIVOS (10)",
+    "razon_juridica": "Los reglamentos contienen las normas orgánicas de los órganos de gobierno, mientras que los anexos contienen los formatos operativos derivados de dichas normas (actas y convocatorias)."
+  },
+  "taxonomia_aperturas": [
+    {
+      "nivel": 1,
+      "denominacion": "Obra Completa",
+      "componente": "cover-page()",
+      "posicion": "Recto (p. 1)",
+      "genera_verso_blanco": true
+    },
+    {
+      "nivel": 2,
+      "denominacion": "Preliminares Nobles (Introducción)",
+      "componente": "introduction-page()",
+      "posicion": "Recto (p. 5)",
+      "genera_verso_blanco": true
+    },
+    {
+      "nivel": 3,
+      "denominacion": "Capítulos Principales (01-09)",
+      "componente": "chapter-opening()",
+      "posicion": "Recto impar",
+      "genera_verso_blanco": true
+    },
+    {
+      "nivel": 4,
+      "denominacion": "Módulos Mayores (Reglamentos / Anexos)",
+      "componente": "module-opening()",
+      "posicion": "Recto impar",
+      "genera_verso_blanco": true
+    },
+    {
+      "nivel": 5,
+      "denominacion": "Reglamentos Individuales",
+      "componente": "regulation-header()",
+      "posicion": "Recto impar",
+      "genera_verso_blanco": false
+    },
+    {
+      "nivel": 6,
+      "denominacion": "Formatos Operativos Individuales",
+      "componente": "legal-form-container()",
+      "posicion": "Página nueva (Recto o Verso)",
+      "genera_verso_blanco": false
+    }
+  ],
+  "modulos": {
+    "introduccion": {
+      "archivo": "capitulos/00_introduccion.md",
+      "palabras": 305,
+      "parrafos": 6,
+      "caracter": "institucional_ceremonial_narrativo",
+      "alternativas": {
+        "alternativa_a": {
+          "nombre": "Página Noble Unitaria en Recto con Verso Blanco Posterior",
+          "recomendada": true,
+          "ventajas": "Elegancia, concisión, cero huérfanas, lectura completa de un solo vistazo.",
+          "riesgos": "Ajuste milimétrico de espaciado interparrafal.",
+          "consistencia_poliflex": "Óptima",
+          "complejidad": "Baja"
+        },
+        "alternativa_b": {
+          "nombre": "Pliego Ceremonial Extendido (Díptico a 2 páginas)",
+          "recomendada": false,
+          "ventajas": "Ritmo muy solemne.",
+          "riesgos": "Dilución del texto y sensación de desierto tipográfico.",
+          "consistencia_poliflex": "Media",
+          "complejidad": "Media"
+        },
+        "alternativa_c": {
+          "nombre": "Apertura Integrada sin Verso Blanco Posterior",
+          "recomendada": false,
+          "ventajas": "Ahorro de papel.",
+          "riesgos": "Resta solemnidad al inicio del Capítulo 01.",
+          "consistencia_poliflex": "Baja",
+          "complejidad": "Baja"
+        }
+      }
+    },
+    "reglamentos": {
+      "archivos": [
+        "capitulos/11_reglamento_asamblea_familia.md",
+        "capitulos/12_reglamento_consejo_familia.md",
+        "capitulos/13_reglamento_comite_honor_familiar.md"
+      ],
+      "metricas": {
+        "reglamentos_count": 3,
+        "capitulos_internos_count": 26,
+        "articulos_count": 36,
+        "transitorios_count": 3,
+        "parrafos_count": 121,
+        "palabras_count": 4162
+      },
+      "diferenciacion_capitulo_01_vs_capitulo_i": {
+        "numeracion": "Arábiga (01-09) en cuerpo principal vs Romana (I-IX) en reglamentos",
+        "apertura": "Pliego monumental con arco y puntos vs Portadilla sobria / Encabezado de módulo",
+        "escala": "40-60pt título principal vs 11-13pt encabezado H2",
+        "running_header": "Título de capítulo vs REGLAMENTO: ÓRGANO · CAPÍTULO ROMANO"
+      },
+      "alternativas": {
+        "alternativa_a": {
+          "nombre": "Módulo con Portadilla Noble Individual en Recto y Flujo Continuo Interno",
+          "recomendada": true,
+          "ventajas": "Autonomía orgánica para cada reglamento, articulado encadenado sin páginas vacías.",
+          "riesgos": "Añade 6 páginas de transición en total.",
+          "consistencia_poliflex": "Óptima",
+          "complejidad": "Media"
+        },
+        "alternativa_b": {
+          "nombre": "Encabezado de Apertura Directa en Recto (Sin Portadilla Exclusiva)",
+          "recomendada": false,
+          "ventajas": "Ahorro de 6 páginas.",
+          "riesgos": "Entrada abrupta a cuerpos jurídicos relevantes.",
+          "consistencia_poliflex": "Media",
+          "complejidad": "Baja"
+        },
+        "alternativa_c": {
+          "nombre": "Compilación Continua Unificada",
+          "recomendada": false,
+          "ventajas": "Máxima compacidad.",
+          "riesgos": "Difumina la frontera entre los tres órganos de gobierno.",
+          "consistencia_poliflex": "Baja",
+          "complejidad": "Mínima"
+        }
+      }
+    },
+    "anexos": {
+      "archivo": "capitulos/10_anexos_formatos_operativos.md",
+      "unidades_count": 7,
+      "unidades": [
+        "Aviso de Exclusividad y Personalización",
+        "Carta de Aceptación y Adhesión al Protocolo Familiar",
+        "Convocatoria de Asamblea de Familia",
+        "Acta de Asamblea General Familiar",
+        "Convocatoria a Sesión de Consejo de Familia",
+        "Acta de Sesión del Consejo de Familia",
+        "Acta de Constitución y Sesión del Comité de Honor Familiar"
+      ],
+      "diagnostico_clasificacion": "Formatos Operativos e Instrumentos Jurídicos Autónomos dentro de la sección maestra Anexos.",
+      "auditoria_tablas": [
+        {
+          "tabla": 1,
+          "linea": 126,
+          "unidad": "Acta de Asamblea",
+          "columnas": 5,
+          "filas": 4,
+          "ancho_util_pt": 314.56,
+          "requiere_landscape": false
+        },
+        {
+          "tabla": 2,
+          "linea": 165,
+          "unidad": "Acta de Asamblea",
+          "columnas": 4,
+          "filas": 3,
+          "ancho_util_pt": 314.56,
+          "requiere_landscape": false
+        },
+        {
+          "tabla": 3,
+          "linea": 219,
+          "unidad": "Acta de Consejo",
+          "columnas": 4,
+          "filas": 3,
+          "ancho_util_pt": 314.56,
+          "requiere_landscape": false
+        },
+        {
+          "tabla": 4,
+          "linea": 257,
+          "unidad": "Acta de Consejo",
+          "columnas": 3,
+          "filas": 4,
+          "ancho_util_pt": 314.56,
+          "requiere_landscape": false
+        },
+        {
+          "tabla": 5,
+          "linea": 273,
+          "unidad": "Acta de Comité",
+          "columnas": 3,
+          "filas": 3,
+          "ancho_util_pt": 314.56,
+          "requiere_landscape": false
+        },
+        {
+          "tabla": 6,
+          "linea": 323,
+          "unidad": "Acta de Comité",
+          "columnas": 3,
+          "filas": 3,
+          "ancho_util_pt": 314.56,
+          "requiere_landscape": false
+        }
+      ],
+      "auditoria_firmas": {
+        "firmas_individuales": 3,
+        "tablas_firmas_colegiadas": 4,
+        "regla_keep_together": true
+      },
+      "alternativas": {
+        "alternativa_a": {
+          "nombre": "Sección con Portadilla General y Formatos con Inicio en Nueva Página",
+          "recomendada": true,
+          "ventajas": "Formatos autocontenidos, imprimibles y extraíbles individualmente; máxima utilidad.",
+          "riesgos": "Control riguroso de padding para no desbordar en páginas residuales.",
+          "consistencia_poliflex": "Óptima",
+          "complejidad": "Media"
+        },
+        "alternativa_b": {
+          "nombre": "Flujo Continuo sin Salto Forzado de Página",
+          "recomendada": false,
+          "ventajas": "Menor cantidad de páginas.",
+          "riesgos": "Formatos mutilados; totalmente inoperable para uso práctico.",
+          "consistencia_poliflex": "Inaceptable",
+          "complejidad": "Baja"
+        },
+        "alternativa_c": {
+          "nombre": "Formatos Forzados Exclusivamente a Recto (Página Impar)",
+          "recomendada": false,
+          "ventajas": "Uniformidad de apertura.",
+          "riesgos": "Inflación innecesaria de páginas blancas intermedias.",
+          "consistencia_poliflex": "Media",
+          "complejidad": "Media"
+        }
+      }
+    }
+  },
+  "catalogo_componentes_candidatos": [
+    {
+      "nombre": "module-opening()",
+      "estado": "NUEVO_CANDIDATO",
+      "descripcion": "Portadilla noble para macro-secciones (Módulo de Reglamentos y Módulo de Anexos). Fusiona annex-cover y regulation-opening."
+    },
+    {
+      "nombre": "introduction-page()",
+      "estado": "MANTENER_CANDIDATO",
+      "descripcion": "Layout noble en Recto para la página única de Introducción."
+    },
+    {
+      "nombre": "regulation-header()",
+      "estado": "MANTENER_CANDIDATO",
+      "descripcion": "Encabezado noble superior para apertura de cada uno de los 3 reglamentos."
+    },
+    {
+      "nombre": "legal-form-container()",
+      "estado": "MANTENER_CANDIDATO",
+      "descripcion": "Contenedor de página autocontenida para cada uno de los 7 formatos operativos."
+    },
+    {
+      "nombre": "signature-block()",
+      "estado": "MANTENER_CANDIDATO",
+      "descripcion": "Bloque atómico indivisible de rúbrica individual con protección anti-huérfana."
+    },
+    {
+      "nombre": "table-style()",
+      "estado": "EXTENDER_EXISTENTE",
+      "descripcion": "Extensión de la función existente en componentes.typ para filas de rúbrica manual."
+    },
+    {
+      "nombre": "regulation-page()",
+      "estado": "DESCARTADO",
+      "descripcion": "Descartado; hereda directamente de interior-page() para preservar la unidad de obra."
+    },
+    {
+      "nombre": "legal-article()",
+      "estado": "DESCARTADO",
+      "descripcion": "Descartado; se gestiona limpiamente mediante reglas de estilo Typst show heading."
+    }
+  ]
+}

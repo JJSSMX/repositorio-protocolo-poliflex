@@ -1,0 +1,96 @@
+================================================================================
+INFORME DE AUDITORÍA DE TEXTO Y UNICODE — FASE 3.9.3
+Protocolo Familiar · Poliductos Flexibles, S.A. de C.V. (POLIFLEX)
+================================================================================
+
+Total caracteres analizados en PDF: 166,281
+Total glifos / caracteres distintos: 83
+Anomalías críticas detectadas (U+FFFD, U+FFFE, etc.): 0
+
+ESTADO DE UNICODE: PASS (0 caracteres corruptos)
+
+TABLA DE TODOS LOS CARACTERES PRESENTES EN EL DOCUMENTO:
+--------------------------------------------------------------------------------
+U+000A |   2546 apariciones | '\n'     | UNKNOWN
+U+0020 |  24600 apariciones | ' '      | SPACE
+U+0025 |      3 apariciones | '%'      | PERCENT SIGN
+U+0028 |      4 apariciones | '('      | LEFT PARENTHESIS
+U+0029 |     49 apariciones | ')'      | RIGHT PARENTHESIS
+U+002C |   1465 apariciones | ','      | COMMA
+U+002D |      5 apariciones | '-'      | HYPHEN-MINUS
+U+002E |   1048 apariciones | '.'      | FULL STOP
+U+0030 |    231 apariciones | '0'      | DIGIT ZERO
+U+0031 |    216 apariciones | '1'      | DIGIT ONE
+U+0032 |    162 apariciones | '2'      | DIGIT TWO
+U+0033 |    126 apariciones | '3'      | DIGIT THREE
+U+0034 |    134 apariciones | '4'      | DIGIT FOUR
+U+0035 |     65 apariciones | '5'      | DIGIT FIVE
+U+0036 |     53 apariciones | '6'      | DIGIT SIX
+U+0037 |     49 apariciones | '7'      | DIGIT SEVEN
+U+0038 |     48 apariciones | '8'      | DIGIT EIGHT
+U+0039 |     40 apariciones | '9'      | DIGIT NINE
+U+003A |     38 apariciones | ':'      | COLON
+U+003B |     26 apariciones | ';'      | SEMICOLON
+U+0041 |    530 apariciones | 'A'      | LATIN CAPITAL LETTER A
+U+0042 |     11 apariciones | 'B'      | LATIN CAPITAL LETTER B
+U+0043 |    436 apariciones | 'C'      | LATIN CAPITAL LETTER C
+U+0044 |    157 apariciones | 'D'      | LATIN CAPITAL LETTER D
+U+0045 |    539 apariciones | 'E'      | LATIN CAPITAL LETTER E
+U+0046 |    224 apariciones | 'F'      | LATIN CAPITAL LETTER F
+U+0047 |     38 apariciones | 'G'      | LATIN CAPITAL LETTER G
+U+0048 |     10 apariciones | 'H'      | LATIN CAPITAL LETTER H
+U+0049 |    534 apariciones | 'I'      | LATIN CAPITAL LETTER I
+U+004A |     21 apariciones | 'J'      | LATIN CAPITAL LETTER J
+U+004C |    559 apariciones | 'L'      | LATIN CAPITAL LETTER L
+U+004D |    171 apariciones | 'M'      | LATIN CAPITAL LETTER M
+U+004E |    270 apariciones | 'N'      | LATIN CAPITAL LETTER N
+U+004F |    727 apariciones | 'O'      | LATIN CAPITAL LETTER O
+U+0050 |    457 apariciones | 'P'      | LATIN CAPITAL LETTER P
+U+0051 |     31 apariciones | 'Q'      | LATIN CAPITAL LETTER Q
+U+0052 |    497 apariciones | 'R'      | LATIN CAPITAL LETTER R
+U+0053 |    312 apariciones | 'S'      | LATIN CAPITAL LETTER S
+U+0054 |    309 apariciones | 'T'      | LATIN CAPITAL LETTER T
+U+0055 |    179 apariciones | 'U'      | LATIN CAPITAL LETTER U
+U+0056 |    132 apariciones | 'V'      | LATIN CAPITAL LETTER V
+U+0059 |     11 apariciones | 'Y'      | LATIN CAPITAL LETTER Y
+U+005A |      6 apariciones | 'Z'      | LATIN CAPITAL LETTER Z
+U+0061 |  13433 apariciones | 'a'      | LATIN SMALL LETTER A
+U+0062 |   1048 apariciones | 'b'      | LATIN SMALL LETTER B
+U+0063 |   8451 apariciones | 'c'      | LATIN SMALL LETTER C
+U+0064 |   6220 apariciones | 'd'      | LATIN SMALL LETTER D
+U+0065 |  15705 apariciones | 'e'      | LATIN SMALL LETTER E
+U+0066 |   1339 apariciones | 'f'      | LATIN SMALL LETTER F
+U+0067 |   1254 apariciones | 'g'      | LATIN SMALL LETTER G
+U+0068 |    525 apariciones | 'h'      | LATIN SMALL LETTER H
+U+0069 |  12496 apariciones | 'i'      | LATIN SMALL LETTER I
+U+006A |    431 apariciones | 'j'      | LATIN SMALL LETTER J
+U+006C |   6412 apariciones | 'l'      | LATIN SMALL LETTER L
+U+006D |   3420 apariciones | 'm'      | LATIN SMALL LETTER M
+U+006E |  10068 apariciones | 'n'      | LATIN SMALL LETTER N
+U+006F |  10944 apariciones | 'o'      | LATIN SMALL LETTER O
+U+0070 |   3183 apariciones | 'p'      | LATIN SMALL LETTER P
+U+0071 |    645 apariciones | 'q'      | LATIN SMALL LETTER Q
+U+0072 |   8943 apariciones | 'r'      | LATIN SMALL LETTER R
+U+0073 |   8351 apariciones | 's'      | LATIN SMALL LETTER S
+U+0074 |   6602 apariciones | 't'      | LATIN SMALL LETTER T
+U+0075 |   3768 apariciones | 'u'      | LATIN SMALL LETTER U
+U+0076 |   1349 apariciones | 'v'      | LATIN SMALL LETTER V
+U+0078 |    285 apariciones | 'x'      | LATIN SMALL LETTER X
+U+0079 |    818 apariciones | 'y'      | LATIN SMALL LETTER Y
+U+007A |    359 apariciones | 'z'      | LATIN SMALL LETTER Z
+U+00C1 |      1 apariciones | 'Á'      | LATIN CAPITAL LETTER A WITH ACUTE
+U+00C9 |     10 apariciones | 'É'      | LATIN CAPITAL LETTER E WITH ACUTE
+U+00CD |     87 apariciones | 'Í'      | LATIN CAPITAL LETTER I WITH ACUTE
+U+00D3 |     23 apariciones | 'Ó'      | LATIN CAPITAL LETTER O WITH ACUTE
+U+00DA |      3 apariciones | 'Ú'      | LATIN CAPITAL LETTER U WITH ACUTE
+U+00E1 |    669 apariciones | 'á'      | LATIN SMALL LETTER A WITH ACUTE
+U+00E9 |    253 apariciones | 'é'      | LATIN SMALL LETTER E WITH ACUTE
+U+00ED |    308 apariciones | 'í'      | LATIN SMALL LETTER I WITH ACUTE
+U+00F1 |     26 apariciones | 'ñ'      | LATIN SMALL LETTER N WITH TILDE
+U+00F3 |   1614 apariciones | 'ó'      | LATIN SMALL LETTER O WITH ACUTE
+U+00FA |     89 apariciones | 'ú'      | LATIN SMALL LETTER U WITH ACUTE
+U+00FC |      6 apariciones | 'ü'      | LATIN SMALL LETTER U WITH DIAERESIS
+U+2013 |     66 apariciones | '–'      | EN DASH
+U+2014 |      6 apariciones | '—'      | EM DASH
+U+201C |      1 apariciones | '“'      | LEFT DOUBLE QUOTATION MARK
+U+201D |      1 apariciones | '”'      | RIGHT DOUBLE QUOTATION MARK

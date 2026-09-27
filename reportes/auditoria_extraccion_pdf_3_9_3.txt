@@ -1,0 +1,16 @@
+================================================================================
+INFORME DE AUDITORÍA DE EXTRACCIÓN DE TEXTO DEL PDF — FASE 3.9.3
+Protocolo Familiar · Poliductos Flexibles, S.A. de C.V. (POLIFLEX)
+================================================================================
+
+Total palabras extraídas: 25,757
+Palabras fusionadas / camelCase anómalo detectadas: 0
+Caracteres de reemplazo (U+FFFD): 0
+Total encabezados verificados presentes en extracción: 175 de 175 (100%)
+Total secciones H2 verificadas presentes: 69 de 69 (100%)
+Total subsecciones H3 verificadas presentes: 103 de 103 (100%)
+Total sub-subsecciones H4 verificadas presentes: 3 de 3 (100%)
+
+DICTAMEN DE EXTRACCIÓN:
+  El texto extraído coincide al 100% con la estructura jurídica canónica.
+  0 anomalías críticas de extracción.

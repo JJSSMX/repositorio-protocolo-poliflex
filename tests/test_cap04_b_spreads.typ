@@ -1,0 +1,83 @@
+#set page(width: 792pt, height: 612pt, margin: 0pt)
+#let master_pdf = "/dist/TEST_CAP04_B.pdf"
+#let render-spread(verso-p, recto-p) = [
+  #grid(
+    columns: (396pt, 396pt),
+    rows: (612pt),
+    gutter: 0pt,
+    if verso-p != none {
+      image(master_pdf, page: verso-p, width: 396pt, height: 612pt)
+    } else {
+      rect(width: 396pt, height: 612pt, fill: rgb("#ffffff"))[]
+    },
+    if recto-p != none {
+      image(master_pdf, page: recto-p, width: 396pt, height: 612pt)
+    } else {
+      rect(width: 396pt, height: 612pt, fill: rgb("#ffffff"))[]
+    }
+  )
+]
+#render-spread(none, 1)
+#render-spread(2, 3)
+#render-spread(4, 5)
+#render-spread(6, 7)
+#render-spread(8, 9)
+#render-spread(10, 11)
+#render-spread(12, 13)
+#render-spread(14, 15)
+#render-spread(16, 17)
+#render-spread(18, 19)
+#render-spread(20, 21)
+#render-spread(22, 23)
+#render-spread(24, 25)
+#render-spread(26, 27)
+#render-spread(28, 29)
+#render-spread(30, 31)
+#render-spread(32, 33)
+#render-spread(34, 35)
+#render-spread(36, 37)
+#render-spread(38, 39)
+#render-spread(40, 41)
+#render-spread(42, 43)
+#render-spread(44, 45)
+#render-spread(46, 47)
+#render-spread(48, 49)
+#render-spread(50, 51)
+#render-spread(52, 53)
+#render-spread(54, 55)
+#render-spread(56, 57)
+#render-spread(58, 59)
+#render-spread(60, 61)
+#render-spread(62, 63)
+#render-spread(64, 65)
+#render-spread(66, 67)
+#render-spread(68, 69)
+#render-spread(70, 71)
+#render-spread(72, 73)
+#render-spread(74, 75)
+#render-spread(76, 77)
+#render-spread(78, 79)
+#render-spread(80, 81)
+#render-spread(82, 83)
+#render-spread(84, 85)
+#render-spread(86, 87)
+#render-spread(88, 89)
+#render-spread(90, 91)
+#render-spread(92, 93)
+#render-spread(94, 95)
+#render-spread(96, 97)
+#render-spread(98, 99)
+#render-spread(100, 101)
+#render-spread(102, 103)
+#render-spread(104, 105)
+#render-spread(106, 107)
+#render-spread(108, 109)
+#render-spread(110, 111)
+#render-spread(112, 113)
+#render-spread(114, 115)
+#render-spread(116, 117)
+#render-spread(118, 119)
+#render-spread(120, 121)
+#render-spread(122, 123)
+#render-spread(124, 125)
+#render-spread(126, none)
