@@ -21,7 +21,8 @@ DIST_DIR = os.path.join(REPO_DIR, 'dist')
 TESTS_DIR = os.path.join(REPO_DIR, 'tests')
 SCRATCH_DIR = os.path.join(REPO_DIR, 'scratch')
 FONTS_DIR = os.path.join(REPO_DIR, 'assets', 'fonts')
-ARTIFACT_DIR = r"C:\Users\JJSS\.gemini\antigravity-cli\brain\44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2"
+from pathlib import Path
+ARTIFACT_DIR = os.environ.get("ANTIGRAVITY_ARTIFACTS_DIR") or str(Path.home() / ".gemini" / "antigravity-cli" / "brain" / "44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2")
 
 os.makedirs(DIST_DIR, exist_ok=True)
 os.makedirs(TESTS_DIR, exist_ok=True)

@@ -7,7 +7,8 @@ import difflib
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-REPO_ROOT = os.path.abspath(r'C:\Users\JJSS\Desktop\ABC\repositorio_protocolo')
+from pathlib import Path
+REPO_ROOT = str(Path(__file__).resolve().parent.parent)
 
 INITIAL_HASHES = {
     'capitulos/00_introduccion.md': 'DEEECA7863249DB1348BEF6138E0DAEDA35B5120658459D0362309E543FECAD8',

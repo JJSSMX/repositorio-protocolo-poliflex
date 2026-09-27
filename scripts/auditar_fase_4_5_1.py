@@ -1,18 +1,43 @@
 import os
 import sys
 import hashlib
-import json
-import pymupdf
+import subprocess
 
-WORKSPACE_ROOT = "C:/Users/JJSS/Desktop/ABC/repositorio_protocolo"
-ARTIFACT_DIR = "C:/Users/JJSS/.gemini/antigravity-cli/brain/44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2"
+try:
+    import pymupdf
+    HAS_PYMUPDF = True
+except ImportError:
+    HAS_PYMUPDF = False
+
+from pathlib import Path
+WORKSPACE_ROOT = str(Path(__file__).resolve().parent.parent)
+ARTIFACT_DIR = os.environ.get("ANTIGRAVITY_ARTIFACTS_DIR") or str(Path.home() / ".gemini" / "antigravity-cli" / "brain" / "44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2")
+
+import json
+
+def get_pdf_page_count(path):
+    if HAS_PYMUPDF:
+        return len(pymupdf.open(path))
+    res = subprocess.run(["pdfinfo", path], capture_output=True, text=True, check=True)
+    for line in res.stdout.splitlines():
+        if line.startswith("Pages:"):
+            return int(line.split(":")[1].strip())
+    return 0
+
+def get_pdf_page_text(path, page_idx):
+    if HAS_PYMUPDF:
+        return pymupdf.open(path)[page_idx].get_text()
+    p_num = page_idx + 1
+    res = subprocess.run(["pdftotext", "-f", str(p_num), "-l", str(p_num), path, "-"], capture_output=True, text=True, check=True)
+    return res.stdout
 
 def sha256_file(path):
-    h = hashlib.sha256()
     with open(path, "rb") as f:
-        while chunk := f.read(8192):
-            h.update(chunk)
-    return h.hexdigest().upper()
+        data = f.read()
+    if path.endswith(".md"):
+        # Normalizar CRLF para garantizar consistencia entre clones Windows y Linux
+        data = data.replace(b'\r\n', b'\n').replace(b'\n', b'\r\n')
+    return hashlib.sha256(data).hexdigest().upper()
 
 print("=== AUDITORÍA FORMAL DE INTEGRIDAD Y NO-REGRESIÓN: FASE 4.5.1 ===")
 
@@ -77,26 +102,28 @@ for pdf_rel, exp_pages in expected_pdfs.items():
     if not os.path.exists(pdf_abs):
         print(f"ERROR: Archivo {pdf_rel} no existe!")
         sys.exit(1)
-    doc = pymupdf.open(pdf_abs)
-    if len(doc) == exp_pages:
-        print(f"  {pdf_rel}: PASS ({len(doc)} páginas, {os.path.getsize(pdf_abs)} bytes)")
+    page_count = get_pdf_page_count(pdf_abs)
+    if page_count == exp_pages:
+        print(f"  {pdf_rel}: PASS ({page_count} páginas, {os.path.getsize(pdf_abs)} bytes)")
     else:
-        print(f"  {pdf_rel}: FAIL (esperadas {exp_pages}, encontradas {len(doc)})")
+        print(f"  {pdf_rel}: FAIL (esperadas {exp_pages}, encontradas {page_count})")
         sys.exit(1)
 
 # 4. Verificación de No Regresión Capítulos 01–09
 print("\n--- Verificación de No Regresión Capítulos 01–09 ---")
-doc_base = pymupdf.open(os.path.join(WORKSPACE_ROOT, "dist/TEST_PROTOCOLO_CAPITULOS_01_09_FASE_3_9_3.pdf"))
-doc_test = pymupdf.open(os.path.join(WORKSPACE_ROOT, "dist/TEST_NON_REGRESSION_4_5.pdf"))
-if len(doc_base) == len(doc_test) == 126:
-    diffs = sum(1 for i in range(126) if doc_base[i].get_text() != doc_test[i].get_text())
+pdf_base = os.path.join(WORKSPACE_ROOT, "dist/TEST_PROTOCOLO_CAPITULOS_01_09_FASE_3_9_3.pdf")
+pdf_test = os.path.join(WORKSPACE_ROOT, "dist/TEST_NON_REGRESSION_4_5.pdf")
+cnt_base = get_pdf_page_count(pdf_base)
+cnt_test = get_pdf_page_count(pdf_test)
+if cnt_base == cnt_test == 126:
+    diffs = sum(1 for i in range(126) if get_pdf_page_text(pdf_base, i) != get_pdf_page_text(pdf_test, i))
     if diffs == 0:
         print("  Capítulos 01–09 (126 páginas): 100% IDÉNTICAS (PASS)")
     else:
         print(f"  ERROR: {diffs} diferencias encontradas en Capítulos 01–09!")
         sys.exit(1)
 else:
-    print(f"  ERROR en conteo de páginas Capítulos 01-09 ({len(doc_test)} vs 126)!")
+    print(f"  ERROR en conteo de páginas Capítulos 01-09 ({cnt_test} vs 126)!")
     sys.exit(1)
 
 # 5. Verificación de Artefactos de Imagen y JSON
@@ -124,11 +151,12 @@ expected_images = [
 
 for img_name in expected_images:
     dist_img = os.path.join(WORKSPACE_ROOT, "dist", img_name)
-    art_img = os.path.join(ARTIFACT_DIR, img_name)
-    if os.path.exists(dist_img) and os.path.exists(art_img):
-        print(f"  {img_name}: PASS (dist & artifact ok)")
+    art_img = os.path.join(ARTIFACT_DIR, img_name) if ARTIFACT_DIR else None
+    if os.path.exists(dist_img):
+        art_status = " (dist & artifact ok)" if (art_img and os.path.exists(art_img)) else " (dist ok)"
+        print(f"  {img_name}: PASS{art_status}")
     else:
-        print(f"  ERROR: Imagen {img_name} falta en dist o artifact!")
+        print(f"  ERROR: Imagen {img_name} falta en dist!")
         sys.exit(1)
 
 print("\n=== TODAS LAS PRUEBAS DE INTEGRIDAD Y AUDITORÍA PASARON AL 100% ===")

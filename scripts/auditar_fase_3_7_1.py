@@ -22,7 +22,8 @@ CAP_DIR = os.path.join(REPO_DIR, 'capitulos')
 CEREMONIAL_PDF = os.path.join(DIST_DIR, 'TEST_CAPITULOS_01_03_CEREMONIAL.pdf')
 SPREADS_PDF = os.path.join(DIST_DIR, 'TEST_CAPITULOS_01_03_CEREMONIAL_SPREADS.pdf')
 OPENINGS_PDF = os.path.join(DIST_DIR, 'TEST_CEREMONIAL_OPENINGS.pdf')
-ARTIFACT_DIR = r"C:\Users\JJSS\.gemini\antigravity-cli\brain\44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2"
+from pathlib import Path
+ARTIFACT_DIR = os.environ.get("ANTIGRAVITY_ARTIFACTS_DIR") or str(Path.home() / ".gemini" / "antigravity-cli" / "brain" / "44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2")
 
 def audit_ceremonial_pdf():
     doc = fitz.open(CEREMONIAL_PDF)

@@ -3,7 +3,8 @@ import json
 import hashlib
 import pymupdf
 
-WORKSPACE_ROOT = "C:/Users/JJSS/Desktop/ABC/repositorio_protocolo"
+from pathlib import Path
+WORKSPACE_ROOT = str(Path(__file__).resolve().parent.parent)
 
 def sha256_file(path):
     h = hashlib.sha256()

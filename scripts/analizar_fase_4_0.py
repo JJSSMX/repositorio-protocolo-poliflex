@@ -28,7 +28,8 @@ if sys.stdout.encoding.lower() != 'utf-8':
     except Exception:
         pass
 
-REPO_DIR = r'C:\Users\JJSS\Desktop\ABC\repositorio_protocolo'
+from pathlib import Path
+REPO_DIR = str(Path(__file__).resolve().parent.parent)
 CAP_DIR = os.path.join(REPO_DIR, 'capitulos')
 DATOS_DIR = os.path.join(REPO_DIR, 'datos')
 os.makedirs(DATOS_DIR, exist_ok=True)

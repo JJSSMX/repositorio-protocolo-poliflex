@@ -552,7 +552,7 @@ def export_audit_renders():
     print("[INFO] Exportando renders diagnósticos de alta resolución (200 DPI)...")
     doc = pymupdf.open(OUTPUT_PDF)
     target_dirs = [SCRATCH_DIR]
-    known_brain = r"C:\Users\JJSS\.gemini\antigravity-cli\brain\44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2"
+    known_brain = os.environ.get("ANTIGRAVITY_ARTIFACTS_DIR") or str(Path.home() / ".gemini" / "antigravity-cli" / "brain" / "44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2")
     if os.path.exists(known_brain):
         target_dirs.append(known_brain)
 

@@ -8,7 +8,8 @@ import os
 import subprocess
 import pymupdf
 
-REPO_DIR = 'C:/Users/JJSS/Desktop/ABC/repositorio_protocolo'
+from pathlib import Path
+REPO_DIR = str(Path(__file__).resolve().parent.parent)
 FONTS_DIR = os.path.join(REPO_DIR, 'assets', 'fonts')
 DIST_DIR = os.path.join(REPO_DIR, 'dist')
 TESTS_DIR = os.path.join(REPO_DIR, 'tests')

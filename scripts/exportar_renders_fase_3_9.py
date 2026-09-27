@@ -4,7 +4,8 @@ import pymupdf
 REPO_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIST_DIR = os.path.join(REPO_DIR, 'dist')
 SCRATCH_DIR = os.path.join(REPO_DIR, 'scratch')
-BRAIN_DIR = r"C:\Users\JJSS\.gemini\antigravity-cli\brain\44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2"
+from pathlib import Path
+BRAIN_DIR = os.environ.get("ANTIGRAVITY_ARTIFACTS_DIR") or str(Path.home() / ".gemini" / "antigravity-cli" / "brain" / "44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2")
 
 target_dirs = [SCRATCH_DIR]
 if os.path.exists(BRAIN_DIR):

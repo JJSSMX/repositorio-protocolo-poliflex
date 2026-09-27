@@ -3,8 +3,9 @@ import shutil
 import pymupdf
 from PIL import Image, ImageDraw, ImageFont
 
-WORKSPACE_ROOT = "C:/Users/JJSS/Desktop/ABC/repositorio_protocolo"
-ARTIFACT_DIR = "C:/Users/JJSS/.gemini/antigravity-cli/brain/44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2"
+from pathlib import Path
+WORKSPACE_ROOT = str(Path(__file__).resolve().parent.parent)
+ARTIFACT_DIR = os.environ.get("ANTIGRAVITY_ARTIFACTS_DIR") or str(Path.home() / ".gemini" / "antigravity-cli" / "brain" / "44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2")
 DIST_DIR = os.path.join(WORKSPACE_ROOT, "dist")
 
 os.makedirs(DIST_DIR, exist_ok=True)

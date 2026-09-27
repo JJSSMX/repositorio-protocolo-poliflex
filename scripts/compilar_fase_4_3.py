@@ -6,7 +6,8 @@ import pymupdf
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-REPO_ROOT = os.path.abspath(r'C:\Users\JJSS\Desktop\ABC\repositorio_protocolo')
+from pathlib import Path
+REPO_ROOT = str(Path(__file__).resolve().parent.parent)
 DIST_DIR = os.path.join(REPO_ROOT, 'dist')
 TESTS_DIR = os.path.join(REPO_ROOT, 'tests')
 REPORTES_DIR = os.path.join(REPO_ROOT, 'reportes')

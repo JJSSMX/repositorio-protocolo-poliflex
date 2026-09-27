@@ -16,7 +16,8 @@ PDF_PATH = os.path.join(REPO_DIR, 'dist', 'TEST_CAPITULOS_01_03_COMPLETOS.pdf')
 SPREADS_PDF = os.path.join(REPO_DIR, 'dist', 'TEST_CAPITULOS_01_03_SPREADS.pdf')
 DIST_DIR = os.path.join(REPO_DIR, 'dist')
 SCRATCH_DIR = os.path.join(REPO_DIR, 'scratch', 'pages_150dpi')
-ARTIFACT_DIR = r"C:\Users\JJSS\.gemini\antigravity-cli\brain\44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2"
+from pathlib import Path
+ARTIFACT_DIR = os.environ.get("ANTIGRAVITY_ARTIFACTS_DIR") or str(Path.home() / ".gemini" / "antigravity-cli" / "brain" / "44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2")
 
 os.makedirs(SCRATCH_DIR, exist_ok=True)
 os.makedirs(DIST_DIR, exist_ok=True)

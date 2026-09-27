@@ -31,11 +31,12 @@ if sys.stdout.encoding.lower() != 'utf-8':
     except Exception:
         pass
 
-REPO_DIR = r'C:\Users\JJSS\Desktop\ABC\repositorio_protocolo'
+from pathlib import Path
+REPO_DIR = str(Path(__file__).resolve().parent.parent)
 DIST_DIR = os.path.join(REPO_DIR, 'dist')
 TESTS_DIR = os.path.join(REPO_DIR, 'tests')
 FONTS_DIR = os.path.join(REPO_DIR, 'assets', 'fonts')
-ARTIFACTS_DIR = r'C:\Users\JJSS\.gemini\antigravity-cli\brain\44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2'
+ARTIFACTS_DIR = os.environ.get("ANTIGRAVITY_ARTIFACTS_DIR") or str(Path.home() / ".gemini" / "antigravity-cli" / "brain" / "44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2")
 
 ORIG_PDF = os.path.join(DIST_DIR, 'TEST_PROTOCOLO_CAPITULOS_01_09.pdf')
 SIM_PDF = os.path.join(DIST_DIR, 'TEST_PAGINATION_X1_PLUS18.pdf')

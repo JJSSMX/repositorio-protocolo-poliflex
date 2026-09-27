@@ -17,7 +17,8 @@ import shutil
 import pymupdf
 import re
 
-REPO_DIR = r'C:\Users\JJSS\Desktop\ABC\repositorio_protocolo'
+from pathlib import Path
+REPO_DIR = str(Path(__file__).resolve().parent.parent)
 TESTS_DIR = os.path.join(REPO_DIR, 'tests')
 DIST_DIR = os.path.join(REPO_DIR, 'dist')
 FONTS_DIR = os.path.join(REPO_DIR, 'assets', 'fonts')

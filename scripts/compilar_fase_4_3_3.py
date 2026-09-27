@@ -28,12 +28,13 @@ if sys.stdout.encoding.lower() != 'utf-8':
     except Exception:
         pass
 
-REPO_ROOT = os.path.abspath(r'C:\Users\JJSS\Desktop\ABC\repositorio_protocolo')
+from pathlib import Path
+REPO_ROOT = str(Path(__file__).resolve().parent.parent)
 DIST_DIR = os.path.join(REPO_ROOT, 'dist')
 TESTS_DIR = os.path.join(REPO_ROOT, 'tests')
 REPORTES_DIR = os.path.join(REPO_ROOT, 'reportes')
 FONTS_DIR = os.path.join(REPO_ROOT, 'assets', 'fonts')
-ARTIFACTS_DIR = r'C:\Users\JJSS\.gemini\antigravity-cli\brain\44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2'
+ARTIFACTS_DIR = os.environ.get("ANTIGRAVITY_ARTIFACTS_DIR") or str(Path.home() / ".gemini" / "antigravity-cli" / "brain" / "44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2")
 
 os.makedirs(DIST_DIR, exist_ok=True)
 os.makedirs(TESTS_DIR, exist_ok=True)

@@ -10,9 +10,10 @@ import hashlib
 import subprocess
 import pymupdf
 
-WORKSPACE_ROOT = "C:/Users/JJSS/Desktop/ABC/repositorio_protocolo"
+from pathlib import Path
+WORKSPACE_ROOT = str(Path(__file__).resolve().parent.parent)
 CANONICAL_MD = os.path.join(WORKSPACE_ROOT, "capitulos/11_reglamento_asamblea_familia.md")
-ARTIFACT_DIR = "C:/Users/JJSS/.gemini/antigravity-cli/brain/44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2"
+ARTIFACT_DIR = os.environ.get("ANTIGRAVITY_ARTIFACTS_DIR") or str(Path.home() / ".gemini" / "antigravity-cli" / "brain" / "44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2")
 
 def sha256_file(path):
     h = hashlib.sha256()

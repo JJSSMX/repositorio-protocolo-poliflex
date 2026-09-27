@@ -34,7 +34,8 @@ if sys.stdout.encoding.lower() != 'utf-8':
     except Exception:
         pass
 
-REPO_DIR = r'C:\Users\JJSS\Desktop\ABC\repositorio_protocolo'
+from pathlib import Path
+REPO_DIR = str(Path(__file__).resolve().parent.parent)
 DIST_DIR = os.path.join(REPO_DIR, 'dist')
 TESTS_DIR = os.path.join(REPO_DIR, 'tests')
 REPORTES_DIR = os.path.join(REPO_DIR, 'reportes')
@@ -42,7 +43,7 @@ CAPITULOS_DIR = os.path.join(REPO_DIR, 'capitulos')
 TEMPLATES_DIR = os.path.join(REPO_DIR, 'templates')
 FONTS_DIR = os.path.join(REPO_DIR, 'assets', 'fonts')
 SCRIPTS_DIR = os.path.join(REPO_DIR, 'scripts')
-ARTIFACTS_DIR = r'C:\Users\JJSS\.gemini\antigravity-cli\brain\44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2'
+ARTIFACTS_DIR = os.environ.get("ANTIGRAVITY_ARTIFACTS_DIR") or str(Path.home() / ".gemini" / "antigravity-cli" / "brain" / "44be4a15-c5f0-4a79-9d3a-ff9fd2e33ab2")
 
 sys.path.insert(0, SCRIPTS_DIR)
 from compilar_fase_3_9_1 import (
