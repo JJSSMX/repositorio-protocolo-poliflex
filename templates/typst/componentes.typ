@@ -1565,3 +1565,255 @@
     )[#ftr.version.text]
   ]
 }
+
+// ==============================================================================
+// 17. ENTORNO Y ELEMENTOS NORMATIVOS DE REGLAMENTO (regulation-page)
+// [APPROVED / LOCKED — FASE 4.5.8]
+// Protocolo Familiar · Poliductos Flexibles, S.A. de C.V. (POLIFLEX)
+// ==============================================================================
+
+// ------------------------------------------------------------------------------
+// 17.1 RUNNING HEADER DE REGLAMENTOS [LOCKED — FASE 4.5.8]
+// Variante H2: Grid asimétrico 1.025fr / 0.975fr con inversión Recto / Verso
+// ------------------------------------------------------------------------------
+#let regulation-running-header(
+  cfg,
+  reg_name: "ASAMBLEA DE FAMILIA",
+  variant: "A8",
+  is_recto: true
+) = {
+  let neuzeit = ("Neuzeit Grotesk", "Segoe UI")
+  let iso = interior-isotype(width: 7.1186pt, height: 7.0000pt, opacity: 50%)
+
+  let header_title = "REGLAMENTO · " + reg_name
+  let header_font_size = 5.5pt
+  let header_tracking = 0.200em
+  let header_color = rgb("#6c6b67")
+  let header_weight = "regular"
+
+  let rh_text(t, col, sz: 5.5pt, tr: 0.200em, wt: "regular") = text(
+    font: neuzeit,
+    size: sz,
+    fill: col,
+    tracking: tr,
+    weight: wt
+  )[#t]
+
+  let inst_unit = [
+    #rh_text("PROTOCOLO FAMILIAR", rgb("#6c6b67"))#h(8pt)#rh_text("VERSION 1.0", rgb("#f15d22"))
+  ]
+
+  let reg_unit = rh_text(
+    header_title,
+    header_color,
+    sz: header_font_size,
+    tr: header_tracking,
+    wt: header_weight
+  )
+
+  place(top + left, dx: 0pt, dy: 25.5pt)[
+    #if is_recto [
+      #grid(
+        columns: (0.975fr, 1.025fr),
+        align: (left + horizon, right + horizon),
+        inst_unit,
+        [#reg_unit#h(5pt)#box(baseline: 15%)[#iso]]
+      )
+    ] else [
+      #grid(
+        columns: (1.025fr, 0.975fr),
+        align: (left + horizon, right + horizon),
+        [#box(baseline: 15%)[#iso]#h(5pt)#reg_unit],
+        inst_unit
+      )
+    ]
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 17.2 PIE Y FOLIO DE REGLAMENTOS [LOCKED — FASE 4.5.8]
+// Folio dinámico en Minion Pro Medium 8pt alineado a corte exterior
+// ------------------------------------------------------------------------------
+#let regulation-footer(page_num, is_recto: true) = {
+  let minion = ("Minion Pro", "Georgia")
+  let p_str = if page_num < 10 { "0" + str(page_num) } else { str(page_num) }
+  let folio_txt = text(font: minion, size: 8pt, fill: rgb("#f15d22"), weight: "medium")[#p_str]
+
+  v(20pt)
+  if is_recto [
+    #align(right)[#folio_txt]
+  ] else [
+    #align(left)[#folio_txt]
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 17.3 FILETE VERTICAL DE LOMO [LOCKED — FASE 4.5.8]
+// Filete de 0.5pt en #f15d22 pegado al lomo (x=30.13pt recto, x=365.87pt verso)
+// ------------------------------------------------------------------------------
+#let regulation-spine-rule(is_recto: true) = {
+  let rule_x = if is_recto { 30.13pt } else { 365.87pt }
+  place(top + left, dx: rule_x, dy: 0pt, line(start: (0pt, 0pt), end: (0pt, 612pt), stroke: 0.5pt + rgb("#f15d22")))
+}
+
+// ------------------------------------------------------------------------------
+// 17.4 CAPÍTULO REGLAMENTARIO [LOCKED — FASE 4.5.8]
+// Bloque indivisible (sticky: true) Minion Pro Medium con jerarquía de color
+// ------------------------------------------------------------------------------
+#let regulation-chapter(
+  roman_num,
+  title,
+  variant: "A8",
+  above_spacing: auto,
+  below_spacing: auto
+) = {
+  let minion = ("Minion Pro", "Georgia")
+
+  let sp_above = if above_spacing != auto { above_spacing } else { 18.00pt }
+  let sp_below = if below_spacing != auto { below_spacing } else { 12.73pt }
+
+  block(width: 100%, breakable: false, sticky: true, above: sp_above, below: sp_below)[
+    #text(font: minion, size: 10.5pt, fill: rgb("#f15d22"), stroke: 0.3pt + rgb("#f15d22"), tracking: 0.050em, weight: "medium")[#roman_num]
+    #v(3.5pt)
+    #text(font: minion, size: 9.5pt, fill: rgb("#2e2f31"), tracking: 0.020em, weight: "medium")[#title]
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 17.5 ARTÍCULO REGLAMENTARIO [LOCKED — FASE 4.5.8]
+// Encabezado normativo (sticky: true) con pulso O1 (12.72949pt) y respiro A12 (12.00pt)
+// ------------------------------------------------------------------------------
+#let regulation-article(
+  art_num,
+  art_name,
+  variant: "A8",
+  above_spacing: auto,
+  below_spacing: auto
+) = {
+  let minion = ("Minion Pro", "Georgia")
+
+  let sp_above = if above_spacing != auto { above_spacing } else { 12.72949pt }
+  let sp_below = if below_spacing != auto { below_spacing } else { 12.00pt }
+
+  block(width: 100%, breakable: false, sticky: true, above: sp_above, below: sp_below)[
+    #box[#text(font: minion, size: 9.2pt, fill: rgb("#f15d22"), stroke: 0.2pt + rgb("#f15d22"), weight: "medium")[#art_num]]#h(5.0pt)#text(font: minion, size: 9.2pt, fill: rgb("#2e2f31"), tracking: 0.015em, weight: "medium")[#art_name]
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 17.6 FRACCIONES ROMANAS Y LISTAS NORMATIVAS [LOCKED — FASE 4.5.8]
+// Variante M1: hanging indent 14pt, intra-leading 5.0pt, inter 7.5pt, post 14.0pt, ragged-right
+// ------------------------------------------------------------------------------
+#let regulation-fraction(
+  marker,
+  body,
+  variant: "A8",
+  is_last: false,
+  justify: false,
+  intra_leading: auto,
+  below_spacing: auto
+) = {
+  let neuzeit = ("Neuzeit Grotesk", "Segoe UI")
+
+  let lead_val = if intra_leading != auto { intra_leading } else { 5.00pt }
+  let def_below = if is_last { 14.00pt } else { 7.50pt }
+  let sp_below = if below_spacing != auto {
+    below_spacing
+  } else {
+    def_below
+  }
+
+  block(width: 100%, breakable: true, below: sp_below)[
+    #grid(
+      columns: (14.0pt, 1fr),
+      column-gutter: 4.0pt,
+      align: (right + top, left + top),
+      text(font: neuzeit, size: 7.9077pt, fill: rgb("#2e2f31"), weight: "medium")[#marker],
+      [
+        #set par(leading: lead_val, justify: justify, linebreaks: "simple")
+        #text(font: neuzeit, size: 7.9077pt, fill: rgb("#2e2f31"))[#body]
+      ]
+    )
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 17.7 TRANSITORIO ÚNICO [LOCKED — FASE 4.5.8]
+// Cláusula de cierre normativo: above 18.00pt, below 12.00pt (T12)
+// ------------------------------------------------------------------------------
+#let regulation-transitory(
+  title: "TRANSITORIO ÚNICO",
+  body: none,
+  variant: "A8",
+  above_spacing: auto,
+  below_spacing: auto
+) = {
+  let minion = ("Minion Pro", "Georgia")
+
+  let sp_above = if above_spacing != auto { above_spacing } else { 18.00pt }
+  let sp_below = if below_spacing != auto { below_spacing } else { 12.00pt }
+
+  block(width: 100%, breakable: false, sticky: true, above: sp_above, below: sp_below)[
+    #text(font: minion, size: 10.0pt, fill: rgb("#f15d22"), stroke: 0.25pt + rgb("#f15d22"), tracking: 0.050em, weight: "medium")[#title]
+  ]
+  if body != none [
+    #body
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 17.8 ENTORNO BASE DE PÁGINA INTERIOR DE REGLAMENTO (regulation-page)
+// [APPROVED / LOCKED — FASE 4.5.8]
+// Geometría canónica Media Carta (396pt x 612pt), retícula +6mm, lomo 58.74pt, corte 22.70pt
+// ------------------------------------------------------------------------------
+#let regulation-page(
+  cfg,
+  variant: "A8",
+  reg_name: "ASAMBLEA DE FAMILIA",
+  body
+) = {
+  let neuzeit = ("Neuzeit Grotesk", "Segoe UI")
+
+  set page(
+    width: 396pt,
+    height: 612pt,
+    margin: (
+      inside: 58.74pt,   // Lomo: 58.74pt
+      outside: 22.70pt,  // Corte: 22.70pt
+      top: 71.0079pt,    // Consolidado +6 mm
+      bottom: 65.00pt
+    ),
+    header: context [
+      #let p = counter(page).get().first()
+      #let is_recto = calc.odd(p)
+      #regulation-running-header(cfg, reg_name: reg_name, variant: variant, is_recto: is_recto)
+    ],
+    footer: context [
+      #let p = counter(page).get().first()
+      #let is_recto = calc.odd(p)
+      #regulation-footer(p, is_recto: is_recto)
+    ],
+    background: context [
+      #let p = counter(page).get().first()
+      #let is_recto = calc.odd(p)
+      #regulation-spine-rule(is_recto: is_recto)
+    ]
+  )
+
+  set text(
+    font: neuzeit,
+    size: 7.9077pt,
+    fill: rgb("#2e2f31"),
+    tracking: 0em,
+    hyphenate: false
+  )
+
+  set par(
+    leading: 12.72949pt,
+    justify: true,
+    spacing: 12.72949pt,
+    linebreaks: "simple"
+  )
+
+  body
+}
