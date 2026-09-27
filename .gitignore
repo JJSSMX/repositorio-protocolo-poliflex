@@ -1,4 +1,4 @@
-﻿# ============================================================
+# ============================================================
 # POLIFLEX — Protocolo Familiar
 # Archivos locales / temporales
 # ============================================================
@@ -40,3 +40,14 @@ scratch/
 
 # Logs
 *.log
+
+# Typst / editorial temporary diagnostics
+tests/tmp_*
+dist/tmp_*
+
+# Diagnostic renders and crops
+dist/render_*
+dist/renders_*/
+dist/crop_*
+dist/*-[0-9]*_[0-9]*.png
+dist/*_page-[0-9]*.png

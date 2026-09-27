@@ -1,0 +1,401 @@
+{
+  "fase": "4.5.7",
+  "descripcion": "Validación integral final de regulation-page()",
+  "configuracion": {
+    "running_header": "H2 (1.025fr / 0.975fr)",
+    "article_above": 12.72949,
+    "article_below": 12.0,
+    "transitory_above": 18.0,
+    "transitory_below": 12.0,
+    "list_intra_leading": 5.0,
+    "list_inter_below": 7.5,
+    "list_last_below": 14.0,
+    "list_justify": false,
+    "body_font": "Neuzeit Grotesk",
+    "body_size": 7.9077,
+    "body_leading": 12.72949,
+    "par_spacing": 12.72949
+  },
+  "resumen_volumen": {
+    "total_paginas": 24,
+    "asamblea_paginas": 8,
+    "consejo_paginas": 8,
+    "comite_paginas": 8,
+    "paginas_apertura_recto": 3,
+    "paginas_blanco_ceremonial_verso": 3,
+    "paginas_contenido": 18
+  },
+  "auditoria_pagina_por_pagina": [
+    {
+      "numero_fisico": 1,
+      "reglamento": "ASAMBLEA DE FAMILIA",
+      "paridad": "RECTO",
+      "tipo": "apertura (regulation-opening)",
+      "total_lineas_utiles": 3,
+      "primer_bloque": "REGLAMENTO",
+      "ultimo_bloque": "DE FAMILIA",
+      "espacio_libre_inferior_pt": 112.92,
+      "encabezados": [],
+      "observaciones": "APERTURA INSTITUCIONAL RECTO (CORRECTA)"
+    },
+    {
+      "numero_fisico": 2,
+      "reglamento": "ASAMBLEA DE FAMILIA",
+      "paridad": "VERSO",
+      "tipo": "blanco ceremonial",
+      "total_lineas_utiles": 0,
+      "primer_bloque": "",
+      "ultimo_bloque": "",
+      "espacio_libre_inferior_pt": 564.0,
+      "encabezados": [],
+      "observaciones": "PÁGINA CEREMONIAL VERSO (CORRECTA)"
+    },
+    {
+      "numero_fisico": 3,
+      "reglamento": "ASAMBLEA DE FAMILIA",
+      "paridad": "RECTO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 35,
+      "primer_bloque": "CAPÍTULO I",
+      "ultimo_bloque": "disposiciones del Protocolo Familiar.",
+      "espacio_libre_inferior_pt": 18.47,
+      "encabezados": [
+        "CAPÍTULO I",
+        "Artículo 1. Del Objeto y Alcance",
+        "Artículo 2. De la Prevalencia del Protocolo Familiar",
+        "CAPÍTULO II",
+        "Artículo 3. De la Integración"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA"
+    },
+    {
+      "numero_fisico": 4,
+      "reglamento": "ASAMBLEA DE FAMILIA",
+      "paridad": "VERSO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 26,
+      "primer_bloque": "La calidad de integrante de la Asamblea de Familia",
+      "ultimo_bloque": "I. Fecha y hora de la sesión;",
+      "espacio_libre_inferior_pt": 24.43,
+      "encabezados": [
+        "CAPÍTULO III",
+        "Artículo 4. De las Convocatorias"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA"
+    },
+    {
+      "numero_fisico": 5,
+      "reglamento": "ASAMBLEA DE FAMILIA",
+      "paridad": "RECTO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 27,
+      "primer_bloque": "II. Lugar de celebración o medio de conexión corre",
+      "ultimo_bloque": "asuntos sujetos a regímenes especiales de aprobaci",
+      "espacio_libre_inferior_pt": 20.85,
+      "encabezados": [
+        "CAPÍTULO IV",
+        "Artículo 5. De la Instalación de la Asamblea"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA"
+    },
+    {
+      "numero_fisico": 6,
+      "reglamento": "ASAMBLEA DE FAMILIA",
+      "paridad": "VERSO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 26,
+      "primer_bloque": "o de cualquier otro asunto sujeto a mayorías refor",
+      "ultimo_bloque": "activas, según corresponda.",
+      "espacio_libre_inferior_pt": 38.86,
+      "encabezados": [
+        "Artículo 6. Del Desarrollo de las Sesiones",
+        "CAPÍTULO V",
+        "Artículo 7. De las Votaciones"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA"
+    },
+    {
+      "numero_fisico": 7,
+      "reglamento": "ASAMBLEA DE FAMILIA",
+      "paridad": "RECTO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 35,
+      "primer_bloque": "Las votaciones podrán realizarse de manera económi",
+      "ultimo_bloque": "a la Asamblea sobre su avance.",
+      "espacio_libre_inferior_pt": 33.03,
+      "encabezados": [
+        "CAPÍTULO VI",
+        "Artículo 8. De las Facultades",
+        "CAPÍTULO VII",
+        "Artículo 9. De las Actas y Seguimiento"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA"
+    },
+    {
+      "numero_fisico": 8,
+      "reglamento": "ASAMBLEA DE FAMILIA",
+      "paridad": "VERSO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 22,
+      "primer_bloque": "CAPÍTULO VIII",
+      "ultimo_bloque": "conforme a las disposiciones aplicables del Protoc",
+      "espacio_libre_inferior_pt": 95.94,
+      "encabezados": [
+        "CAPÍTULO VIII",
+        "Artículo 10. De las Modalidades de Celebración",
+        "Artículo 11. De la Identificación de los Participantes",
+        "Artículo 12. De la Constancia de la Sesión",
+        "TRANSITORIO ÚNICO"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA; CONTIENE TRANSITORIO ÚNICO"
+    },
+    {
+      "numero_fisico": 9,
+      "reglamento": "CONSEJO DE FAMILIA",
+      "paridad": "RECTO",
+      "tipo": "apertura (regulation-opening)",
+      "total_lineas_utiles": 3,
+      "primer_bloque": "REGLAMENTO",
+      "ultimo_bloque": "DE FAMILIA",
+      "espacio_libre_inferior_pt": 112.92,
+      "encabezados": [],
+      "observaciones": "APERTURA INSTITUCIONAL RECTO (CORRECTA)"
+    },
+    {
+      "numero_fisico": 10,
+      "reglamento": "CONSEJO DE FAMILIA",
+      "paridad": "VERSO",
+      "tipo": "blanco ceremonial",
+      "total_lineas_utiles": 0,
+      "primer_bloque": "",
+      "ultimo_bloque": "",
+      "espacio_libre_inferior_pt": 564.0,
+      "encabezados": [],
+      "observaciones": "PÁGINA CEREMONIAL VERSO (CORRECTA)"
+    },
+    {
+      "numero_fisico": 11,
+      "reglamento": "CONSEJO DE FAMILIA",
+      "paridad": "RECTO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 25,
+      "primer_bloque": "CAPÍTULO I",
+      "ultimo_bloque": "III. Tres Vocales.",
+      "espacio_libre_inferior_pt": 46.93,
+      "encabezados": [
+        "CAPÍTULO I",
+        "Artículo 1. Del Objeto y Alcance",
+        "Artículo 2. De la Prevalencia del Protocolo Familiar",
+        "CAPÍTULO II",
+        "Artículo 3. De la Integración"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA"
+    },
+    {
+      "numero_fisico": 12,
+      "reglamento": "CONSEJO DE FAMILIA",
+      "paridad": "VERSO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 27,
+      "primer_bloque": "Los integrantes del Consejo de Familia deberán ser",
+      "ultimo_bloque": "IV. Información o documentación relevante para el ",
+      "espacio_libre_inferior_pt": 22.13,
+      "encabezados": [
+        "Artículo 4. De la Designación",
+        "CAPÍTULO III",
+        "Artículo 5. De las Sesiones"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA"
+    },
+    {
+      "numero_fisico": 13,
+      "reglamento": "CONSEJO DE FAMILIA",
+      "paridad": "RECTO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 21,
+      "primer_bloque": "Salvo causa justificada, las convocatorias deberán",
+      "ultimo_bloque": "determine el propio Consejo.",
+      "espacio_libre_inferior_pt": 114.44,
+      "encabezados": [
+        "CAPÍTULO IV",
+        "Artículo 6. De la Instalación",
+        "Artículo 7. De las Votaciones"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA"
+    },
+    {
+      "numero_fisico": 14,
+      "reglamento": "CONSEJO DE FAMILIA",
+      "paridad": "VERSO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 33,
+      "primer_bloque": "CAPÍTULO V",
+      "ultimo_bloque": "VII. Resultado de las votaciones correspondientes.",
+      "espacio_libre_inferior_pt": 30.01,
+      "encabezados": [
+        "CAPÍTULO V",
+        "Artículo 8. De las Facultades",
+        "CAPÍTULO VI",
+        "Artículo 9. De las Actas y Seguimiento"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA"
+    },
+    {
+      "numero_fisico": 15,
+      "reglamento": "CONSEJO DE FAMILIA",
+      "paridad": "RECTO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 25,
+      "primer_bloque": "Las actas deberán ser firmadas por el Presidente y",
+      "ultimo_bloque": "Reglamento podrá ser resuelta por el Consejo de Fa",
+      "espacio_libre_inferior_pt": 19.95,
+      "encabezados": [
+        "CAPÍTULO VII",
+        "Artículo 10. De las Vacantes",
+        "CAPÍTULO VIII",
+        "Artículo 11. De las Modalidades de Celebración",
+        "CAPÍTULO IX",
+        "Artículo 12. De los Casos No Previstos"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA"
+    },
+    {
+      "numero_fisico": 16,
+      "reglamento": "CONSEJO DE FAMILIA",
+      "paridad": "VERSO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 12,
+      "primer_bloque": "resulte consistente con el Protocolo Familiar y no",
+      "ultimo_bloque": "conforme a las disposiciones aplicables del Protoc",
+      "espacio_libre_inferior_pt": 281.89,
+      "encabezados": [
+        "TRANSITORIO ÚNICO"
+      ],
+      "observaciones": "PÁGINA TERMINAL CORTA; CONTIENE TRANSITORIO ÚNICO; AMPLIA RESPIRACIÓN AL PIE"
+    },
+    {
+      "numero_fisico": 17,
+      "reglamento": "COMITÉ DE HONOR FAMILIAR",
+      "paridad": "RECTO",
+      "tipo": "apertura (regulation-opening)",
+      "total_lineas_utiles": 3,
+      "primer_bloque": "REGLAMENTO",
+      "ultimo_bloque": "HONOR FAMILIAR",
+      "espacio_libre_inferior_pt": 112.92,
+      "encabezados": [],
+      "observaciones": "APERTURA INSTITUCIONAL RECTO (CORRECTA)"
+    },
+    {
+      "numero_fisico": 18,
+      "reglamento": "COMITÉ DE HONOR FAMILIAR",
+      "paridad": "VERSO",
+      "tipo": "blanco ceremonial",
+      "total_lineas_utiles": 0,
+      "primer_bloque": "",
+      "ultimo_bloque": "",
+      "espacio_libre_inferior_pt": 564.0,
+      "encabezados": [],
+      "observaciones": "PÁGINA CEREMONIAL VERSO (CORRECTA)"
+    },
+    {
+      "numero_fisico": 19,
+      "reglamento": "COMITÉ DE HONOR FAMILIAR",
+      "paridad": "RECTO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 24,
+      "primer_bloque": "CAPÍTULO I",
+      "ultimo_bloque": "ser sometido a su conocimiento y resolución.",
+      "espacio_libre_inferior_pt": 54.47,
+      "encabezados": [
+        "CAPÍTULO I",
+        "Artículo 1. Del Objeto y Alcance",
+        "Artículo 2. De la Prevalencia del Protocolo Familiar",
+        "CAPÍTULO II",
+        "Artículo 3. De la Integración"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA"
+    },
+    {
+      "numero_fisico": 20,
+      "reglamento": "COMITÉ DE HONOR FAMILIAR",
+      "paridad": "VERSO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 22,
+      "primer_bloque": "Para cada asunto que requiera su intervención, la ",
+      "ultimo_bloque": "asunto.",
+      "espacio_libre_inferior_pt": 107.68,
+      "encabezados": [
+        "Artículo 4. De la Designación, Duración y Remoción"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA"
+    },
+    {
+      "numero_fisico": 21,
+      "reglamento": "COMITÉ DE HONOR FAMILIAR",
+      "paridad": "RECTO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 27,
+      "primer_bloque": "CAPÍTULO III",
+      "ultimo_bloque": "en el acta correspondiente.",
+      "espacio_libre_inferior_pt": 22.62,
+      "encabezados": [
+        "CAPÍTULO III",
+        "Artículo 5. De las Sesiones y Convocatorias",
+        "CAPÍTULO IV",
+        "Artículo 6. De la Instalación del Comité",
+        "Artículo 7. De la Adopción de Acuerdos"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA"
+    },
+    {
+      "numero_fisico": 22,
+      "reglamento": "COMITÉ DE HONOR FAMILIAR",
+      "paridad": "VERSO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 33,
+      "primer_bloque": "CAPÍTULO V",
+      "ultimo_bloque": "generar dudas sobre su independencia, objetividad ",
+      "espacio_libre_inferior_pt": 29.55,
+      "encabezados": [
+        "CAPÍTULO V",
+        "Artículo 8. De las Atribuciones",
+        "CAPÍTULO VI",
+        "Artículo 9. De los Conflictos de Interés"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA"
+    },
+    {
+      "numero_fisico": 23,
+      "reglamento": "COMITÉ DE HONOR FAMILIAR",
+      "paridad": "RECTO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 26,
+      "primer_bloque": "Cuando un integrante identifique la existencia de ",
+      "ultimo_bloque": "en el Protocolo Familiar.",
+      "espacio_libre_inferior_pt": 43.3,
+      "encabezados": [
+        "CAPÍTULO VII",
+        "Artículo 10. De las Actas y del Registro",
+        "CAPÍTULO VIII",
+        "Artículo 11. De la Confidencialidad"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA"
+    },
+    {
+      "numero_fisico": 24,
+      "reglamento": "COMITÉ DE HONOR FAMILIAR",
+      "paridad": "VERSO",
+      "tipo": "regulation-page",
+      "total_lineas_utiles": 18,
+      "primer_bloque": "La obligación de confidencialidad subsistirá aun d",
+      "ultimo_bloque": "conforme a las disposiciones aplicables del Protoc",
+      "espacio_libre_inferior_pt": 162.65,
+      "encabezados": [
+        "CAPÍTULO IX",
+        "Artículo 12. De los Casos No Previstos",
+        "TRANSITORIO ÚNICO"
+      ],
+      "observaciones": "DENSIDAD BALANCEADA; CONTIENE TRANSITORIO ÚNICO"
+    }
+  ]
+}
