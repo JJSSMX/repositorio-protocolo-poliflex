@@ -396,6 +396,281 @@
   ]
 }
 
+// ------------------------------------------------------------------------------
+// 3.1 TABLA DE CONTENIDOS DEFINITIVA DINÁMICA (dynamic-table-of-contents) [FASE 4.8]
+// Resuelve dinámicamente las páginas sin hardcodear mediante consultas context
+// ------------------------------------------------------------------------------
+#let dynamic-table-of-contents(cfg, definitions: none) = {
+  let default_defs = (
+    (
+      id: <intro-start>,
+      num: "—",
+      title: "INTRODUCCIÓN INSTITUCIONAL",
+      lines: 1,
+      fallback_page: "05"
+    ),
+    (
+      id: <chapter-01-start>,
+      ch_index: 0,
+      num: "01",
+      title: "DECLARACIÓN DE PRINCIPIOS FAMILIARES Y \\ VISIÓN INTERGENERACIONAL",
+      lines: 2,
+      fallback_page: "09"
+    ),
+    (
+      id: <chapter-02-start>,
+      ch_index: 1,
+      num: "02",
+      title: "PROPIEDAD ACCIONARIA, CONTROL FAMILIAR Y \\ LIQUIDEZ PATRIMONIAL",
+      lines: 2,
+      fallback_page: "17"
+    ),
+    (
+      id: <chapter-03-start>,
+      ch_index: 2,
+      num: "03",
+      title: "GOBIERNO CORPORATIVO FAMILIAR, \\ INSTITUCIONALIZACIÓN Y RÉGIMEN DE \\ PROFESIONALIZACIÓN",
+      lines: 3,
+      fallback_page: "49"
+    ),
+    (
+      id: <chapter-04-start>,
+      ch_index: 3,
+      num: "04",
+      title: "RÉGIMEN DE SUCESIÓN FAMILIAR EMPRESARIAL",
+      lines: 1,
+      fallback_page: "69"
+    ),
+    (
+      id: <chapter-05-start>,
+      ch_index: 4,
+      num: "05",
+      title: "CONTROL INSTITUCIONAL DE LA INFORMACIÓN Y \\ COMUNICACIÓN FAMILIAR–EMPRESARIAL",
+      lines: 2,
+      fallback_page: "95"
+    ),
+    (
+      id: <chapter-06-start>,
+      ch_index: 5,
+      num: "06",
+      title: "RÉGIMEN DE DISCIPLINA FINANCIERA \\ FAMILIAR–EMPRESARIAL",
+      lines: 2,
+      fallback_page: "103"
+    ),
+    (
+      id: <chapter-07-start>,
+      ch_index: 6,
+      num: "07",
+      title: "PROCEDIMIENTO SANCIONADOR Y RÉGIMEN DE \\ SANCIONES INTERNAS",
+      lines: 2,
+      fallback_page: "111"
+    ),
+    (
+      id: <chapter-08-start>,
+      ch_index: 7,
+      num: "08",
+      title: "MEDIOS ALTERNATIVOS DE SOLUCIÓN DE \\ CONFLICTOS FAMILIARES–EMPRESARIALES",
+      lines: 2,
+      fallback_page: "119"
+    ),
+    (
+      id: <chapter-09-start>,
+      ch_index: 8,
+      num: "09",
+      title: "RÉGIMEN JURÍDICO DEL PROTOCOLO FAMILIAR",
+      lines: 1,
+      fallback_page: "127"
+    ),
+    (
+      id: <reglamentos-start>,
+      num: "10",
+      title: "REGLAMENTOS DE ÓRGANOS DE GOBIERNO",
+      lines: 1,
+      fallback_page: "131"
+    ),
+    (
+      id: <anexos-start>,
+      num: "11",
+      title: "ANEXOS Y FORMATOS OPERATIVOS",
+      lines: 1,
+      fallback_page: "155"
+    ),
+    (
+      id: <indice-start>,
+      num: "12",
+      title: "ÍNDICE DE TEMAS Y ANEXOS",
+      lines: 1,
+      fallback_page: "171"
+    ),
+  )
+
+  let defs = if definitions != none { definitions } else { default_defs }
+  let t = cfg.toc
+  let st = t.styles
+  let minion = (t.header.title.font, t.header.title.fallback_font)
+  let neuzeit = (t.header.prefix.font, t.header.prefix.fallback_font)
+
+  // 1. Header: TABLA DE
+  place(top + left, dx: to-len(t.header.prefix.x), dy: to-len(t.header.prefix.dy))[
+    #text(
+      font: neuzeit,
+      size: to-len(t.header.prefix.size),
+      fill: rgb(t.header.prefix.color),
+      stroke: to-len(t.header.prefix.stroke) + rgb(t.header.prefix.stroke_color),
+      tracking: eval(t.header.prefix.tracking),
+      weight: "regular"
+    )[#t.header.prefix.text]
+  ]
+
+  // 2. Header: CONTENIDO
+  place(top + left, dx: to-len(t.header.title.x), dy: to-len(t.header.title.dy))[
+    #text(
+      font: minion,
+      size: to-len(t.header.title.size),
+      fill: rgb(t.header.title.color),
+      tracking: eval(t.header.title.tracking),
+      weight: "medium"
+    )[#t.header.title.text]
+  ]
+
+  // 3. Filete naranja (orange rule)
+  place(top + left, dx: to-len(t.header.rule.x), dy: to-len(t.header.rule.y))[
+    #rect(
+      width: to-len(t.header.rule.width),
+      height: to-len(t.header.rule.height),
+      fill: rgb(t.header.rule.color),
+      stroke: none
+    )
+  ]
+
+  // 4. Matriz decorativa de puntos (7 columnas x 38 filas = 266 puntos)
+  let dm = t.dot_matrix
+  let dm_cols = dm.cols
+  let dm_rows = dm.rows
+  let dm_x0 = to-len(dm.x0)
+  let dm_y0 = to-len(dm.y0)
+  let dm_dx = to-len(dm.dx)
+  let dm_dy = to-len(dm.dy)
+  let dm_r = to-len(dm.radius)
+  let dm_fill = rgb(dm.color)
+
+  for c in range(dm_cols) {
+    let cx = dm_x0 + c * dm_dx
+    for r in range(dm_rows) {
+      let cy = dm_y0 + r * dm_dy
+      place(
+        top + left,
+        dx: cx - dm_r,
+        dy: cy - dm_r,
+        circle(radius: dm_r, fill: dm_fill, stroke: none)
+      )
+    }
+  }
+
+  // 5. Entradas dinámicas calculadas contextualmente
+  context {
+    let start_y = 86.0pt
+    let line_step = 12.0pt
+    let gap = 14.0pt
+    let ascent = to-len(st.ascent_neuzeit)
+
+    let curr_y = start_y
+
+    for item in defs {
+      let baseline_y = curr_y
+      let dy_val = baseline_y - ascent
+
+      // Consulta de página en tiempo real
+      let q = query(item.id)
+      let page_str = if q.len() > 0 {
+        let p = q.first().location().page()
+        if p < 10 { "0" + str(p) } else { str(p) }
+      } else if "ch_index" in item {
+        let q_ch = query(selector(<chapter-opening-marker>))
+        if q_ch.len() > item.ch_index {
+          let p = q_ch.at(item.ch_index).location().page()
+          if p < 10 { "0" + str(p) } else { str(p) }
+        } else {
+          item.fallback_page
+        }
+      } else {
+        item.fallback_page
+      }
+
+      // Columna 1: Número o distintivo
+      let num_color = if item.num == "—" { rgb("#94a3b8") } else { rgb(st.number.color) }
+      place(top + left, dx: to-len(st.number.default_x), dy: dy_val)[
+        #text(
+          font: neuzeit,
+          size: to-len(st.number.size),
+          fill: num_color,
+          stroke: if item.num == "—" { none } else { to-len(st.number.stroke) + rgb(st.number.stroke_color) },
+          weight: "regular"
+        )[#item.num]
+      ]
+
+      // Columna 2: Título institucional
+      place(top + left, dx: to-len(st.title.x), dy: dy_val)[
+        #block(width: to-len(st.title.width))[
+          #set text(
+            font: neuzeit,
+            size: to-len(st.title.size),
+            fill: rgb(st.title.color),
+            weight: "regular"
+          )
+          #set par(leading: to-len(st.title.typst_leading), justify: false)
+          #if type(item.title) == str {
+            eval("[" + item.title + "]")
+          } else {
+            item.title
+          }
+        ]
+      ]
+
+      // Columna 3: Número de página dinámico
+      place(top + left, dx: to-len(st.page.x), dy: dy_val)[
+        #text(
+          font: neuzeit,
+          size: to-len(st.page.size),
+          fill: rgb(st.page.color),
+          stroke: to-len(st.page.stroke) + rgb(st.page.stroke_color),
+          tracking: eval(st.page.tracking),
+          weight: "regular"
+        )[#page_str]
+      ]
+
+      // Avance vertical para el siguiente elemento
+      let block_height = (item.lines - 1) * line_step
+      curr_y = curr_y + block_height + gap + 10.0pt
+    }
+  }
+
+  // 6. Footer institucional
+  let ftr = t.footer
+  place(top + left, dx: to-len(ftr.phrase.x), dy: to-len(ftr.phrase.dy))[
+    #text(
+      font: neuzeit,
+      size: to-len(ftr.phrase.size),
+      fill: rgb(ftr.phrase.color),
+      stroke: to-len(ftr.phrase.stroke) + rgb(ftr.phrase.stroke_color),
+      tracking: eval(ftr.phrase.tracking),
+      weight: "regular"
+    )[#ftr.phrase.text]
+  ]
+
+  place(top + left, dx: to-len(ftr.version.x), dy: to-len(ftr.version.dy))[
+    #text(
+      font: neuzeit,
+      size: to-len(ftr.version.size),
+      fill: rgb(ftr.version.color),
+      stroke: to-len(ftr.version.stroke) + rgb(ftr.version.stroke_color),
+      tracking: eval(ftr.version.tracking),
+      weight: "regular"
+    )[#ftr.version.text]
+  ]
+}
+
+
 
 // ------------------------------------------------------------------------------
 // 4. APERTURA DE CAPÍTULO (chapter-opening)
@@ -613,31 +888,175 @@
 }
 
 // ------------------------------------------------------------------------------
-// 5. APERTURA DE ANEXOS / REGLAMENTOS (annex-opening)
+// 5. APERTURA DE ANEXOS / FORMATOS OPERATIVOS (annex-opening)
+// Consistente con chapter-opening() y regulation-opening().
+// Soporta firma institucional moderna con cfg o firma legada.
 // ------------------------------------------------------------------------------
-#let annex-opening(code, title, subtitle: none) = {
-  pagebreak(to: "odd")
-  
-  block(
-    width: 100%,
-    fill: rgb("#f8fafc"),
-    stroke: (left: 3pt + rgb("#0284c7")),
-    inset: (x: 12pt, y: 10pt),
-    radius: (right: 4pt)
-  )[
-    #text(size: 9pt, fill: rgb("#0284c7"), weight: "bold")[#upper(code)]
-    #v(2pt)
-    #text(size: 13pt, fill: rgb("#0f172a"), weight: "bold")[#title]
-    #if subtitle != none [
+#let annex-opening(
+  arg1,
+  title: none,
+  subtitle: none,
+  opening_title: none,
+  upper_label: "ANEXOS",
+  description: none,
+  show_blank_verso: false,
+  is_recto: false,
+  cfg: none
+) = {
+  let c = if type(arg1) == dictionary { arg1 } else if cfg != none { cfg } else { none }
+  let co = if c != none and "chapter_opening" in c { c.chapter_opening } else { none }
+
+  if co == none {
+    // Fallback legado para llamadas previas sin configuración centralizada
+    let code_str = if type(arg1) == str { arg1 } else { "ANEXO" }
+    let t_str = if title != none { title } else { "" }
+    let s_str = if subtitle != none { subtitle } else { description }
+    if is_recto { pagebreak(to: "odd") }
+    block(
+      width: 100%,
+      fill: rgb("#f8fafc"),
+      stroke: (left: 3pt + rgb("#0284c7")),
+      inset: (x: 12pt, y: 10pt),
+      radius: (right: 4pt)
+    )[
+      #text(size: 9pt, fill: rgb("#0284c7"), weight: "bold")[#upper(code_str)]
       #v(2pt)
-      #text(size: 9.5pt, fill: rgb("#64748b"))[#subtitle]
+      #text(size: 13pt, fill: rgb("#0f172a"), weight: "bold")[#t_str]
+      #if s_str != none [
+        #v(2pt)
+        #text(size: 9.5pt, fill: rgb("#64748b"))[#s_str]
+      ]
+    ]
+    [#metadata((type: "annex", code: code_str, title: t_str)) <annex-marker>]
+    heading(level: 1, outlined: true)[#code_str: #t_str]
+    v(12pt)
+    return
+  }
+
+  // 1. Verso en blanco ceremonial previo si se requiere
+  if show_blank_verso {
+    page(
+      width: to-len(co.page.width),
+      height: to-len(co.page.height),
+      margin: 0pt,
+      fill: rgb("#ffffff"),
+      header: none,
+      footer: none
+    )[]
+  }
+
+  // 2. Salto ceremonial a página impar (Recto)
+  if is_recto {
+    pagebreak(to: "odd")
+  }
+
+  let minion = (co.number.font, co.number.fallback_font)
+  let neuzeit = (co.description.font, co.description.fallback_font)
+
+  // 3. Fondo vectorial corporativo institucional
+  place(
+    top + left,
+    dx: 0pt,
+    dy: 0pt,
+    image(co.assets.background_vector, width: to-len(co.page.width), height: to-len(co.page.height))
+  )
+
+  // 4. Identificador superior ceremonial: "ANEXOS"
+  // dy = 352.0000 pt (baseline = 365.0200 pt, luz libre a regla = 18.4740 pt)
+  place(
+    top + left,
+    dx: to-len(co.number.x),
+    dy: 352.00pt
+  )[
+    #text(
+      font: minion,
+      size: 20.0pt,
+      fill: rgb(co.number.color),
+      tracking: 0.050em,
+      weight: "medium"
+    )[#upper(upper_label)]
+  ]
+
+  // 5. Título institucional
+  let lines = if opening_title != none {
+    if type(opening_title) == array { opening_title } else { (opening_title,) }
+  } else if title != none {
+    if type(title) == array { title } else { (title,) }
+  } else {
+    ("Y FORMATOS", "OPERATIVOS")
+  }
+
+  place(
+    top + left,
+    dx: to-len(co.title.x),
+    dy: to-len(co.title.dy)
+  )[
+    #block(width: to-len(co.title.width))[
+      #set text(
+        font: minion,
+        size: to-len(co.title.size),
+        fill: rgb(co.title.color),
+        tracking: eval(co.title.tracking),
+        weight: "medium"
+      )
+      #set par(leading: to-len(co.title.typst_leading), justify: false)
+      #lines.map(l => upper(str(l))).join([\ ])
     ]
   ]
-  // Registra como heading de nivel 1 para TOC y running headers
-  [#metadata((type: "annex", code: code, title: title)) <annex-marker>]
-  heading(level: 1, outlined: true)[#code: #title]
-  v(12pt)
+
+  // 6. Descripción institucional
+  let desc = if description != none {
+    description
+  } else if subtitle != none {
+    subtitle
+  } else {
+    [Formatos de gobierno, convocatorias institucionales, actas de asamblea \ y cartas de adhesión para la ejecución formal del Protocolo Familiar.]
+  }
+
+  if desc != none {
+    place(
+      top + left,
+      dx: to-len(co.description.x),
+      dy: to-len(co.description.dy)
+    )[
+      #block(width: to-len(co.description.width))[
+        #set text(
+          font: neuzeit,
+          size: to-len(co.description.size),
+          fill: rgb(co.description.color),
+          weight: "regular"
+        )
+        #set par(leading: to-len(co.description.typst_leading), justify: false)
+        #desc
+      ]
+    ]
+  }
+
+  // 7. Footer institucional
+  let ftr = co.footer
+  place(top + left, dx: to-len(ftr.phrase.x), dy: to-len(ftr.phrase.dy))[
+    #text(
+      font: neuzeit,
+      size: to-len(ftr.phrase.size),
+      fill: rgb(ftr.phrase.color),
+      stroke: to-len(ftr.phrase.stroke) + rgb(ftr.phrase.stroke_color),
+      tracking: eval(ftr.phrase.tracking),
+      weight: "regular"
+    )[#ftr.phrase.text]
+  ]
+
+  place(top + left, dx: to-len(ftr.version.x), dy: to-len(ftr.version.dy))[
+    #text(
+      font: neuzeit,
+      size: to-len(ftr.version.size),
+      fill: rgb(ftr.version.color),
+      stroke: to-len(ftr.version.stroke) + rgb(ftr.version.stroke_color),
+      tracking: eval(ftr.version.tracking),
+      weight: "regular"
+    )[#ftr.version.text]
+  ]
 }
+
 
 // ------------------------------------------------------------------------------
 // 6. ENCABEZADOS DE SECCIÓN (section-heading H2, H3, H4)
@@ -1673,6 +2092,7 @@
   let sp_below = if below_spacing != auto { below_spacing } else { 12.73pt }
 
   block(width: 100%, breakable: false, sticky: true, above: sp_above, below: sp_below)[
+    #metadata((type: "reg-chapter", roman: roman_num, title: title)) <reg-chapter-marker>
     #text(font: minion, size: 10.5pt, fill: rgb("#f15d22"), stroke: 0.3pt + rgb("#f15d22"), tracking: 0.050em, weight: "medium")[#roman_num]
     #v(3.5pt)
     #text(font: minion, size: 9.5pt, fill: rgb("#2e2f31"), tracking: 0.020em, weight: "medium")[#title]
@@ -1754,6 +2174,7 @@
   let sp_below = if below_spacing != auto { below_spacing } else { 12.00pt }
 
   block(width: 100%, breakable: false, sticky: true, above: sp_above, below: sp_below)[
+    #metadata((type: "reg-transitory", title: title)) <reg-transitory-marker>
     #text(font: minion, size: 10.0pt, fill: rgb("#f15d22"), stroke: 0.25pt + rgb("#f15d22"), tracking: 0.050em, weight: "medium")[#title]
   ]
   if body != none [
@@ -2177,6 +2598,7 @@
   short_header_title: "ACTA DE ASAMBLEA",
   full_header_title: false,
   start_page: 2, // Inicia en verso (página par) para formar pliego enfrentado natural
+  binding: auto,
   body
 ) = {
   if start_page != none {
@@ -2185,10 +2607,19 @@
 
   // Paridad de encuadernación para páginas enfrentadas:
   // Typst calcula márgenes inside/outside según el índice físico de página (1-indexed).
-  // Con binding: left, las páginas impares físicas reciben inside a la izquierda.
-  // Si start_page es par (ej. página 02 / Verso), la primera página física debe recibir
-  // el margen outside a la izquierda e inside a la derecha, requiriendo binding: right.
-  let pg-binding = if start_page != none and calc.even(start_page) { right } else { left }
+  // Con binding: left, las páginas impares físicas reciben inside a la izquierda (Recto)
+  // y las pares reciben inside a la derecha (Verso).
+  // Si binding == auto:
+  // - En pruebas aisladas donde start_page es par pero la página física es 1 (impar),
+  //   se usa binding: right para forzar que la primera página física sea Verso.
+  // - En documentos continuos (o cuando se especifica binding explícito), se respeta binding.
+  let pg-binding = if binding != auto {
+    binding
+  } else if start_page != none and calc.even(start_page) {
+    right
+  } else {
+    left
+  }
 
   set page(
     width: 396pt,
@@ -2233,4 +2664,129 @@
   )
 
   body
+}
+
+// ==============================================================================
+// 19. ANEXOS — SISTEMA DE CONVOCATORIAS
+// Fase 4.6.7 — LOCK
+// ==============================================================================
+// Helpers semánticos específicos para la familia de Convocatorias:
+// - Convocatoria de Asamblea de Familia
+// - Convocatoria a Sesión de Consejo de Familia
+//
+// Invariantes aprobadas:
+// - Arquitectura unifoliar: exactamente 1 página (Recto / Folio 01)
+// - Caja útil horizontal real: 314.56 pt
+// - convocation-agenda(): num_width: auto, column_gutter: 3.5pt, text 7.2pt, tracking 0em
+// - convocation-recipient(): Neuzeit 8.5pt bold + subtítulo 7.5pt medium
+// - convocation-notice(): borde 1.5pt col-primary con pad(left: 1.5pt)
+// - form-single-signature(): firma individual centrada e indivisible
+// ==============================================================================
+
+// ------------------------------------------------------------------------------
+// 19.1 DESTINATARIO FORMAL DE CONVOCATORIA (convocation-recipient)
+// ------------------------------------------------------------------------------
+#let convocation-recipient(
+  name,
+  subtitle: "Presente",
+  below: 8pt
+) = {
+  block(width: 100%, breakable: false, below: below)[
+    #text(font: font-neuzeit, size: 8.5pt, weight: "bold", fill: col-text)[#name] \
+    #v(2pt)
+    #text(font: font-neuzeit, size: 7.5pt, weight: "medium", fill: col-muted, tracking: 0.04em)[#subtitle]
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 19.2 BLOQUE DE ORDEN DEL DÍA (convocation-agenda)
+// [APPROVED / LOCKED — FASE 4.6.7: FAMILIA DE CONVOCATORIAS]
+// Numerales en columna auto (13.66 pt max para VIII.), gutter 3.5 pt, texto 7.2 pt.
+// ------------------------------------------------------------------------------
+#let convocation-agenda(
+  title: "ORDEN DEL DÍA",
+  items: (),
+  above: 8pt,
+  below: 6pt,
+  item_gutter: 3.0pt,
+  num_width: auto,
+  column_gutter: 3.5pt
+) = {
+  block(width: 100%, breakable: false, above: above, below: below)[
+    #text(font: font-minion, size: 9.0pt, weight: "medium", fill: col-primary, tracking: 0.04em)[#title]
+    #v(3pt)
+    #line(length: 100%, stroke: 0.5pt + col-border)
+    #v(4pt)
+    #grid(
+      columns: (num_width, 1fr),
+      column-gutter: column_gutter,
+      row-gutter: item_gutter,
+      ..items.map(it => {
+        (
+          align(left + top)[#text(font: font-minion, size: 7.5pt, weight: "medium", fill: col-primary)[#it.at(0)]],
+          align(left + top)[#text(font: font-neuzeit, size: 7.2pt, fill: col-text)[#it.at(1)]]
+        )
+      }).flatten()
+    )
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 19.3 AVISO DOCUMENTAL INSTITUCIONAL (convocation-notice)
+// Recuadro con acento lateral naranja de 1.5 pt; pad(left: 1.5pt) protege canal de lomo.
+// ------------------------------------------------------------------------------
+#let convocation-notice(
+  content,
+  above: 7pt,
+  below: 7pt
+) = {
+  pad(left: 1.5pt)[
+    #block(
+      width: 100% - 1.5pt,
+      stroke: (left: 1.5pt + col-primary),
+      inset: (left: 6.5pt, top: 3.5pt, bottom: 3.5pt),
+      above: above,
+      below: below
+    )[
+      #set text(font: font-neuzeit, size: 6.8pt, fill: col-muted, style: "italic")
+      #content
+    ]
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 19.4 FIRMA INDIVIDUAL DE EMISOR (form-single-signature)
+// Bloque indivisible centrado con espacio autógrafo y cargo abierto o institucional.
+// ------------------------------------------------------------------------------
+#let form-single-signature(
+  salutation: "Atentamente,",
+  line_width: 160pt,
+  name_label: "Nombre:",
+  name_content: none,
+  name_field_width: 110pt,
+  cargo_label: "Cargo:",
+  cargo_content: none,
+  above: 8pt,
+  v_space: 20pt
+) = {
+  block(width: 100%, breakable: false, above: above)[
+    #align(center)[
+      #text(font: font-neuzeit, size: 7.5pt, weight: "medium", fill: col-text)[#salutation]
+      #v(v_space) // Espacio para firma manuscrita autógrafa
+      #line(length: line_width, stroke: 0.5pt + col-line)
+      #v(3.5pt)
+      #if name_content != none [
+        #text(font: font-neuzeit, size: 7.5pt, fill: col-text)[#name_label #name_content]
+      ] else [
+        #text(font: font-neuzeit, size: 7.5pt, fill: col-text)[#name_label]#h(4pt)#form-field-line(width: name_field_width)
+      ]
+      #if cargo_content != none [
+        #v(2.5pt)
+        #text(font: font-neuzeit, size: 7.5pt, weight: "medium", fill: col-muted)[#cargo_content]
+      ] else if cargo_label != none [
+        #v(2.5pt)
+        #text(font: font-neuzeit, size: 7.5pt, fill: col-text)[#cargo_label]#h(4pt)#form-field-line(width: 110pt)
+      ]
+    ]
+  ]
 }
