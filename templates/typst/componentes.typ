@@ -1817,3 +1817,420 @@
 
   body
 }
+
+
+// ==============================================================================
+// 18. ANEXOS — SISTEMA DE ACTAS
+// Fase 4.6.5 — LOCK PARCIAL
+// ==============================================================================
+// Infraestructura editorial y helpers funcionales para la familia de Actas:
+// - Acta de Asamblea General Familiar (A2: 2/3/3/3)
+// - Acta de Sesión del Consejo de Familia
+// - Acta de Constitución y Sesión del Comité de Honor Familiar
+//
+// Invariantes geométricas:
+// - Página: Media Carta (396 pt x 612 pt)
+// - Margen interior (lomo): 58.74 pt
+// - Margen exterior (corte): 22.70 pt
+// - Margen superior: 71.0079 pt (+6 mm consolidado)
+// - Margen inferior: 65.00 pt
+// - Caja útil horizontal real: 314.56 pt
+// - Filete de lomo: 0.5 pt (#f15d22) a 30.13 pt del lomo
+// - Canal libre de seguridad al filete: >= 28 pt (cero cruces vectoriales)
+// - Paridad de encuadernación: binding sincronizado con start_page
+// - Tablas: row_height 22.0 pt, cabeceras en #f8fafc, trazo 0.5 pt (#cbd5e1)
+// - Renglones manuscritos: interlínea 14.5 pt (5.11 mm), par(spacing: 0pt)
+// - Firmas: Keep-together indivisible (clausura + mesa de firmas)
+// ==============================================================================
+
+// Paleta cromática y familias tipográficas para anexos y formularios
+#let font-neuzeit = ("Neuzeit Grotesk",)
+#let font-minion = ("Minion Pro",)
+
+#let col-primary = rgb("#f15d22")   // Naranja institucional POLIFLEX
+#let col-text = rgb("#2e2f31")      // Gris oscuro de lectura
+#let col-muted = rgb("#6c6b67")     // Gris medio de metadatos y etiquetas
+#let col-border = rgb("#cbd5e1")    // Borde de tablas y reglas secundarias
+#let col-line = rgb("#94a3b8")      // Líneas vectoriales de captura manuscrita
+#let col-header-bg = rgb("#f8fafc") // Fondo para encabezados de tabla
+
+// ------------------------------------------------------------------------------
+// 18.1 CAMPO VECTORIAL DE CAPTURA EN LÍNEA (form-field-line)
+// Sustituye las secuencias de "_" por líneas horizontales nítidas alineadas al texto.
+// ------------------------------------------------------------------------------
+#let form-field-line(
+  width: auto,
+  min_width: 20pt,
+  stroke: 0.5pt + col-line,
+  baseline: 1.0pt,
+  content: none
+) = {
+  let w = if width != auto { width } else { min_width }
+  box(width: w, baseline: baseline)[
+    #if content != none [
+      #align(center + bottom)[#content]
+    ]
+    #place(bottom + left, line(length: 100%, stroke: stroke))
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 18.2 CHECKBOX VECTORIAL CONSISTENTE (form-checkbox)
+// Sustituye el glifo Unicode ☐ por una caja geométrica con radio y alineación óptica.
+// ------------------------------------------------------------------------------
+#let form-checkbox(
+  label: none,
+  checked: false,
+  size: 7.0pt,
+  stroke: 0.6pt + col-muted,
+  radius: 1.2pt
+) = {
+  let box-elem = box(
+    width: size,
+    height: size,
+    baseline: -0.5pt,
+    stroke: stroke,
+    radius: radius,
+    fill: if checked { col-primary } else { none }
+  )
+  if label != none [
+    #box(baseline: 0pt)[#box-elem#h(3.5pt)#text(font: font-neuzeit, size: 7.5pt, fill: col-text)[#label]]
+  ] else [
+    #box-elem
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 18.3 TÍTULO PRINCIPAL DEL FORMULARIO (form-title)
+// Jerarquía operativa/institucional en Minion Pro Medium Display, 13.5 pt.
+// ------------------------------------------------------------------------------
+#let form-title(
+  title,
+  above: 0pt,
+  below: 8.0pt
+) = {
+  block(
+    width: 100%,
+    breakable: false,
+    above: above,
+    below: below
+  )[
+    #text(
+      font: font-minion,
+      size: 13.5pt,
+      fill: col-text,
+      weight: "medium",
+      tracking: 0.020em
+    )[#title]
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 18.4 METADATOS SUPERIORES DEL DOCUMENTO (form-header-meta)
+// Identificador y tipo en Neuzeit Grotesk Medium 7.5 pt con campos vectoriales.
+// ------------------------------------------------------------------------------
+#let form-header-meta(
+  label: "Número:",
+  prefix: "AGF",
+  suffix: "/20",
+  num_width: 50pt,
+  year_width: 15pt,
+  show_type: true,
+  type_label: "Tipo:",
+  type_options: ("Ordinaria", "Extraordinaria"),
+  doc_number_prefix: none,
+  doc_year_suffix: none,
+  below: 10pt
+) = {
+  let pref = if doc_number_prefix != none { doc_number_prefix } else { prefix }
+  let suff = if doc_year_suffix != none { doc_year_suffix } else { suffix }
+  block(
+    width: 100%,
+    breakable: false,
+    below: below
+  )[
+    #grid(
+      columns: if show_type { (1fr, auto) } else { (1fr,) },
+      align: if show_type { (left + horizon, right + horizon) } else { (left + horizon,) },
+      [
+        #text(font: font-neuzeit, size: 7.5pt, fill: col-muted, weight: "medium")[#label]#h(4pt)
+        #text(font: font-neuzeit, size: 7.5pt, fill: col-text)[#pref]#form-field-line(width: num_width)#text(font: font-neuzeit, size: 7.5pt, fill: col-text)[#suff]#form-field-line(width: year_width)
+      ],
+      if show_type [
+        #text(font: font-neuzeit, size: 7.5pt, fill: col-muted, weight: "medium")[#type_label]#h(6pt)
+        #for (i, opt) in type_options.enumerate() [
+          #if i > 0 [#h(8pt)]
+          #form-checkbox(label: opt)
+        ]
+      ]
+    )
+    #v(3pt)
+    #line(length: 100%, stroke: 0.5pt + col-border)
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 18.5 TÍTULO DE SECCIÓN OPERATIVA (form-section-title)
+// Encabezado indivisible con acento institucional naranja y texto en gris oscuro.
+// ------------------------------------------------------------------------------
+#let form-section-title(
+  num_str,
+  title,
+  above: 11.5pt,
+  below: 5.0pt
+) = {
+  block(
+    width: 100%,
+    breakable: false,
+    sticky: true,
+    above: above,
+    below: below
+  )[
+    #text(
+      font: font-minion,
+      size: 9.5pt,
+      fill: col-primary,
+      weight: "medium"
+    )[#num_str]#h(4.5pt)#text(
+      font: font-minion,
+      size: 9.5pt,
+      fill: col-text,
+      weight: "medium",
+      tracking: 0.015em
+    )[#title]
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 18.6 CAMPO NARRATIVO MULTILÍNEA (form-multiline-field)
+// Genera renglones horizontales vectoriales para redacción manuscrita estructurada.
+// ------------------------------------------------------------------------------
+#let form-multiline-field(
+  label,
+  num_lines: 2,
+  line_spacing: 14.5pt,
+  below: 6.0pt,
+  stroke: 0.5pt + col-border
+) = {
+  block(
+    width: 100%,
+    breakable: false,
+    below: below
+  )[
+    #set par(spacing: 0pt)
+    #grid(
+      columns: (auto, 1fr),
+      column-gutter: 5pt,
+      align: (bottom, bottom),
+      text(font: font-neuzeit, size: 7.5pt, fill: col-text, weight: "medium")[#label],
+      box(baseline: -1pt, line(length: 100%, stroke: stroke))
+    )
+    #for i in range(num_lines - 1) [
+      #v(line_spacing)
+      #line(length: 100%, stroke: stroke)
+    ]
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 18.7 TABLA OPERATIVA DE FORMULARIO (form-table)
+// Renderiza tablas institucionales con row_height configurable y bordes finos.
+// ------------------------------------------------------------------------------
+#let form-table(
+  columns: (1.1fr, 1.0fr, 0.65fr, 1.15fr, 1.1fr),
+  headers: (),
+  rows_data: (),
+  row_height: 22.0pt,
+  stroke: 0.5pt + col-border
+) = {
+  let num_data_rows = rows_data.len()
+  set text(font: font-neuzeit, size: 7.0pt, fill: col-text)
+
+  table(
+    columns: columns,
+    rows: (auto, ..(row_height,) * num_data_rows),
+    align: (col, row) => {
+      if row == 0 {
+        if type(headers.at(col)) == dictionary and "align" in headers.at(col) { headers.at(col).align } else { left + horizon }
+      } else {
+        left + horizon
+      }
+    },
+    fill: (col, row) => if row == 0 { col-header-bg } else { none },
+    stroke: (col, row) => stroke,
+    table.header(
+      ..headers.map(h => {
+        let content = if type(h) == dictionary { h.body } else { h }
+        let al = if type(h) == dictionary and "align" in h { h.align } else { left + horizon }
+        align(al)[#text(font: font-neuzeit, size: 7.0pt, weight: "medium", fill: col-text)[#content]]
+      })
+    ),
+    ..rows_data.flatten()
+  )
+}
+
+// ------------------------------------------------------------------------------
+// 18.8 BLOQUE INDIVISIBLE DE FIRMAS Y CIERRE (form-signature-block)
+// Garantiza que el cierre y la tabla de firmas nunca queden desvinculados ni huérfanos.
+// ------------------------------------------------------------------------------
+#let form-signature-block(
+  above: 11.5pt,
+  content
+) = {
+  block(
+    width: 100%,
+    breakable: false,
+    above: above
+  )[
+    #content
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 18.9 ENCABEZADO CORRIENTE DE ANEXOS (annex-running-header)
+// Sigue la distribución recto/verso del libro, con isotipo exterior.
+// ------------------------------------------------------------------------------
+#let annex-running-header(
+  form_title: "ACTA DE ASAMBLEA GENERAL FAMILIAR",
+  short_title: "ACTA DE ASAMBLEA",
+  full_title: false,
+  is_recto: true
+) = {
+  let iso = interior-isotype(width: 7.1186pt, height: 7.0000pt, opacity: 50%)
+
+  let effective_title = if full_title {
+    form_title
+  } else if short_title != none {
+    short_title
+  } else {
+    form_title
+  }
+  let header_title = "ANEXOS · " + effective_title
+
+  let rh_text(t, col) = text(
+    font: font-neuzeit,
+    size: 5.5pt,
+    fill: col,
+    tracking: 0.200em,
+    weight: "regular"
+  )[#t]
+
+  let inst_unit = [
+    #rh_text("PROTOCOLO FAMILIAR", col-muted)#h(8pt)#rh_text("VERSION 1.0", col-primary)
+  ]
+
+  let annex_unit = rh_text(header_title, col-muted)
+
+  place(top + left, dx: 0pt, dy: 25.5pt)[
+    #if is_recto [
+      #grid(
+        columns: (0.975fr, 1.025fr),
+        align: (left + horizon, right + horizon),
+        inst_unit,
+        [#annex_unit#h(5pt)#box(baseline: 15%)[#iso]]
+      )
+    ] else [
+      #grid(
+        columns: (1.025fr, 0.975fr),
+        align: (left + horizon, right + horizon),
+        [#box(baseline: 15%)[#iso]#h(5pt)#annex_unit],
+        inst_unit
+      )
+    ]
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 18.10 PIE Y FOLIO DE ANEXOS (annex-footer)
+// Minion Pro Medium 8pt alineado al corte exterior.
+// ------------------------------------------------------------------------------
+#let annex-footer(page_num, is_recto: true) = {
+  let p_str = if page_num < 10 { "0" + str(page_num) } else { str(page_num) }
+  let folio_txt = text(font: font-minion, size: 8pt, fill: col-primary, weight: "medium")[#p_str]
+
+  v(20pt)
+  if is_recto [
+    #align(right)[#folio_txt]
+  ] else [
+    #align(left)[#folio_txt]
+  ]
+}
+
+// ------------------------------------------------------------------------------
+// 18.11 FILETE VERTICAL INSTITUCIONAL DE LOMO (annex-spine-rule)
+// Regla vertical de 0.5pt en #f15d22 situada a 30.13pt del lomo (recto o verso).
+// ------------------------------------------------------------------------------
+#let annex-spine-rule(is_recto: true) = {
+  let rule_x = if is_recto { 30.13pt } else { 365.87pt }
+  place(top + left, dx: rule_x, dy: 0pt, line(start: (0pt, 0pt), end: (0pt, 612pt), stroke: 0.5pt + col-primary))
+}
+
+// ------------------------------------------------------------------------------
+// 18.12 ENTORNO BASE DE PÁGINA DE ANEXOS (annex-page)
+// [APPROVED / LOCKED PARCIAL — FASE 4.6.5: FAMILIA DE ACTAS]
+// Geometría Media Carta (396 x 612 pt), retícula +6mm, lomo 58.74pt, corte 22.70pt.
+// Caja útil horizontal real: 314.56 pt
+// ------------------------------------------------------------------------------
+#let annex-page(
+  cfg: none,
+  form_title: "ACTA DE ASAMBLEA GENERAL FAMILIAR",
+  short_header_title: "ACTA DE ASAMBLEA",
+  full_header_title: false,
+  start_page: 2, // Inicia en verso (página par) para formar pliego enfrentado natural
+  body
+) = {
+  if start_page != none {
+    counter(page).update(start_page)
+  }
+
+  // Paridad de encuadernación para páginas enfrentadas:
+  // Typst calcula márgenes inside/outside según el índice físico de página (1-indexed).
+  // Con binding: left, las páginas impares físicas reciben inside a la izquierda.
+  // Si start_page es par (ej. página 02 / Verso), la primera página física debe recibir
+  // el margen outside a la izquierda e inside a la derecha, requiriendo binding: right.
+  let pg-binding = if start_page != none and calc.even(start_page) { right } else { left }
+
+  set page(
+    width: 396pt,
+    height: 612pt,
+    binding: pg-binding,
+    margin: (
+      inside: 58.74pt,   // Lomo: 58.74pt
+      outside: 22.70pt,  // Corte: 22.70pt
+      top: 71.0079pt,    // Consolidado +6 mm
+      bottom: 65.00pt
+    ),
+    header: context [
+      #let p = counter(page).get().first()
+      #let is_recto = calc.odd(p)
+      #annex-running-header(form_title: form_title, short_title: short_header_title, full_title: full_header_title, is_recto: is_recto)
+    ],
+    footer: context [
+      #let p = counter(page).get().first()
+      #let is_recto = calc.odd(p)
+      #annex-footer(p, is_recto: is_recto)
+    ],
+    background: context [
+      #let p = counter(page).get().first()
+      #let is_recto = calc.odd(p)
+      #annex-spine-rule(is_recto: is_recto)
+    ]
+  )
+
+  set text(
+    font: font-neuzeit,
+    size: 7.9077pt,
+    fill: col-text,
+    tracking: 0em,
+    hyphenate: false
+  )
+
+  set par(
+    leading: 12.0pt,
+    justify: true,
+    spacing: 10.0pt,
+    linebreaks: "simple"
+  )
+
+  body
+}
